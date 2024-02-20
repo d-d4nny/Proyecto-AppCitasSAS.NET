@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AppCitasSAS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+599634efd9cd9a6a65b2ef4a62684b4dfa70e450")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b9a70c15b71542cf4040e93f8afe7b1ad25e25b4")]
 [assembly: System.Reflection.AssemblyProductAttribute("AppCitasSAS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AppCitasSAS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
