@@ -11,7 +11,6 @@ namespace AppCitasSAS.Servicios.Implementaciones
         {
             try
             {
-                ImplPacienteServicio iPac = new ImplPacienteServicio();
                 PacienteDTO dto = new PacienteDTO();
 
                 dto.IdPaciente = u.IdPaciente;

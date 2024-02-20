@@ -5,13 +5,13 @@ namespace AppCitasSAS.Servicios.Interfaces
 {
     public interface IntfPacienteServicio
     {
-        public PacienteDTO registrar(PacienteDTO pacienteDTO);
+        public PacienteDTO registrar(PacienteDTO pacienteDTO); 
 
 
         public PacienteDTO buscarPorId(long id);
 
 
-        public Paciente buscarPorEmail(String emailPaciente);
+        public PacienteDTO buscarPorEmail(String emailPaciente);
 
 
         public Boolean buscarPorDni(String dni);
@@ -23,24 +23,24 @@ namespace AppCitasSAS.Servicios.Interfaces
         public void actualizarPaciente(PacienteDTO pacienteModificado);
 
 
-        public PacienteDTO obtenerUsuarioPorToken(String token);
+        public PacienteDTO obtenerPacientePorToken(String token);
 
 
-        public bool iniciarResetPassConEmail(String emailPaciente);
+        public bool iniciarProcesoRecuperacion(String emailPaciente);
 
 
-        public bool modificarContrasenaConToken(PacienteDTO paciente);
+        public bool modificarContraseñaConToken(PacienteDTO paciente);
 
 
-        public Paciente eliminar(long id);
+        public void eliminar(long id);
 
 
-        public bool confirmarCuenta(String token);
+        public bool confirmarCuenta(String token); 
 
 
         public bool estaLaCuentaConfirmada(String email);
 
 
-        bool verificarCredenciales(string emailPaciente, string clavePaciente);
+        public bool verificarCredenciales(string emailPaciente, string clavePaciente);
     }
 }

@@ -11,7 +11,6 @@ namespace AppCitasSAS.Servicios.Implementaciones
         {
             try
             {
-                ImplPacienteServicio iPac = new ImplPacienteServicio();
                 Paciente pacienteDao = new Paciente();
 
                 EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método pacienteToDao() de la clase ImplsPacienteToDao");
