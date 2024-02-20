@@ -7,7 +7,7 @@ namespace AppCitasSAS.Servicios.Implementaciones
 {
     public class ImplPacienteToDao : IntfPacienteToDao
     {
-        public Paciente PacienteToDao(PacienteDTO pacienteDTO)
+        public Paciente pacienteToDao(PacienteDTO pacienteDTO)
         {
             try
             {
@@ -51,7 +51,7 @@ namespace AppCitasSAS.Servicios.Implementaciones
 
                 foreach (PacienteDTO pacienteDTO in listaPacienteDTO)
                 {
-                    listaPacienteDao.Add(PacienteToDao(pacienteDTO));
+                    listaPacienteDao.Add(pacienteToDao(pacienteDTO));
                 }
 
                 EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método listPacienteToDao() de la clase ImplsPacienteToDao");

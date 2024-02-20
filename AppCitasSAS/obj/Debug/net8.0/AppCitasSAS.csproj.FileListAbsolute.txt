@@ -240,3 +240,4 @@ C:\Users\Puesto15\Desktop\CLASES\DIW\AppCitasSASv2\AppCitasSAS\AppCitasSAS\obj\D
 C:\Users\Puesto15\Desktop\CLASES\DIW\AppCitasSASv2\AppCitasSAS\AppCitasSAS\obj\Debug\net8.0\AppCitasSAS.pdb
 C:\Users\Puesto15\Desktop\CLASES\DIW\AppCitasSASv2\AppCitasSAS\AppCitasSAS\obj\Debug\net8.0\AppCitasSAS.genruntimeconfig.cache
 C:\Users\Puesto15\Desktop\CLASES\DIW\AppCitasSASv2\AppCitasSAS\AppCitasSAS\obj\Debug\net8.0\ref\AppCitasSAS.dll
+C:\Users\Puesto15\Desktop\CLASES\DIW\AppCitasSASv2\AppCitasSAS\AppCitasSAS\obj\Debug\net8.0\AppCitasSAS.sourcelink.json
