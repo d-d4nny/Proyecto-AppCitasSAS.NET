@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Puesto15\\Desktop\\CLASES\\DIW\\AppCitasSASv2\\AppCitasSAS\\DAL\\DAL.csproj": {}
+    "C:\\Users\\DaniT\\Desktop\\AppCitasSAS.net\\Proyecto-AppCitasSAS.NET\\DAL\\DAL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Puesto15\\Desktop\\CLASES\\DIW\\AppCitasSASv2\\AppCitasSAS\\DAL\\DAL.csproj": {
+    "C:\\Users\\DaniT\\Desktop\\AppCitasSAS.net\\Proyecto-AppCitasSAS.NET\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Puesto15\\Desktop\\CLASES\\DIW\\AppCitasSASv2\\AppCitasSAS\\DAL\\DAL.csproj",
+        "projectUniqueName": "C:\\Users\\DaniT\\Desktop\\AppCitasSAS.net\\Proyecto-AppCitasSAS.NET\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "C:\\Users\\Puesto15\\Desktop\\CLASES\\DIW\\AppCitasSASv2\\AppCitasSAS\\DAL\\DAL.csproj",
-        "packagesPath": "C:\\Users\\Puesto15\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Puesto15\\Desktop\\CLASES\\DIW\\AppCitasSASv2\\AppCitasSAS\\DAL\\obj\\",
+        "projectPath": "C:\\Users\\DaniT\\Desktop\\AppCitasSAS.net\\Proyecto-AppCitasSAS.NET\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\DaniT\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DaniT\\Desktop\\AppCitasSAS.net\\Proyecto-AppCitasSAS.NET\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Puesto15\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DaniT\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -36,7 +36,9 @@
           ]
         },
         "restoreAuditProperties": {
-          "enableAudit": "default"
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -80,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
