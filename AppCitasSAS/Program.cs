@@ -1,7 +1,36 @@
+using AppCitasSAS.Servicios.Implementaciones;
+using AppCitasSAS.Servicios.Interfaces;
+using DAL.Entidades;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+
+builder.Services.AddDbContext<AppCitasSasContext>(options =>
+     options.UseNpgsql(builder.Configuration.GetConnectionString("PostgresConnection")));
+
+builder.Services.AddScoped<IntfPacienteServicio, ImplPacienteServicio>();
+builder.Services.AddScoped<IntfPacienteToDao, ImplPacienteToDao>();
+builder.Services.AddScoped<IntfPacienteToDto, ImplPacienteToDto>();
+builder.Services.AddScoped<IntfEncriptar,  ImplEncriptar>();
+builder.Services.AddScoped<IntfEmailRecuperacion, ImplEmailRecuperacion>();
+
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+    options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+    options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+})
+.AddCookie(options =>
+{
+    options.LoginPath = "/auth/login";
+});
 
 var app = builder.Build();
 

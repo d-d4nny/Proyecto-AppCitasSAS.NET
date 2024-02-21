@@ -12,7 +12,7 @@ namespace AppCitasSAS.Servicios.Implementaciones
             {
                 EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método enviarEmailConfirmacion() de la clase ServicioEmailImpl");
 
-                string urlDominio = "https://localhost:7142";
+                string urlDominio = "http://localhost:5187";
 
                 string EmailOrigen = "danitbp12@gmail.com";
                 //Se crea la URL de recuperación con el token que se enviará al mail del user.
@@ -33,7 +33,7 @@ namespace AppCitasSAS.Servicios.Implementaciones
                 smtpCliente.EnableSsl = true;
                 smtpCliente.UseDefaultCredentials = false;
                 smtpCliente.Port = 587;
-                smtpCliente.Credentials = new System.Net.NetworkCredential(EmailOrigen, "");
+                smtpCliente.Credentials = new System.Net.NetworkCredential(EmailOrigen, "exwl tblj sanf siey");
 
                 smtpCliente.Send(mensajeDelCorreo);
 
@@ -59,7 +59,7 @@ namespace AppCitasSAS.Servicios.Implementaciones
             {
                 EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método enviarEmailRecuperacion() de la clase ServicioEmailImpl");
 
-                string urlDominio = "https://localhost:7142";
+                string urlDominio = "http://localhost:5187";
 
                 string EmailOrigen = "danitbp12@gmail.com";
                 //Se crea la URL de recuperación con el token que se enviará al mail del user.
@@ -80,7 +80,7 @@ namespace AppCitasSAS.Servicios.Implementaciones
                 smtpCliente.EnableSsl = true;
                 smtpCliente.UseDefaultCredentials = false;
                 smtpCliente.Port = 587;
-                smtpCliente.Credentials = new System.Net.NetworkCredential(EmailOrigen, "");
+                smtpCliente.Credentials = new System.Net.NetworkCredential(EmailOrigen, "exwl tblj sanf siey");
 
                 smtpCliente.Send(mensajeDelCorreo);
 

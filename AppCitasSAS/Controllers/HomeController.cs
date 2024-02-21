@@ -31,7 +31,7 @@ namespace AppCitasSAS.Controllers
                 EscribirLog.escribirEnFicheroLog("[ERROR] Se lanzó una excepción en el método Index() de la clase HomeController: " + e.Message + e.StackTrace);
                 return View();
             }
-        }   
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

@@ -1,5 +1,32 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    ViewData["Title"] = "Login";
 }
+
+<div>
+    <div class="imgBackground">
+        <img src="./assets/backgroundSFondo.png" class="d-block w-100" alt="imagen fondo">
+		    <p class="textLogin">Clientes</p>
+    </div>
+
+    <div class="contenedor form-login">
+        <div class="login cardPrincipal">
+            <form class="custom-form" method="post" asp-action="ProcesarInicioSesion" asp-controller="Login" asp-for="PacienteDTO" role="form">
+                <h2 class="text-center mb-5"><i class="bi bi-box-arrow-in-right" style="color: #1f3c85;"> Iniciar sesión</i></h2>
+                <div class="mb-3">
+                    <label for="EmailPaciente" class="form-label textoPrincipal">Correo Electrónico</label>
+                    <input type="text" class="form-control" name="EmailPaciente" id="EmailPaciente" placeholder="Introduzca su correo electrónico" required autofocus />
+                </div>
+                <div class="mb-3">
+                    <label for="ContrasenaPaciente" class="form-label textoPrincipal">Contraseña</label>
+                    <input type="password" name="ContrasenaPaciente" id="ContrasenaPaciente" class="form-control" placeholder="Introduzca su contraseña" required />
+                </div>
+                <button type="submit" class="btn btn-primary mt-5 mb-5"><i class="bi bi-box-arrow-in-right fs-5"> Iniciar sesión</i></button>
+                <hr class="border border-primary border-2 opacity-80 m-4">
+                <ul class="listaLogin">
+                    <li><a href="/auth/solicitar-recuperacion">Olvidó su <span class="fw-bold fs-5">contraseña?</span></a></li>
+                    <li><a href="/auth/registrar">No tiene una cuenta?<span class="fw-bold fs-5"> Regístrese</span></a></li>
+                </ul>
+            </form>
+        </div>
+    </div>
+</div>

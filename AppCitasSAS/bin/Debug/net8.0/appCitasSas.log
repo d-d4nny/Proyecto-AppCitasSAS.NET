@@ -8,3 +8,731 @@
 20/02/2024 04:40:23 [INFO] Entrando en el método  Index() de la clase HomeController
 20/02/2024 07:11:46 [INFO] Entrando en el método  Index() de la clase HomeController
 20/02/2024 07:19:32 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 08:22:59 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 08:36:37 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 09:00:25 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 09:00:29 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 09:06:51 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 09:06:55 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 09:15:48 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 09:15:50 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 09:16:07 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 09:16:07 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 09:16:07 [INFO] Saliendo del método Encriptar() de la clase EncriptarImpl
+21/02/2024 09:16:08 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl. Username no encontrado
+21/02/2024 09:16:08 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController. Credenciales inválidas o cuenta no confirmada. Inténtelo de nuevo.
+21/02/2024 09:16:32 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 09:16:32 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 09:16:32 [INFO] Saliendo del método Encriptar() de la clase EncriptarImpl
+21/02/2024 09:16:32 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl. Username no encontrado
+21/02/2024 09:16:32 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController. Credenciales inválidas o cuenta no confirmada. Inténtelo de nuevo.
+21/02/2024 09:42:52 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 09:42:54 [INFO] Entrando en el método RegistrarGet() de la clase PacienteController
+21/02/2024 09:42:56 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 09:43:02 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 09:43:02 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 09:43:02 [INFO] Saliendo del método Encriptar() de la clase EncriptarImpl
+21/02/2024 09:43:03 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl. Username no encontrado
+21/02/2024 09:43:03 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController. Credenciales inválidas o cuenta no confirmada. Inténtelo de nuevo.
+21/02/2024 09:43:09 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 09:43:09 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 09:43:09 [INFO] Saliendo del método Encriptar() de la clase EncriptarImpl
+21/02/2024 09:43:09 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl. Username no encontrado
+21/02/2024 09:43:09 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController. Credenciales inválidas o cuenta no confirmada. Inténtelo de nuevo.
+21/02/2024 09:43:14 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 09:43:14 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 09:43:14 [INFO] Saliendo del método Encriptar() de la clase EncriptarImpl
+21/02/2024 09:43:14 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl. Username no encontrado
+21/02/2024 09:43:14 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController. Credenciales inválidas o cuenta no confirmada. Inténtelo de nuevo.
+21/02/2024 09:43:19 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 09:43:19 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 09:43:19 [INFO] Saliendo del método Encriptar() de la clase EncriptarImpl
+21/02/2024 09:43:19 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl. Username no encontrado
+21/02/2024 09:43:19 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController. Credenciales inválidas o cuenta no confirmada. Inténtelo de nuevo.
+21/02/2024 09:43:22 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 09:43:22 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 09:43:22 [INFO] Saliendo del método Encriptar() de la clase EncriptarImpl
+21/02/2024 09:43:22 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl. Username no encontrado
+21/02/2024 09:43:22 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController. Credenciales inválidas o cuenta no confirmada. Inténtelo de nuevo.
+21/02/2024 09:43:32 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 09:43:32 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 09:43:32 [INFO] Saliendo del método Encriptar() de la clase EncriptarImpl
+21/02/2024 09:43:32 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl. Username no encontrado
+21/02/2024 09:43:32 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController. Credenciales inválidas o cuenta no confirmada. Inténtelo de nuevo.
+21/02/2024 09:43:51 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 09:43:51 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 09:43:51 [INFO] Saliendo del método Encriptar() de la clase EncriptarImpl
+21/02/2024 09:43:51 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl. Username no encontrado
+21/02/2024 09:43:51 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController. Credenciales inválidas o cuenta no confirmada. Inténtelo de nuevo.
+21/02/2024 09:44:54 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 09:44:54 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 09:44:54 [INFO] Saliendo del método Encriptar() de la clase EncriptarImpl
+21/02/2024 09:44:54 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl. Username no encontrado
+21/02/2024 09:44:54 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController. Credenciales inválidas o cuenta no confirmada. Inténtelo de nuevo.
+21/02/2024 09:45:15 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 09:45:15 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 09:45:15 [INFO] Saliendo del método Encriptar() de la clase EncriptarImpl
+21/02/2024 09:45:15 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl. Username no encontrado
+21/02/2024 09:45:15 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController. Credenciales inválidas o cuenta no confirmada. Inténtelo de nuevo.
+21/02/2024 09:46:08 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 09:46:08 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 09:46:08 [INFO] Saliendo del método Encriptar() de la clase EncriptarImpl
+21/02/2024 09:46:08 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl. Username no encontrado
+21/02/2024 09:46:08 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController. Credenciales inválidas o cuenta no confirmada. Inténtelo de nuevo.
+21/02/2024 09:46:29 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 09:46:29 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 09:46:29 [INFO] Saliendo del método Encriptar() de la clase EncriptarImpl
+21/02/2024 09:46:29 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl. Username no encontrado
+21/02/2024 09:46:29 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController. Credenciales inválidas o cuenta no confirmada. Inténtelo de nuevo.
+21/02/2024 09:46:36 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 09:46:36 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 09:46:36 [INFO] Saliendo del método Encriptar() de la clase EncriptarImpl
+21/02/2024 09:46:36 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl. Username no encontrado
+21/02/2024 09:46:36 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController. Credenciales inválidas o cuenta no confirmada. Inténtelo de nuevo.
+21/02/2024 09:47:47 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 09:47:55 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 09:47:57 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 09:48:37 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 09:48:37 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 09:48:37 [INFO] Saliendo del método Encriptar() de la clase EncriptarImpl
+21/02/2024 09:48:39 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl. Username no encontrado
+21/02/2024 09:49:49 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 09:49:53 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 09:50:02 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 09:50:14 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 09:50:14 [INFO] Saliendo del método Encriptar() de la clase EncriptarImpl
+21/02/2024 09:50:42 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl. Username no encontrado
+21/02/2024 09:50:51 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController. Credenciales inválidas o cuenta no confirmada. Inténtelo de nuevo.
+21/02/2024 09:51:42 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 09:51:43 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 09:51:50 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 09:51:51 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 09:51:51 [INFO] Saliendo del método Encriptar() de la clase EncriptarImpl
+21/02/2024 09:52:16 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl. Username no encontrado
+21/02/2024 09:52:28 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 09:52:30 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 09:53:55 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 09:53:56 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 09:53:56 [INFO] Saliendo del método Encriptar() de la clase EncriptarImpl
+21/02/2024 09:54:58 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 09:54:59 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 09:55:15 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 09:55:18 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 09:55:18 [INFO] Saliendo del método Encriptar() de la clase EncriptarImpl
+21/02/2024 09:56:20 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl. Username no encontrado
+21/02/2024 09:56:24 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController. Credenciales inválidas o cuenta no confirmada. Inténtelo de nuevo.
+21/02/2024 09:58:21 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 09:58:22 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 09:58:34 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 09:58:52 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 09:58:52 [INFO] Saliendo del método Encriptar() de la clase EncriptarImpl
+21/02/2024 09:59:53 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 10:00:01 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 10:00:01 [INFO] Saliendo del método Encriptar() de la clase EncriptarImpl
+21/02/2024 10:00:13 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 10:00:28 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 10:00:28 [INFO] Entrando en el método buscarPorEmail() de la clase PacienteServicioImpl
+21/02/2024 10:00:29 [INFO] Entrando en el método obtenerTodosLosUsuarios() de la clase PacienteServicioImpl
+21/02/2024 10:00:33 [INFO] Entrando en el método listaPacienteToDto() de la clase ImplPacienteToDto
+21/02/2024 10:00:33 [INFO] Entrando en el método buscarPorEmail() de la clase PacienteServicioImpl
+21/02/2024 10:00:33 [INFO] Entrando en el método obtenerTodosLosUsuarios() de la clase PacienteServicioImpl
+21/02/2024 10:00:33 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 10:00:33 [INFO] Entrando en el método listaPacienteToDto() de la clase ImplPacienteToDto
+21/02/2024 10:00:33 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 10:00:33 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 10:00:33 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 10:00:33 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 10:00:33 [INFO] Saliendo del método listaPacienteToDto() de la clase ImplPacienteToDto
+21/02/2024 10:00:33 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 10:00:35 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 10:00:35 [INFO] Saliendo del método listaPacienteToDto() de la clase ImplPacienteToDto
+21/02/2024 10:00:46 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController
+21/02/2024 10:00:46 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController
+21/02/2024 10:02:43 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 10:02:54 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 10:02:54 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 10:02:54 [INFO] Saliendo del método Encriptar() de la clase EncriptarImpl
+21/02/2024 10:03:06 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl. Username no encontrado
+21/02/2024 10:03:10 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController. Credenciales inválidas o cuenta no confirmada. Inténtelo de nuevo.
+21/02/2024 10:03:38 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 10:03:39 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 10:03:45 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 10:03:48 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 10:03:48 [INFO] Saliendo del método Encriptar() de la clase EncriptarImpl
+21/02/2024 10:05:16 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 10:05:19 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 10:05:19 [INFO] Saliendo del método Encriptar() de la clase EncriptarImpl
+21/02/2024 10:05:49 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl. Username no encontrado
+21/02/2024 10:05:50 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController. Credenciales inválidas o cuenta no confirmada. Inténtelo de nuevo.
+21/02/2024 10:05:50 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 10:05:53 [INFO] Entrando en el método buscarPorEmail() de la clase PacienteServicioImpl
+21/02/2024 10:05:53 [INFO] Entrando en el método obtenerTodosLosUsuarios() de la clase PacienteServicioImpl
+21/02/2024 10:05:53 [INFO] Entrando en el método listaPacienteToDto() de la clase ImplPacienteToDto
+21/02/2024 10:05:53 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 10:05:53 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 10:05:53 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 10:05:53 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 10:05:53 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 10:05:53 [INFO] Saliendo del método listaPacienteToDto() de la clase ImplPacienteToDto
+21/02/2024 10:05:54 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController
+21/02/2024 10:14:23 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 10:14:25 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 10:14:29 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 10:14:29 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 10:14:29 [INFO] Saliendo del método Encriptar() de la clase EncriptarImpl
+21/02/2024 10:14:30 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 10:14:30 [INFO] Entrando en el método buscarPorEmail() de la clase PacienteServicioImpl
+21/02/2024 10:14:30 [INFO] Entrando en el método obtenerTodosLosUsuarios() de la clase PacienteServicioImpl
+21/02/2024 10:14:30 [INFO] Entrando en el método listaPacienteToDto() de la clase ImplPacienteToDto
+21/02/2024 10:14:30 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 10:14:30 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 10:14:30 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 10:14:30 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 10:14:30 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 10:14:30 [INFO] Saliendo del método listaPacienteToDto() de la clase ImplPacienteToDto
+21/02/2024 10:14:30 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController
+21/02/2024 10:16:27 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 10:16:28 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 10:16:30 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 10:16:30 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 10:16:30 [INFO] Saliendo del método Encriptar() de la clase EncriptarImpl
+21/02/2024 10:16:31 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 10:16:31 [INFO] Entrando en el método buscarPorEmail() de la clase PacienteServicioImpl
+21/02/2024 10:16:31 [INFO] Entrando en el método obtenerTodosLosUsuarios() de la clase PacienteServicioImpl
+21/02/2024 10:16:31 [INFO] Entrando en el método listaPacienteToDto() de la clase ImplPacienteToDto
+21/02/2024 10:16:31 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 10:16:31 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 10:16:31 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 10:16:31 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 10:16:31 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 10:16:31 [INFO] Saliendo del método listaPacienteToDto() de la clase ImplPacienteToDto
+21/02/2024 10:16:31 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController
+21/02/2024 10:50:33 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 10:50:35 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 10:50:38 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 10:50:38 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 10:50:38 [INFO] Saliendo del método Encriptar() de la clase EncriptarImpl
+21/02/2024 10:50:39 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl. Username no encontrado
+21/02/2024 10:50:39 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController. Credenciales inválidas o cuenta no confirmada. Inténtelo de nuevo.
+21/02/2024 10:50:44 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 10:50:44 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 10:50:44 [INFO] Saliendo del método Encriptar() de la clase EncriptarImpl
+21/02/2024 10:50:44 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl. Username no encontrado
+21/02/2024 10:50:44 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController. Credenciales inválidas o cuenta no confirmada. Inténtelo de nuevo.
+21/02/2024 10:50:51 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 10:50:51 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 10:50:51 [INFO] Saliendo del método Encriptar() de la clase EncriptarImpl
+21/02/2024 10:50:51 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl. Username no encontrado
+21/02/2024 10:50:51 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController. Credenciales inválidas o cuenta no confirmada. Inténtelo de nuevo.
+21/02/2024 10:50:54 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 10:50:54 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 10:50:54 [INFO] Saliendo del método Encriptar() de la clase EncriptarImpl
+21/02/2024 10:50:54 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 10:50:54 [INFO] Entrando en el método buscarPorEmail() de la clase PacienteServicioImpl
+21/02/2024 10:50:54 [INFO] Entrando en el método obtenerTodosLosUsuarios() de la clase PacienteServicioImpl
+21/02/2024 10:50:54 [INFO] Entrando en el método listaPacienteToDto() de la clase ImplPacienteToDto
+21/02/2024 10:50:54 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 10:50:54 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 10:50:54 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 10:50:54 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 10:50:54 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 10:50:54 [INFO] Saliendo del método listaPacienteToDto() de la clase ImplPacienteToDto
+21/02/2024 10:50:54 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController
+21/02/2024 10:55:03 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 10:55:16 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 10:55:19 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 10:55:19 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 10:55:19 [INFO] Saliendo del método Encriptar() de la clase EncriptarImpl
+21/02/2024 10:55:20 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 10:55:20 [INFO] Entrando en el método buscarPorEmail() de la clase PacienteServicioImpl
+21/02/2024 10:55:20 [INFO] Entrando en el método obtenerTodosLosUsuarios() de la clase PacienteServicioImpl
+21/02/2024 10:55:20 [INFO] Entrando en el método listaPacienteToDto() de la clase ImplPacienteToDto
+21/02/2024 10:55:20 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 10:55:20 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 10:55:20 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 10:55:20 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 10:55:20 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 10:55:20 [INFO] Saliendo del método listaPacienteToDto() de la clase ImplPacienteToDto
+21/02/2024 10:55:20 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController
+21/02/2024 10:56:32 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 10:56:34 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 10:56:36 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 10:56:36 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 10:56:36 [INFO] Saliendo del método Encriptar() de la clase EncriptarImpl
+21/02/2024 10:56:37 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 10:56:37 [INFO] Entrando en el método buscarPorEmail() de la clase PacienteServicioImpl
+21/02/2024 10:56:37 [INFO] Entrando en el método obtenerTodosLosUsuarios() de la clase PacienteServicioImpl
+21/02/2024 10:56:37 [INFO] Entrando en el método listaPacienteToDto() de la clase ImplPacienteToDto
+21/02/2024 10:56:37 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 10:56:37 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 10:56:37 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 10:56:37 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 10:56:37 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 10:56:37 [INFO] Saliendo del método listaPacienteToDto() de la clase ImplPacienteToDto
+21/02/2024 10:56:37 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController
+21/02/2024 10:56:37 [INFO] Entrando en el método buscarPorEmail() de la clase PacienteServicioImpl
+21/02/2024 10:56:37 [INFO] Entrando en el método obtenerTodosLosUsuarios() de la clase PacienteServicioImpl
+21/02/2024 10:56:37 [INFO] Entrando en el método listaPacienteToDto() de la clase ImplPacienteToDto
+21/02/2024 10:56:37 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 10:56:37 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 10:56:37 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 10:56:37 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 10:56:37 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 10:56:37 [INFO] Saliendo del método listaPacienteToDto() de la clase ImplPacienteToDto
+21/02/2024 11:30:56 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 11:31:13 [INFO] Entrando en el método RegistrarGet() de la clase PacienteController
+21/02/2024 11:31:50 [INFO] Entrando en el método RegistrarGet() de la clase PacienteController
+21/02/2024 11:32:03 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 11:32:05 [INFO] Entrando en el método RegistrarGet() de la clase PacienteController
+21/02/2024 11:32:09 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 11:32:24 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 11:32:29 [INFO] Entrando en el método RegistrarGet() de la clase PacienteController
+21/02/2024 11:33:29 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 11:33:31 [INFO] Entrando en el método RegistrarGet() de la clase PacienteController
+21/02/2024 11:37:24 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 11:37:25 [INFO] Entrando en el método RegistrarGet() de la clase PacienteController
+21/02/2024 11:37:39 [INFO] Entrando en el método RegistrarPost() de la clase PacienteController
+21/02/2024 11:37:39 [INFO] Entrando en el método registrarPaciente() de la clase PacienteServicioImpl
+21/02/2024 11:37:41 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 11:37:41 [INFO] Saliendo del método Encriptar() de la clase EncriptarImpl
+21/02/2024 11:37:41 [INFO] Entrando en el método pacienteToDao() de la clase ImplsPacienteToDao
+21/02/2024 11:37:41 [INFO] Saliendo del método pacienteToDao() de la clase ImplsPacienteToDao
+21/02/2024 11:37:41 [INFO] Entrando en el método generarToken() de la clase PacienteServicioImpl
+21/02/2024 11:37:41 [INFO] Saliendo del método generarToken() de la clase PacienteServicioImpl
+21/02/2024 11:37:41 [INFO] Entrando en el método enviarEmailConfirmacion() de la clase ServicioEmailImpl
+21/02/2024 11:37:42 [Error ServicioEmailImpl - enviarEmailConfirmacion()] Error con el protocolo de envio de email: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. For more information, go to
+21/02/2024 11:37:42 [INFO] Saliendo del método registrarPaciente() de la clase PacienteServicioImpl
+21/02/2024 11:37:42 [INFO] Saliendo del método RegistrarPost() de la clase PacienteController. Registro del nuevo usuario OK
+21/02/2024 11:38:43 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 11:38:43 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 11:38:43 [INFO] Saliendo del método Encriptar() de la clase EncriptarImpl
+21/02/2024 11:38:43 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 11:38:43 [INFO] Entrando en el método buscarPorEmail() de la clase PacienteServicioImpl
+21/02/2024 11:38:43 [INFO] Entrando en el método obtenerTodosLosUsuarios() de la clase PacienteServicioImpl
+21/02/2024 11:38:43 [INFO] Entrando en el método listaPacienteToDto() de la clase ImplPacienteToDto
+21/02/2024 11:38:43 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 11:38:43 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 11:38:43 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 11:38:43 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 11:38:43 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 11:38:43 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 11:38:43 [INFO] Saliendo del método listaPacienteToDto() de la clase ImplPacienteToDto
+21/02/2024 11:38:43 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController
+21/02/2024 11:38:44 [INFO] Entrando en el método buscarPorEmail() de la clase PacienteServicioImpl
+21/02/2024 11:38:44 [INFO] Entrando en el método obtenerTodosLosUsuarios() de la clase PacienteServicioImpl
+21/02/2024 11:38:44 [INFO] Entrando en el método listaPacienteToDto() de la clase ImplPacienteToDto
+21/02/2024 11:38:44 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 11:38:44 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 11:38:44 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 11:38:44 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 11:38:44 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 11:38:44 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 11:38:44 [INFO] Saliendo del método listaPacienteToDto() de la clase ImplPacienteToDto
+21/02/2024 11:38:45 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 11:55:33 [INFO] Entrando en el método RegistrarGet() de la clase PacienteController
+21/02/2024 11:55:34 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 11:55:36 [INFO] Entrando en el método RegistrarGet() de la clase PacienteController
+21/02/2024 11:55:37 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 11:55:38 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 11:55:41 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 11:55:44 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 12:14:52 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 12:14:53 [INFO] Entrando en el método RegistrarGet() de la clase PacienteController
+21/02/2024 12:14:56 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 12:14:56 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 12:17:20 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 12:17:22 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 12:17:27 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 12:19:36 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 12:19:37 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 12:19:38 [INFO] Entrando en el método MostrarVistaRecuperar() de la clase RecuperarPasswordController
+21/02/2024 12:19:38 [INFO] Entrando en el método obtenerPacientePorToken() de la clase PacienteServicioImpl
+21/02/2024 12:19:40 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 12:19:40 [INFO] Saliendo del método obtenerPacientePorToken() de la clase PacienteServicioImpl.
+21/02/2024 12:19:40 [INFO] Saliendo del método MostrarVistaRecuperar() de la clase RecuperarPasswordController
+21/02/2024 12:19:46 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 12:19:52 [INFO] Entrando en el método MostrarVistaRecuperar() de la clase RecuperarPasswordController
+21/02/2024 12:19:52 [INFO] Entrando en el método obtenerPacientePorToken() de la clase PacienteServicioImpl
+21/02/2024 12:19:52 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 12:19:52 [INFO] Saliendo del método obtenerPacientePorToken() de la clase PacienteServicioImpl.
+21/02/2024 12:19:52 [INFO] Saliendo del método MostrarVistaRecuperar() de la clase RecuperarPasswordController
+21/02/2024 12:19:57 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 12:19:58 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 12:19:59 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 12:20:02 [INFO] Entrando en el método MostrarVistaRecuperar() de la clase RecuperarPasswordController
+21/02/2024 12:20:02 [INFO] Entrando en el método obtenerPacientePorToken() de la clase PacienteServicioImpl
+21/02/2024 12:20:02 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 12:20:02 [INFO] Saliendo del método obtenerPacientePorToken() de la clase PacienteServicioImpl.
+21/02/2024 12:20:02 [INFO] Saliendo del método MostrarVistaRecuperar() de la clase RecuperarPasswordController
+21/02/2024 12:20:06 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 12:20:09 [INFO] Entrando en el método MostrarVistaRecuperar() de la clase RecuperarPasswordController
+21/02/2024 12:20:09 [INFO] Entrando en el método obtenerPacientePorToken() de la clase PacienteServicioImpl
+21/02/2024 12:20:09 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 12:20:09 [INFO] Saliendo del método obtenerPacientePorToken() de la clase PacienteServicioImpl.
+21/02/2024 12:20:09 [INFO] Saliendo del método MostrarVistaRecuperar() de la clase RecuperarPasswordController
+21/02/2024 12:20:19 [INFO] Entrando en el método ProcesarRecuperacionContraseña() de la clase RecuperarPasswordController
+21/02/2024 12:20:19 [INFO] Entrando en el método obtenerPacientePorToken() de la clase PacienteServicioImpl
+21/02/2024 12:20:19 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 12:20:19 [INFO] Saliendo del método obtenerPacientePorToken() de la clase PacienteServicioImpl.
+21/02/2024 12:20:19 [INFO] Entrando en el método modificarContraseñaConToken() de la clase PacienteServicioImpl
+21/02/2024 12:20:19 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 12:20:19 [Error  EncriptarImpl - Encriptar()] Error al encriptar: Value cannot be null. (Parameter 's')
+21/02/2024 12:20:19 [Error PacienteServicioImpl - modificarContraseñaConToken()] Error de persistencia al actualizar la bbdd: An error occurred while saving the entity changes. See the inner exception for details.
+21/02/2024 12:20:19 [INFO] Saliendo del método ProcesarRecuperacionContraseña() de la clase RecuperarPasswordController. Error al cambiar de contraseña
+21/02/2024 12:20:34 [INFO] Entrando en el método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController
+21/02/2024 12:20:34 [INFO] Entrando en el método iniciarProcesoRecuperacion() de la clase PacienteServicioImpl
+21/02/2024 12:20:34 [INFO] El usuario con email  no existe
+21/02/2024 12:20:34 [INFO] Saliendo del método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController. No se inició el proceso de recuperación, cuenta de correo electrónico no encontrada.
+21/02/2024 12:21:00 [INFO] Entrando en el método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController
+21/02/2024 12:21:00 [INFO] Entrando en el método iniciarProcesoRecuperacion() de la clase PacienteServicioImpl
+21/02/2024 12:21:00 [INFO] El usuario con email  no existe
+21/02/2024 12:21:00 [INFO] Saliendo del método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController. No se inició el proceso de recuperación, cuenta de correo electrónico no encontrada.
+21/02/2024 12:23:53 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 12:23:55 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 12:23:56 [INFO] Entrando en el método MostrarVistaIniciarRecuperacion() de la clase SolicitarRecuperacionController
+21/02/2024 12:23:58 [INFO] Entrando en el método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController
+21/02/2024 12:23:58 [INFO] Entrando en el método iniciarProcesoRecuperacion() de la clase PacienteServicioImpl
+21/02/2024 12:23:59 [INFO] El usuario con email  no existe
+21/02/2024 12:23:59 [INFO] Saliendo del método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController. No se inició el proceso de recuperación, cuenta de correo electrónico no encontrada.
+21/02/2024 12:27:27 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 12:27:29 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 12:27:30 [INFO] Entrando en el método MostrarVistaIniciarRecuperacion() de la clase SolicitarRecuperacionController
+21/02/2024 12:27:33 [INFO] Entrando en el método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController
+21/02/2024 12:27:33 [INFO] Entrando en el método iniciarProcesoRecuperacion() de la clase PacienteServicioImpl
+21/02/2024 12:27:34 [INFO] El usuario con email  no existe
+21/02/2024 12:27:34 [INFO] Saliendo del método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController. No se inició el proceso de recuperación, cuenta de correo electrónico no encontrada.
+21/02/2024 12:30:43 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 12:30:45 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 12:30:47 [INFO] Entrando en el método MostrarVistaIniciarRecuperacion() de la clase SolicitarRecuperacionController
+21/02/2024 12:30:49 [INFO] Entrando en el método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController
+21/02/2024 12:30:49 [INFO] Entrando en el método iniciarProcesoRecuperacion() de la clase PacienteServicioImpl
+21/02/2024 12:30:50 [INFO] El usuario con email  no existe
+21/02/2024 12:30:50 [INFO] Saliendo del método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController. No se inició el proceso de recuperación, cuenta de correo electrónico no encontrada.
+21/02/2024 12:32:25 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 12:32:26 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 12:32:27 [INFO] Entrando en el método RegistrarGet() de la clase PacienteController
+21/02/2024 12:32:28 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 12:32:29 [INFO] Entrando en el método MostrarVistaIniciarRecuperacion() de la clase SolicitarRecuperacionController
+21/02/2024 12:32:38 [INFO] Entrando en el método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController
+21/02/2024 12:33:19 [INFO] Entrando en el método iniciarProcesoRecuperacion() de la clase PacienteServicioImpl
+21/02/2024 12:33:19 [INFO] El usuario con email  no existe
+21/02/2024 12:34:00 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 12:34:02 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 12:34:02 [INFO] Entrando en el método MostrarVistaIniciarRecuperacion() de la clase SolicitarRecuperacionController
+21/02/2024 12:34:06 [INFO] Entrando en el método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController
+21/02/2024 12:34:09 [INFO] Entrando en el método iniciarProcesoRecuperacion() de la clase PacienteServicioImpl
+21/02/2024 12:34:43 [INFO] El usuario con email  no existe
+21/02/2024 12:35:35 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 12:35:36 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 12:35:40 [INFO] Entrando en el método MostrarVistaIniciarRecuperacion() de la clase SolicitarRecuperacionController
+21/02/2024 12:35:45 [INFO] Entrando en el método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController
+21/02/2024 12:35:49 [INFO] Entrando en el método iniciarProcesoRecuperacion() de la clase PacienteServicioImpl
+21/02/2024 12:38:40 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 12:38:42 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 12:38:43 [INFO] Entrando en el método MostrarVistaIniciarRecuperacion() de la clase SolicitarRecuperacionController
+21/02/2024 12:38:46 [INFO] Entrando en el método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController
+21/02/2024 12:38:51 [INFO] Entrando en el método iniciarProcesoRecuperacion() de la clase PacienteServicioImpl
+21/02/2024 12:38:57 [INFO] Entrando en el método generarToken() de la clase PacienteServicioImpl
+21/02/2024 12:38:57 [INFO] Saliendo del método generarToken() de la clase PacienteServicioImpl
+21/02/2024 12:39:16 [INFO] Entrando en el método enviarEmailRecuperacion() de la clase ServicioEmailImpl
+21/02/2024 12:39:16 [Error ServicioEmailImpl - enviarEmailRecuperacion()] Error con el protocolo de envio de email: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. For more information, go to
+21/02/2024 12:39:17 [INFO] Saliendo del método iniciarProcesoRecuperacion() de la clase PacienteServicioImpl.
+21/02/2024 12:39:17 [INFO] Saliendo del método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController. Proceso de recuperación OK
+21/02/2024 12:40:07 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 12:40:08 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 12:40:09 [INFO] Entrando en el método MostrarVistaIniciarRecuperacion() de la clase SolicitarRecuperacionController
+21/02/2024 12:40:10 [INFO] Entrando en el método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController
+21/02/2024 12:40:10 [INFO] Entrando en el método iniciarProcesoRecuperacion() de la clase PacienteServicioImpl
+21/02/2024 12:40:12 [INFO] Entrando en el método generarToken() de la clase PacienteServicioImpl
+21/02/2024 12:40:12 [INFO] Saliendo del método generarToken() de la clase PacienteServicioImpl
+21/02/2024 12:40:12 [INFO] Entrando en el método enviarEmailRecuperacion() de la clase ServicioEmailImpl
+21/02/2024 12:40:12 [Error ServicioEmailImpl - enviarEmailRecuperacion()] Error con el protocolo de envio de email: The SMTP server requires a secure connection or the client was not authenticated. The server response was: 5.7.0 Authentication Required. For more information, go to
+21/02/2024 12:40:12 [INFO] Saliendo del método iniciarProcesoRecuperacion() de la clase PacienteServicioImpl.
+21/02/2024 12:40:12 [INFO] Saliendo del método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController. Proceso de recuperación OK
+21/02/2024 12:42:04 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 12:42:50 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 12:43:22 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 12:43:24 [INFO] Entrando en el método MostrarVistaIniciarRecuperacion() de la clase SolicitarRecuperacionController
+21/02/2024 12:43:26 [INFO] Entrando en el método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController
+21/02/2024 12:43:26 [INFO] Entrando en el método iniciarProcesoRecuperacion() de la clase PacienteServicioImpl
+21/02/2024 12:43:27 [INFO] Entrando en el método generarToken() de la clase PacienteServicioImpl
+21/02/2024 12:43:27 [INFO] Saliendo del método generarToken() de la clase PacienteServicioImpl
+21/02/2024 12:43:27 [INFO] Entrando en el método enviarEmailRecuperacion() de la clase ServicioEmailImpl
+21/02/2024 12:43:28 [INFO] Saliendo del método enviarEmailRecuperacion() de la clase ServicioEmailImpl
+21/02/2024 12:43:28 [INFO] Saliendo del método iniciarProcesoRecuperacion() de la clase PacienteServicioImpl.
+21/02/2024 12:43:28 [INFO] Saliendo del método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController. Proceso de recuperación OK
+21/02/2024 12:55:17 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 12:55:18 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 12:55:18 [INFO] Entrando en el método MostrarVistaIniciarRecuperacion() de la clase SolicitarRecuperacionController
+21/02/2024 12:55:22 [INFO] Entrando en el método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController
+21/02/2024 12:55:22 [INFO] Entrando en el método iniciarProcesoRecuperacion() de la clase PacienteServicioImpl
+21/02/2024 12:55:23 [INFO] Entrando en el método generarToken() de la clase PacienteServicioImpl
+21/02/2024 12:55:23 [INFO] Saliendo del método generarToken() de la clase PacienteServicioImpl
+21/02/2024 12:55:23 [INFO] Entrando en el método enviarEmailRecuperacion() de la clase ServicioEmailImpl
+21/02/2024 12:55:24 [INFO] Saliendo del método enviarEmailRecuperacion() de la clase ServicioEmailImpl
+21/02/2024 12:55:24 [INFO] Saliendo del método iniciarProcesoRecuperacion() de la clase PacienteServicioImpl.
+21/02/2024 12:55:24 [INFO] Saliendo del método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController. Proceso de recuperación OK
+21/02/2024 01:06:04 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 01:06:06 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 01:06:08 [INFO] Entrando en el método MostrarVistaIniciarRecuperacion() de la clase SolicitarRecuperacionController
+21/02/2024 01:06:10 [INFO] Entrando en el método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController
+21/02/2024 01:06:10 [INFO] Entrando en el método iniciarProcesoRecuperacion() de la clase PacienteServicioImpl
+21/02/2024 01:06:12 [INFO] Entrando en el método generarToken() de la clase PacienteServicioImpl
+21/02/2024 01:06:12 [INFO] Saliendo del método generarToken() de la clase PacienteServicioImpl
+21/02/2024 01:06:12 [INFO] Entrando en el método enviarEmailRecuperacion() de la clase ServicioEmailImpl
+21/02/2024 01:06:13 [INFO] Saliendo del método enviarEmailRecuperacion() de la clase ServicioEmailImpl
+21/02/2024 01:06:13 [INFO] Saliendo del método iniciarProcesoRecuperacion() de la clase PacienteServicioImpl.
+21/02/2024 01:06:13 [INFO] Saliendo del método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController. Proceso de recuperación OK
+21/02/2024 01:07:46 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 01:09:22 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 01:09:23 [INFO] Entrando en el método MostrarVistaIniciarRecuperacion() de la clase SolicitarRecuperacionController
+21/02/2024 01:09:26 [INFO] Entrando en el método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController
+21/02/2024 01:09:26 [INFO] Entrando en el método iniciarProcesoRecuperacion() de la clase PacienteServicioImpl
+21/02/2024 01:09:27 [INFO] Entrando en el método generarToken() de la clase PacienteServicioImpl
+21/02/2024 01:09:27 [INFO] Saliendo del método generarToken() de la clase PacienteServicioImpl
+21/02/2024 01:09:27 [INFO] Entrando en el método enviarEmailRecuperacion() de la clase ServicioEmailImpl
+21/02/2024 01:09:28 [INFO] Saliendo del método enviarEmailRecuperacion() de la clase ServicioEmailImpl
+21/02/2024 01:09:28 [INFO] Saliendo del método iniciarProcesoRecuperacion() de la clase PacienteServicioImpl.
+21/02/2024 01:09:28 [INFO] Saliendo del método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController. Proceso de recuperación OK
+21/02/2024 01:09:46 [INFO] Entrando en el método MostrarVistaRecuperar() de la clase RecuperarPasswordController
+21/02/2024 01:09:46 [INFO] Entrando en el método obtenerPacientePorToken() de la clase PacienteServicioImpl
+21/02/2024 01:09:46 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:09:46 [INFO] Saliendo del método obtenerPacientePorToken() de la clase PacienteServicioImpl.
+21/02/2024 01:09:46 [INFO] Saliendo del método MostrarVistaRecuperar() de la clase RecuperarPasswordController
+21/02/2024 01:10:34 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 01:11:05 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 01:11:41 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 01:11:42 [INFO] Entrando en el método MostrarVistaIniciarRecuperacion() de la clase SolicitarRecuperacionController
+21/02/2024 01:11:44 [INFO] Entrando en el método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController
+21/02/2024 01:11:44 [INFO] Entrando en el método iniciarProcesoRecuperacion() de la clase PacienteServicioImpl
+21/02/2024 01:11:45 [INFO] Entrando en el método generarToken() de la clase PacienteServicioImpl
+21/02/2024 01:11:45 [INFO] Saliendo del método generarToken() de la clase PacienteServicioImpl
+21/02/2024 01:11:45 [INFO] Entrando en el método enviarEmailRecuperacion() de la clase ServicioEmailImpl
+21/02/2024 01:11:46 [INFO] Saliendo del método enviarEmailRecuperacion() de la clase ServicioEmailImpl
+21/02/2024 01:11:46 [INFO] Saliendo del método iniciarProcesoRecuperacion() de la clase PacienteServicioImpl.
+21/02/2024 01:11:46 [INFO] Saliendo del método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController. Proceso de recuperación OK
+21/02/2024 01:12:08 [INFO] Entrando en el método MostrarVistaRecuperar() de la clase RecuperarPasswordController
+21/02/2024 01:12:08 [INFO] Entrando en el método obtenerPacientePorToken() de la clase PacienteServicioImpl
+21/02/2024 01:12:08 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:12:08 [INFO] Saliendo del método obtenerPacientePorToken() de la clase PacienteServicioImpl.
+21/02/2024 01:12:08 [INFO] Saliendo del método MostrarVistaRecuperar() de la clase RecuperarPasswordController
+21/02/2024 01:12:19 [INFO] Entrando en el método ProcesarRecuperacionContraseña() de la clase RecuperarPasswordController
+21/02/2024 01:12:19 [INFO] Entrando en el método obtenerPacientePorToken() de la clase PacienteServicioImpl
+21/02/2024 01:12:19 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:12:19 [INFO] Saliendo del método obtenerPacientePorToken() de la clase PacienteServicioImpl.
+21/02/2024 01:12:19 [INFO] Entrando en el método modificarContraseñaConToken() de la clase PacienteServicioImpl
+21/02/2024 01:12:19 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 01:12:19 [Error  EncriptarImpl - Encriptar()] Error al encriptar: Value cannot be null. (Parameter 's')
+21/02/2024 01:12:19 [Error PacienteServicioImpl - modificarContraseñaConToken()] Error de persistencia al actualizar la bbdd: An error occurred while saving the entity changes. See the inner exception for details.
+21/02/2024 01:12:19 [INFO] Saliendo del método ProcesarRecuperacionContraseña() de la clase RecuperarPasswordController. Error al cambiar de contraseña
+21/02/2024 01:12:21 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 01:12:30 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 01:12:30 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 01:12:30 [INFO] Saliendo del método Encriptar() de la clase EncriptarImpl
+21/02/2024 01:12:30 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl. Username no encontrado
+21/02/2024 01:12:30 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController. Credenciales inválidas o cuenta no confirmada. Inténtelo de nuevo.
+21/02/2024 01:12:39 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 01:12:39 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 01:12:39 [INFO] Saliendo del método Encriptar() de la clase EncriptarImpl
+21/02/2024 01:12:39 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl. Username no encontrado
+21/02/2024 01:12:39 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController. Credenciales inválidas o cuenta no confirmada. Inténtelo de nuevo.
+21/02/2024 01:12:45 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 01:12:45 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 01:12:45 [INFO] Saliendo del método Encriptar() de la clase EncriptarImpl
+21/02/2024 01:12:45 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 01:12:45 [INFO] Entrando en el método buscarPorEmail() de la clase PacienteServicioImpl
+21/02/2024 01:12:45 [INFO] Entrando en el método obtenerTodosLosUsuarios() de la clase PacienteServicioImpl
+21/02/2024 01:12:45 [INFO] Entrando en el método listaPacienteToDto() de la clase ImplPacienteToDto
+21/02/2024 01:12:45 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:12:45 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:12:45 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:12:45 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:12:45 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:12:45 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:12:45 [INFO] Saliendo del método listaPacienteToDto() de la clase ImplPacienteToDto
+21/02/2024 01:12:45 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController
+21/02/2024 01:12:45 [INFO] Entrando en el método buscarPorEmail() de la clase PacienteServicioImpl
+21/02/2024 01:12:45 [INFO] Entrando en el método obtenerTodosLosUsuarios() de la clase PacienteServicioImpl
+21/02/2024 01:12:45 [INFO] Entrando en el método listaPacienteToDto() de la clase ImplPacienteToDto
+21/02/2024 01:12:45 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:12:45 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:12:45 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:12:45 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:12:45 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:12:45 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:12:45 [INFO] Saliendo del método listaPacienteToDto() de la clase ImplPacienteToDto
+21/02/2024 01:13:46 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 01:13:50 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 01:13:50 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 01:13:50 [INFO] Saliendo del método Encriptar() de la clase EncriptarImpl
+21/02/2024 01:13:50 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl. Username no encontrado
+21/02/2024 01:13:50 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController. Credenciales inválidas o cuenta no confirmada. Inténtelo de nuevo.
+21/02/2024 01:13:53 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 01:13:53 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 01:13:53 [INFO] Saliendo del método Encriptar() de la clase EncriptarImpl
+21/02/2024 01:13:53 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 01:13:53 [INFO] Entrando en el método buscarPorEmail() de la clase PacienteServicioImpl
+21/02/2024 01:13:53 [INFO] Entrando en el método obtenerTodosLosUsuarios() de la clase PacienteServicioImpl
+21/02/2024 01:13:53 [INFO] Entrando en el método listaPacienteToDto() de la clase ImplPacienteToDto
+21/02/2024 01:13:53 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:13:53 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:13:53 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:13:53 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:13:53 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:13:53 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:13:53 [INFO] Saliendo del método listaPacienteToDto() de la clase ImplPacienteToDto
+21/02/2024 01:13:53 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController
+21/02/2024 01:13:53 [INFO] Entrando en el método buscarPorEmail() de la clase PacienteServicioImpl
+21/02/2024 01:13:53 [INFO] Entrando en el método obtenerTodosLosUsuarios() de la clase PacienteServicioImpl
+21/02/2024 01:13:53 [INFO] Entrando en el método listaPacienteToDto() de la clase ImplPacienteToDto
+21/02/2024 01:13:53 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:13:53 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:13:53 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:13:53 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:13:53 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:13:53 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:13:53 [INFO] Saliendo del método listaPacienteToDto() de la clase ImplPacienteToDto
+21/02/2024 01:13:55 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 01:13:56 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 01:13:57 [INFO] Entrando en el método MostrarVistaIniciarRecuperacion() de la clase SolicitarRecuperacionController
+21/02/2024 01:13:59 [INFO] Entrando en el método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController
+21/02/2024 01:13:59 [INFO] Entrando en el método iniciarProcesoRecuperacion() de la clase PacienteServicioImpl
+21/02/2024 01:13:59 [INFO] Entrando en el método generarToken() de la clase PacienteServicioImpl
+21/02/2024 01:13:59 [INFO] Saliendo del método generarToken() de la clase PacienteServicioImpl
+21/02/2024 01:13:59 [INFO] Entrando en el método enviarEmailRecuperacion() de la clase ServicioEmailImpl
+21/02/2024 01:14:00 [INFO] Saliendo del método enviarEmailRecuperacion() de la clase ServicioEmailImpl
+21/02/2024 01:14:00 [INFO] Saliendo del método iniciarProcesoRecuperacion() de la clase PacienteServicioImpl.
+21/02/2024 01:14:00 [INFO] Saliendo del método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController. Proceso de recuperación OK
+21/02/2024 01:14:22 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 01:14:24 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 01:14:27 [INFO] Entrando en el método MostrarVistaIniciarRecuperacion() de la clase SolicitarRecuperacionController
+21/02/2024 01:14:29 [INFO] Entrando en el método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController
+21/02/2024 01:14:29 [INFO] Entrando en el método iniciarProcesoRecuperacion() de la clase PacienteServicioImpl
+21/02/2024 01:14:30 [INFO] Entrando en el método generarToken() de la clase PacienteServicioImpl
+21/02/2024 01:14:30 [INFO] Saliendo del método generarToken() de la clase PacienteServicioImpl
+21/02/2024 01:14:30 [INFO] Entrando en el método enviarEmailRecuperacion() de la clase ServicioEmailImpl
+21/02/2024 01:14:31 [INFO] Saliendo del método enviarEmailRecuperacion() de la clase ServicioEmailImpl
+21/02/2024 01:14:31 [INFO] Saliendo del método iniciarProcesoRecuperacion() de la clase PacienteServicioImpl.
+21/02/2024 01:14:31 [INFO] Saliendo del método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController. Proceso de recuperación OK
+21/02/2024 01:14:41 [INFO] Entrando en el método MostrarVistaRecuperar() de la clase RecuperarPasswordController
+21/02/2024 01:14:41 [INFO] Entrando en el método obtenerPacientePorToken() de la clase PacienteServicioImpl
+21/02/2024 01:14:41 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:14:41 [INFO] Saliendo del método obtenerPacientePorToken() de la clase PacienteServicioImpl.
+21/02/2024 01:14:41 [INFO] Saliendo del método MostrarVistaRecuperar() de la clase RecuperarPasswordController
+21/02/2024 01:14:51 [INFO] Entrando en el método ProcesarRecuperacionContraseña() de la clase RecuperarPasswordController
+21/02/2024 01:14:51 [INFO] Entrando en el método obtenerPacientePorToken() de la clase PacienteServicioImpl
+21/02/2024 01:14:51 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:14:51 [INFO] Saliendo del método obtenerPacientePorToken() de la clase PacienteServicioImpl.
+21/02/2024 01:14:51 [INFO] Entrando en el método modificarContraseñaConToken() de la clase PacienteServicioImpl
+21/02/2024 01:14:51 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 01:14:51 [Error  EncriptarImpl - Encriptar()] Error al encriptar: Value cannot be null. (Parameter 's')
+21/02/2024 01:14:51 [Error PacienteServicioImpl - modificarContraseñaConToken()] Error de persistencia al actualizar la bbdd: An error occurred while saving the entity changes. See the inner exception for details.
+21/02/2024 01:14:51 [INFO] Saliendo del método ProcesarRecuperacionContraseña() de la clase RecuperarPasswordController. Error al cambiar de contraseña
+21/02/2024 01:18:25 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 01:18:34 [INFO] Entrando en el método MostrarVistaRecuperar() de la clase RecuperarPasswordController
+21/02/2024 01:18:34 [INFO] Entrando en el método obtenerPacientePorToken() de la clase PacienteServicioImpl
+21/02/2024 01:18:35 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:18:35 [INFO] Saliendo del método obtenerPacientePorToken() de la clase PacienteServicioImpl.
+21/02/2024 01:18:35 [INFO] Saliendo del método MostrarVistaRecuperar() de la clase RecuperarPasswordController
+21/02/2024 01:18:49 [INFO] Entrando en el método ProcesarRecuperacionContraseña() de la clase RecuperarPasswordController
+21/02/2024 01:19:05 [INFO] Entrando en el método obtenerPacientePorToken() de la clase PacienteServicioImpl
+21/02/2024 01:19:05 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:19:05 [INFO] Saliendo del método obtenerPacientePorToken() de la clase PacienteServicioImpl.
+21/02/2024 01:19:36 [INFO] Saliendo del método ProcesarRecuperacionContraseña() de la clase RecuperarPasswordController. El enlace de recuperación ha expirado
+21/02/2024 01:19:41 [INFO] Entrando en el método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController
+21/02/2024 01:19:41 [INFO] Entrando en el método iniciarProcesoRecuperacion() de la clase PacienteServicioImpl
+21/02/2024 01:19:41 [INFO] Entrando en el método generarToken() de la clase PacienteServicioImpl
+21/02/2024 01:19:41 [INFO] Saliendo del método generarToken() de la clase PacienteServicioImpl
+21/02/2024 01:19:41 [INFO] Entrando en el método enviarEmailRecuperacion() de la clase ServicioEmailImpl
+21/02/2024 01:19:42 [INFO] Saliendo del método enviarEmailRecuperacion() de la clase ServicioEmailImpl
+21/02/2024 01:19:42 [INFO] Saliendo del método iniciarProcesoRecuperacion() de la clase PacienteServicioImpl.
+21/02/2024 01:19:42 [INFO] Saliendo del método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController. Proceso de recuperación OK
+21/02/2024 01:19:45 [INFO] Entrando en el método MostrarVistaRecuperar() de la clase RecuperarPasswordController
+21/02/2024 01:19:45 [INFO] Entrando en el método obtenerPacientePorToken() de la clase PacienteServicioImpl
+21/02/2024 01:19:45 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:19:45 [INFO] Saliendo del método obtenerPacientePorToken() de la clase PacienteServicioImpl.
+21/02/2024 01:19:45 [INFO] Saliendo del método MostrarVistaRecuperar() de la clase RecuperarPasswordController
+21/02/2024 01:19:53 [INFO] Entrando en el método ProcesarRecuperacionContraseña() de la clase RecuperarPasswordController
+21/02/2024 01:19:55 [INFO] Entrando en el método obtenerPacientePorToken() de la clase PacienteServicioImpl
+21/02/2024 01:19:55 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:19:55 [INFO] Saliendo del método obtenerPacientePorToken() de la clase PacienteServicioImpl.
+21/02/2024 01:20:07 [INFO] Entrando en el método modificarContraseñaConToken() de la clase PacienteServicioImpl
+21/02/2024 01:20:33 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 01:20:33 [Error  EncriptarImpl - Encriptar()] Error al encriptar: Value cannot be null. (Parameter 's')
+21/02/2024 01:22:02 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 01:22:07 [INFO] Entrando en el método Login() de la clase LoginController
+21/02/2024 01:22:09 [INFO] Entrando en el método MostrarVistaIniciarRecuperacion() de la clase SolicitarRecuperacionController
+21/02/2024 01:22:11 [INFO] Entrando en el método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController
+21/02/2024 01:22:11 [INFO] Entrando en el método iniciarProcesoRecuperacion() de la clase PacienteServicioImpl
+21/02/2024 01:22:13 [INFO] Entrando en el método generarToken() de la clase PacienteServicioImpl
+21/02/2024 01:22:13 [INFO] Saliendo del método generarToken() de la clase PacienteServicioImpl
+21/02/2024 01:22:13 [INFO] Entrando en el método enviarEmailRecuperacion() de la clase ServicioEmailImpl
+21/02/2024 01:22:14 [INFO] Saliendo del método enviarEmailRecuperacion() de la clase ServicioEmailImpl
+21/02/2024 01:22:14 [INFO] Saliendo del método iniciarProcesoRecuperacion() de la clase PacienteServicioImpl.
+21/02/2024 01:22:14 [INFO] Saliendo del método ProcesarInicioRecuperacion() de la clase SolicitarRecuperacionController. Proceso de recuperación OK
+21/02/2024 01:22:18 [INFO] Entrando en el método MostrarVistaRecuperar() de la clase RecuperarPasswordController
+21/02/2024 01:22:18 [INFO] Entrando en el método obtenerPacientePorToken() de la clase PacienteServicioImpl
+21/02/2024 01:22:18 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:22:18 [INFO] Saliendo del método obtenerPacientePorToken() de la clase PacienteServicioImpl.
+21/02/2024 01:22:18 [INFO] Saliendo del método MostrarVistaRecuperar() de la clase RecuperarPasswordController
+21/02/2024 01:22:22 [INFO] Entrando en el método ProcesarRecuperacionContraseña() de la clase RecuperarPasswordController
+21/02/2024 01:22:22 [INFO] Entrando en el método obtenerPacientePorToken() de la clase PacienteServicioImpl
+21/02/2024 01:22:22 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:22:22 [INFO] Saliendo del método obtenerPacientePorToken() de la clase PacienteServicioImpl.
+21/02/2024 01:22:22 [INFO] Entrando en el método modificarContraseñaConToken() de la clase PacienteServicioImpl
+21/02/2024 01:22:22 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 01:22:22 [INFO] Saliendo del método Encriptar() de la clase EncriptarImpl
+21/02/2024 01:22:22 [INFO] Saliendo del método modificarContraseñaConToken() de la clase PacienteServicioImpl.
+21/02/2024 01:22:22 [INFO] Saliendo del método ProcesarRecuperacionContraseña() de la clase RecuperarPasswordController. Contraseña modificada OK
+21/02/2024 01:22:28 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 01:22:28 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 01:22:28 [INFO] Saliendo del método Encriptar() de la clase EncriptarImpl
+21/02/2024 01:22:28 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 01:22:28 [INFO] Entrando en el método buscarPorEmail() de la clase PacienteServicioImpl
+21/02/2024 01:22:28 [INFO] Entrando en el método obtenerTodosLosUsuarios() de la clase PacienteServicioImpl
+21/02/2024 01:22:28 [INFO] Entrando en el método listaPacienteToDto() de la clase ImplPacienteToDto
+21/02/2024 01:22:28 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:22:28 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:22:28 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:22:28 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:22:28 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:22:28 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:22:28 [INFO] Saliendo del método listaPacienteToDto() de la clase ImplPacienteToDto
+21/02/2024 01:22:28 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController
+21/02/2024 01:22:28 [INFO] Entrando en el método buscarPorEmail() de la clase PacienteServicioImpl
+21/02/2024 01:22:28 [INFO] Entrando en el método obtenerTodosLosUsuarios() de la clase PacienteServicioImpl
+21/02/2024 01:22:28 [INFO] Entrando en el método listaPacienteToDto() de la clase ImplPacienteToDto
+21/02/2024 01:22:28 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:22:28 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:22:28 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:22:28 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:22:28 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:22:28 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:22:28 [INFO] Saliendo del método listaPacienteToDto() de la clase ImplPacienteToDto
+21/02/2024 01:22:40 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 01:22:40 [INFO] Entrando en el método Encriptar() de la clase EncriptarImpl
+21/02/2024 01:22:40 [INFO] Saliendo del método Encriptar() de la clase EncriptarImpl
+21/02/2024 01:22:40 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl
+21/02/2024 01:22:40 [INFO] Entrando en el método buscarPorEmail() de la clase PacienteServicioImpl
+21/02/2024 01:22:40 [INFO] Entrando en el método obtenerTodosLosUsuarios() de la clase PacienteServicioImpl
+21/02/2024 01:22:40 [INFO] Entrando en el método listaPacienteToDto() de la clase ImplPacienteToDto
+21/02/2024 01:22:40 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:22:40 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:22:40 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:22:40 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:22:40 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:22:40 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:22:40 [INFO] Saliendo del método listaPacienteToDto() de la clase ImplPacienteToDto
+21/02/2024 01:22:40 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController
+21/02/2024 01:22:40 [INFO] Entrando en el método buscarPorEmail() de la clase PacienteServicioImpl
+21/02/2024 01:22:40 [INFO] Entrando en el método obtenerTodosLosUsuarios() de la clase PacienteServicioImpl
+21/02/2024 01:22:40 [INFO] Entrando en el método listaPacienteToDto() de la clase ImplPacienteToDto
+21/02/2024 01:22:40 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:22:40 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:22:40 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:22:40 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:22:40 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:22:40 [INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl
+21/02/2024 01:22:40 [INFO] Saliendo del método listaPacienteToDto() de la clase ImplPacienteToDto
+21/02/2024 01:29:35 [INFO] Entrando en el método  Index() de la clase HomeController
+21/02/2024 01:29:39 [INFO] Entrando en el método Login() de la clase LoginController
