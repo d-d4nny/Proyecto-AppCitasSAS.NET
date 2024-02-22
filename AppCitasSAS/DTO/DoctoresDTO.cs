@@ -8,8 +8,8 @@ namespace AppCitasSAS.DTO
         public long IdDoctor { get; set; }
         public string NombreCompletoDoctor { get; set; }
         public string EspecialidadDoctor { get; set; }
+        public long IdConsultaTurno { get; set; }
 
-        public ConsultaTurnoDTO ConsultaTurnoDTO { get; set; }
 
         // METODOS
         public DoctoresDTO()
@@ -22,19 +22,19 @@ namespace AppCitasSAS.DTO
             EspecialidadDoctor = especialidadDoctor;
         }
 
-        public DoctoresDTO(long idDoctor, string nombreCompletoDoctor, string especialidadDoctor, ConsultaTurnoDTO consultaTurnoDTO)
+        public DoctoresDTO(long idDoctor, string nombreCompletoDoctor, string especialidadDoctor, long idConsultaTurno)
         {
             IdDoctor = idDoctor;
             NombreCompletoDoctor = nombreCompletoDoctor;
             EspecialidadDoctor = especialidadDoctor;
-            ConsultaTurnoDTO = consultaTurnoDTO;
+            IdConsultaTurno = idConsultaTurno;
         }
 
         // CONSTRUCTORES
         public override string ToString()
         {
             return $"DoctoresDTO [IdDoctor={IdDoctor}, NombreCompletoDoctor={NombreCompletoDoctor}, " +
-                $"EspecialidadDoctor={EspecialidadDoctor}, ConsultaTurno={ConsultaTurnoDTO}]";
+                $"EspecialidadDoctor={EspecialidadDoctor}, IdConsultaTurno={IdConsultaTurno}]";
         }
     }
 }

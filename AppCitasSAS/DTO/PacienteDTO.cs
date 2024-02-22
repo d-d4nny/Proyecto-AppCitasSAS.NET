@@ -18,7 +18,6 @@ namespace AppCitasSAS.DTO
         public string Token { get; set; }
         public DateTime? ExpiracionToken { get; set; }
         public bool CuentaConfirmada { get; set; }
-        public List<InformeDTO> InformesDePaciente { get; set; } = new List<InformeDTO>();
         public List<CitasDTO> CitasDePaciente { get; set; } = new List<CitasDTO>();
         public string Password { get; set; }
         public string Password2 { get; set; }
@@ -44,7 +43,7 @@ namespace AppCitasSAS.DTO
         public PacienteDTO(long idPaciente, string nombreCompletoPaciente, string dniPaciente, string tlfPaciente,
             string emailPaciente, string contrasenaPaciente, string generoPaciente,
             string direccionPaciente, byte[] profilePicture, string rolPaciente, string token, DateTime expiracionToken, bool cuentaConfirmada,
-            List<InformeDTO> informesDePaciente, List<CitasDTO> citasDePaciente, string password, string password2)
+            List<CitasDTO> citasDePaciente, string password, string password2)
         {
             IdPaciente = idPaciente;
             NombreCompletoPaciente = nombreCompletoPaciente;
@@ -59,7 +58,6 @@ namespace AppCitasSAS.DTO
             Token = token;
             CuentaConfirmada = cuentaConfirmada;
             ExpiracionToken = expiracionToken;
-            InformesDePaciente = informesDePaciente;
             CitasDePaciente = citasDePaciente;
             Password = password;
             Password2 = password2;
@@ -74,7 +72,7 @@ namespace AppCitasSAS.DTO
                 $"ContrasenaPaciente={ContrasenaPaciente}, GeneroPaciente={GeneroPaciente}, " +
                 $"DireccionPaciente={DireccionPaciente}, ProfilePicture={ProfilePicture}, " +
                 $"RolPaciente={RolPaciente}, Token={Token}, ExpiracionToken={ExpiracionToken}, " +
-                $"CuentaConfirmada={CuentaConfirmada}, InformesDePaciente={InformesDePaciente}, " +
+                $"CuentaConfirmada={CuentaConfirmada}, " +
                 $"CitasDePaciente={CitasDePaciente}, Password={Password}, Password2={Password2}]";
         }
     }

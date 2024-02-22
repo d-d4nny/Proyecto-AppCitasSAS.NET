@@ -46,14 +46,14 @@ namespace AppCitasSAS.Servicios.Implementaciones
 
             try
             {
-                EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método listPacienteToDao() de la clase ImplsPacienteToDao");
+                EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método listPacienteToDao() de la clase ImplPacienteToDao");
 
                 foreach (PacienteDTO pacienteDTO in listaPacienteDTO)
                 {
                     listaPacienteDao.Add(pacienteToDao(pacienteDTO));
                 }
 
-                EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método listPacienteToDao() de la clase ImplsPacienteToDao");
+                EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método listPacienteToDao() de la clase ImplPacienteToDao");
 
                 return listaPacienteDao;
 

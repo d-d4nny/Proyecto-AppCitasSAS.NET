@@ -7,12 +7,12 @@ namespace AppCitasSAS.DTO
     {
         // ATRIBUTOS
         public long IdCita { get; set; }
-        public DateTime FechaCita { get; set; }
-        public TimeSpan HoraCita { get; set; }
+        public DateOnly FechaCita { get; set; }
+        public TimeOnly HoraCita { get; set; }
         public string MotivoCita { get; set; }
         public string EstadoCita { get; set; }
-        public PacienteDTO PacienteDTO { get; set; }
-        public DoctoresDTO DoctoresDTO { get; set; }
+        public long IdPacienteDTO { get; set; }
+        public long IdDoctoresDTO { get; set; }
 
 
         // CONSTRUCTORES
@@ -20,7 +20,7 @@ namespace AppCitasSAS.DTO
         {
         }
 
-        public CitasDTO(DateTime fechaCita, TimeSpan horaCita, string motivoCita, string estadoCita)
+        public CitasDTO(DateOnly fechaCita, TimeOnly horaCita, string motivoCita, string estadoCita)
         {
             FechaCita = fechaCita;
             HoraCita = horaCita;
@@ -28,16 +28,16 @@ namespace AppCitasSAS.DTO
             EstadoCita = estadoCita;
         }
 
-        public CitasDTO(long idCita, DateTime fechaCita, TimeSpan horaCita, string motivoCita, string estadoCita, PacienteDTO pacienteDTO,
-            PacienteDTO doctoresDTO)
+        public CitasDTO(long idCita, DateOnly fechaCita, TimeOnly horaCita, string motivoCita, string estadoCita, long idPacienteDTO,
+            long idDoctoresDTO)
         {
             IdCita = idCita;
             FechaCita = fechaCita;
             HoraCita = horaCita;
             MotivoCita = motivoCita;
             EstadoCita = estadoCita;
-            PacienteDTO = pacienteDTO;
-            PacienteDTO = doctoresDTO;
+            IdPacienteDTO = idPacienteDTO;
+            IdDoctoresDTO = idDoctoresDTO;
         }
 
         // METODOS
@@ -45,7 +45,7 @@ namespace AppCitasSAS.DTO
         public override string ToString()
         {
             return $"CitasDTO [IdCita={IdCita}, FechaCita={FechaCita}, HoraCita={HoraCita}, MotivoCita={MotivoCita}, " +
-                $"EstadoCita={EstadoCita}, Paciente={PacienteDTO}, Doctor={DoctoresDTO}]";
+                $"EstadoCita={EstadoCita}, Paciente={IdPacienteDTO}, Doctor={IdDoctoresDTO}]";
         }
     }
 }

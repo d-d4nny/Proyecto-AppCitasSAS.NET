@@ -5,8 +5,8 @@
         // ATRIBUTOS
         public long IdConsultaTurno { get; set; }
         public int NumConsulta { get; set; }
-        public TimeSpan TramoHoraTurnoInicio { get; set; }
-        public TimeSpan TramoHoraTurnoFin { get; set; }
+        public TimeOnly TramoHoraTurnoInicio { get; set; }
+        public TimeOnly TramoHoraTurnoFin { get; set; }
         public List<DoctoresDTO> DoctoresConConsultaTurno { get; set; } = new List<DoctoresDTO>();
 
 
@@ -15,15 +15,15 @@
         {
         }
 
-        public ConsultaTurnoDTO(int numConsulta, TimeSpan tramoHoraTurnoInicio, TimeSpan tramoHoraTurnoFin)
+        public ConsultaTurnoDTO(int numConsulta, TimeOnly tramoHoraTurnoInicio, TimeOnly tramoHoraTurnoFin)
         {
             NumConsulta = numConsulta;
             TramoHoraTurnoInicio = tramoHoraTurnoInicio;
             TramoHoraTurnoFin = tramoHoraTurnoFin;
         }
 
-        public ConsultaTurnoDTO(long idConsultaTurno, int numConsulta, TimeSpan tramoHoraTurnoInicio,
-            TimeSpan tramoHoraTurnoFin, List<DoctoresDTO> doctoresConConsultaTurno)
+        public ConsultaTurnoDTO(long idConsultaTurno, int numConsulta, TimeOnly tramoHoraTurnoInicio,
+            TimeOnly tramoHoraTurnoFin, List<DoctoresDTO> doctoresConConsultaTurno)
         {
             IdConsultaTurno = idConsultaTurno;
             NumConsulta = numConsulta;
