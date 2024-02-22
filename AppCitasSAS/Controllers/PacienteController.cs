@@ -85,22 +85,24 @@ namespace AppCitasSAS.Controllers
         [Route("/privada/Pacientes")]
         public IActionResult HomeUser()
         {
-            PacienteDTO u = _pacienteServicio.buscarPorEmail(User.Identity.Name);
-            ViewBag.UsuarioDTO = u;
+			EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método HomeUser() de la clase PacienteController");
 
-            var authentication = HttpContext.User.Identity as ClaimsIdentity;
-            //var citas = _citasServicio.BuscarTodos();
-            //var informes = _informeServicio.BuscarTodos();
-            //var paciente = _pacienteServicio.buscarPorEmail(authentication.Name);
-            //var pacienteDTO = _pacienteServicio.buscarPorId(paciente.IdPaciente);
+			PacienteDTO u = _pacienteServicio.buscarPorEmail(User.Identity.Name);
+			ViewBag.PacienteDTO = u;
 
-            //ViewBag.Citas = paciente.CitasDePaciente;
-            //ViewBag.Informes = paciente.InformesDePaciente;
-            //ViewBag.PacienteDTO = pacienteDTO;
-            //ViewBag.Paciente = paciente;
+			//var authentication = HttpContext.User.Identity as ClaimsIdentity;
+			//var citas = _citasServicio.BuscarTodos();
+			//var informes = _informeServicio.BuscarTodos();
+			//var paciente = _pacienteServicio.buscarPorEmail(authentication.Name);
+			//var pacienteDTO = _pacienteServicio.buscarPorId(paciente.IdPaciente);
 
-            return View("~/Views/Home/homePaciente.cshtml");
-        }
+			//ViewBag.Citas = paciente.CitasDePaciente;
+			//ViewBag.Informes = paciente.InformesDePaciente;
+			//ViewBag.PacienteDTO = pacienteDTO;
+			//ViewBag.Paciente = paciente;
+
+			return View("~/Views/Home/homePaciente.cshtml");
+		}
 
 
         [Authorize(Roles = "ROLE_ADMIN")]

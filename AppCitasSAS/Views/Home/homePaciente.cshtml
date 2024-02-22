@@ -1,5 +1,52 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+	ViewData["Title"] = "homePaciente";
 }
+
+<div class="container py-4">
+    <div class="card bg-light cardPrincipal cardAdminUser">
+        <div class="card-header border-bottom border-3">
+            <h3 class="subtituloSecundario">Home Pacientes</h3>
+			<h4 class="text-light text-center subtituloSecundario">Bienvenido/a <span>@User.Identity.Name</span></h4>
+        </div>
+
+        <div class="card-body">
+            @if (ViewBag.PacienteDTO != null)
+            {
+                <div class="user-card">
+				    <div class="user-details">
+                        @if (ViewBag.PacienteDTO.ProfilePicture != null)
+                        {
+                            <img src="data:image/jpeg;base64,@Convert.ToBase64String(ViewBag.PacienteDTO.ProfilePicture)" class="rounded-circle img-fluid mx-auto" alt="Imagen de usuario" style="max-width: 100px; max-height: 100px;">
+                        }
+                        <h5 class="card-title" style="text-align: center;">ViewBag.PacienteDTO.NombreCompletoPaciente</h5>
+					    <br>
+					    <dl class="user-info" style="text-align: center;">
+					        <dt>Email</dt>
+                                <dd>ViewBag.PacienteDTO.NombreCompletoPaciente</dd>
+                                <br>
+					
+					        <dt>Dni</dt>
+                                <dd>ViewBag.PacienteDTO.dniPaciente</dd>
+                                <br>
+					
+					        <dt>Teléfono</dt>
+                                <dd>ViewBag.PacienteDTO.tlfPaciente</dd>
+                                <br>
+					
+					        <dt>Dirección</dt>
+                                <dd>ViewBag.PacienteDTO.direccionPaciente</dd>
+					    </dl>
+					    <br>
+					    <div class="btn-container text-center">
+						    <a class="btn btn-primary" th:href="" th:text="'Modificar Datos'"></a>
+					    </div>
+                        
+				    </div>
+			    </div>
+            }
+            else
+            {
+                <h5 class="card-title text-center text-danger">No hay usuarios registrados</h5>
+            }
+        </div>
+    </div>
