@@ -365,6 +365,8 @@ namespace AppCitasSAS.Servicios.Implementaciones
                 {
                     pacienteActual.NombreCompletoPaciente = pacienteModificado.NombreCompletoPaciente;
                     pacienteActual.TlfPaciente = pacienteModificado.TlfPaciente;
+                    pacienteActual.DniPaciente = pacienteModificado.DniPaciente;
+                    pacienteActual.DireccionPaciente = pacienteModificado.DireccionPaciente;
                     pacienteActual.RolPaciente = pacienteModificado.RolPaciente;
                     pacienteActual.ProfilePicture = pacienteModificado.ProfilePicture;
 

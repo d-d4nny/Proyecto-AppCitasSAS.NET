@@ -1,52 +1,136 @@
-﻿@{
+﻿@model AppCitasSAS.DTO.PacienteDTO
+
+﻿@using AppCitasSAS.DTO
+@using DAL.Entidades
+
+@{
 	ViewData["Title"] = "homePaciente";
+
+	var citas = ViewBag.Cita as List<CitasDTO>;
 }
 
-<div class="container py-4">
-    <div class="card bg-light cardPrincipal cardAdminUser">
-        <div class="card-header border-bottom border-3">
-            <h3 class="subtituloSecundario">Home Pacientes</h3>
-			<h4 class="text-light text-center subtituloSecundario">Bienvenido/a <span>@User.Identity.Name</span></h4>
-        </div>
+<style>
 
-        <div class="card-body">
-            @if (ViewBag.PacienteDTO != null)
-            {
-                <div class="user-card">
-				    <div class="user-details">
-                        @if (ViewBag.PacienteDTO.ProfilePicture != null)
-                        {
-                            <img src="data:image/jpeg;base64,@Convert.ToBase64String(ViewBag.PacienteDTO.ProfilePicture)" class="rounded-circle img-fluid mx-auto" alt="Imagen de usuario" style="max-width: 100px; max-height: 100px;">
-                        }
-                        <h5 class="card-title" style="text-align: center;">ViewBag.PacienteDTO.NombreCompletoPaciente</h5>
-					    <br>
-					    <dl class="user-info" style="text-align: center;">
-					        <dt>Email</dt>
-                                <dd>ViewBag.PacienteDTO.NombreCompletoPaciente</dd>
-                                <br>
+	.parent {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(4, 1fr);
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+	}
+
+	.parent {
+		grid-area: 1 / 1 / 5 / 5;
+	}
+
+	.divDatos {
+		grid-area: 1 / 4 / 5 / 5;
+		min-width: 325px;
+		max-width: 325px;
+		min-height: 700px;
+		max-height: 700px;
+		overflow: auto;
+	}
+
+	.div1 {
+		grid-area: 1 / 1 / 5 / 4;
+		min-width: 725px;
+		min-height: 725px;
+		max-width: 725px;
+		max-height: 725px;
+	}
+
+</style>
+
+<div class="parent">
+	<div class="div1">
+		<div class="card bg-light">
+			<div class="card-header"><h3>Proximas Citas</h3></div>
+			<div class="card-body" style="max-width: 700px;max-height: 700px;overflow: auto;">
+						
+				<table class="table table-striped table-bordered">
+					<thead class="thead-inverse">
+						<tr>
+							<th class="table-dark" style="width: 20%;">Fecha</th>
+							<th class="table-dark" style="width: 20%;">Hora</th>
+							<th class="table-dark" style="width: 25%;">Motivo</th>
+							<th class="table-dark" style="width: 15%;">Estado</th>
+							<th class="table-dark" style="width: 15%;"></th>
+						</tr>
+					</thead>
+					<tbody>
+						@foreach (var cita in citas)
+						{
+							<tr>
+								<td>@cita.FechaCita</td>
+								<td>@cita.HoraCita</td>
+								<td>@cita.MotivoCita</td>
+								<td>@cita.EstadoCita</td>
+								<td style="text-align: center;">
+		    						<button class="btn btn-danger">
+										<i class="bi bi-x-square"></i>
+									</button>
+								</td>
+		
+							</tr>
+						}
+					</tbody>
+				</table>
+
+				<form id="crearCitaForm" method="post" action="/auth/crear-cita" class="center-form">
+					<button type="submit">Crear Cita</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="divDatos">
+		<div class="card bg-light">
+			<div class="card-header border-bottom border-3">
+				<h3 class="subtituloSecundario">Home Pacientes</h3>
+				<h4 class="text-light text-center subtituloSecundario">Bienvenido/a <span>@User.Identity.Name</span></h4>
+			</div>
+
+			<div class="card-body">
+				<div class="user-card">
+					<div class="user-details">
+						@if (Model.ProfilePicture != null)
+						{
+							<img src="data:image/jpeg;base64,@(Model.ProfilePicture != null ? Convert.ToBase64String(Model.ProfilePicture) : "")" class="rounded-circle img-fluid mx-auto" alt="Imagen de usuario" style="max-width: 200px; max-height: 200px;">
+						}
+						else
+						{
+							<span class="badge bg-dark">El usuario no tiene foto de perfil</span>
+						}
+					<h5 class="card-title" style="text-align: center;">@Model.NombreCompletoPaciente</h5>
+						<br>
+						<dl class="user-info" style="text-align: center;">
+							<dd><input type="hidden" name="id" value="@Model.IdPaciente" /></dd>
+							<dt>Email</dt>
+							<dd>@Model.NombreCompletoPaciente</dd>
+								<br>
 					
-					        <dt>Dni</dt>
-                                <dd>ViewBag.PacienteDTO.dniPaciente</dd>
-                                <br>
+							<dt>Dni</dt>
+							<dd>@Model.DniPaciente</dd>
+								<br>
 					
-					        <dt>Teléfono</dt>
-                                <dd>ViewBag.PacienteDTO.tlfPaciente</dd>
-                                <br>
+							<dt>Teléfono</dt>
+							<dd>@Model.TlfPaciente</dd>
+								<br>
 					
-					        <dt>Dirección</dt>
-                                <dd>ViewBag.PacienteDTO.direccionPaciente</dd>
-					    </dl>
-					    <br>
-					    <div class="btn-container text-center">
-						    <a class="btn btn-primary" th:href="" th:text="'Modificar Datos'"></a>
-					    </div>
-                        
-				    </div>
-			    </div>
-            }
-            else
-            {
-                <h5 class="card-title text-center text-danger">No hay usuarios registrados</h5>
-            }
-        </div>
-    </div>
+							<dt>Dirección</dt>
+							<dd>@Model.DireccionPaciente</dd>
+						</dl>
+						<br>
+						<div class="btn-container text-center">
+							<a class="btn buttonPrincipal" asp-action="MostrarFormularioEdicion" asp-controller="Paciente" asp-route-id="@Model.IdPaciente">
+								<i class="bi bi-pencil-square"> Editar</i>
+							</a>
+						</div>                   
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+

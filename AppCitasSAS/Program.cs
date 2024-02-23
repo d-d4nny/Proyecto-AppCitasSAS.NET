@@ -18,6 +18,15 @@ builder.Services.AddScoped<IntfPacienteToDao, ImplPacienteToDao>();
 builder.Services.AddScoped<IntfPacienteToDto, ImplPacienteToDto>();
 builder.Services.AddScoped<IntfEncriptar,  ImplEncriptar>();
 builder.Services.AddScoped<IntfEmailRecuperacion, ImplEmailRecuperacion>();
+builder.Services.AddScoped<IntfCitasServicio, ImplCitasServicio>();
+builder.Services.AddScoped<IntfCitasToDao, ImplCitasToDao>();
+builder.Services.AddScoped<IntfCitasToDto, ImplCitasToDto>();
+builder.Services.AddScoped<IntfConsultaTurnoServicio, ImplConsultaTurnoServicio>();
+builder.Services.AddScoped<IntfConsultaTurnoToDao, ImplConsultaTurnoToDao>();
+builder.Services.AddScoped<IntfConsultaTurnoToDto, ImplConsultaTurnoToDto>();
+builder.Services.AddScoped<IntfDoctorServicio, ImplDoctorServicio>();
+builder.Services.AddScoped<IntfDoctorToDao, ImplDoctorToDao>();
+builder.Services.AddScoped<IntfDoctorToDto, ImplDoctorToDto>();
 
 
 builder.Services.AddAuthentication(options =>

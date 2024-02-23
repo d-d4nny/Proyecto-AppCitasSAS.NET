@@ -55,7 +55,36 @@ namespace AppCitasSAS.Servicios.Implementaciones
         }
 
 
-        public CitasDTO buscarPorId(long id)
+		public List<Cita> ObtenerCitasDePaciente(long IdPaciente)
+		{
+			try
+			{
+				// Se escribe un mensaje de registro al entrar al método.
+				EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método ObtenerCitasDePaciente() de la clase ImplCitasServicio");
+
+				// Se obtienen las transacciones donde el usuario es el destinatario o el remitente.
+				var citas = _contexto.Citas
+					.Where(t => t.IdPaciente == IdPaciente)
+					.ToList();
+
+				// Se escribe un mensaje de registro al salir del método.
+				EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método ObtenerCitasDePaciente() de la clase ImplCitasServicio");
+
+				return citas;
+			}
+			catch (Exception e)
+			{
+				// Se atrapa cualquier excepción que pueda ocurrir.
+				// Se escribe un mensaje de registro indicando el error.
+				EscribirLog.escribirEnFicheroLog("[Error ImplCitasServicio - ObtenerCitasDePaciente()] Error al obtener citas del paciente: " + e.Message);
+
+				// Se retorna una lista vacía debido a que ocurrió un error.
+				return new List<Cita>();
+			}
+		}
+
+
+		public CitasDTO buscarPorId(long id)
         {
             try
             {

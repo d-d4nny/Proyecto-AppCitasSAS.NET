@@ -13,10 +13,16 @@ namespace AppCitasSAS.Controllers
     {
 
         private readonly IntfPacienteServicio _pacienteServicio;
+        private readonly IntfCitasServicio _citaServicio;
+        private readonly IntfCitasToDao _citaToDao;
+        private readonly IntfCitasToDto _citaToDto;
 
-        public PacienteController(IntfPacienteServicio pacienteServicio)
+        public PacienteController(IntfPacienteServicio pacienteServicio, IntfCitasServicio citaServicio, IntfCitasToDao citaToDao, IntfCitasToDto citasToDto)
         {
             _pacienteServicio = pacienteServicio;
+            _citaServicio = citaServicio;
+            _citaToDao = citaToDao;
+            _citaToDto = citasToDto;
         }
 
         [HttpGet]
@@ -88,20 +94,12 @@ namespace AppCitasSAS.Controllers
 			EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método HomeUser() de la clase PacienteController");
 
 			PacienteDTO u = _pacienteServicio.buscarPorEmail(User.Identity.Name);
+            List<CitasDTO> citas = _citaToDto.listCitasToDto(_citaServicio.ObtenerCitasDePaciente(u.IdPaciente));
+
+            ViewBag.Cita = citas;
 			ViewBag.PacienteDTO = u;
 
-			//var authentication = HttpContext.User.Identity as ClaimsIdentity;
-			//var citas = _citasServicio.BuscarTodos();
-			//var informes = _informeServicio.BuscarTodos();
-			//var paciente = _pacienteServicio.buscarPorEmail(authentication.Name);
-			//var pacienteDTO = _pacienteServicio.buscarPorId(paciente.IdPaciente);
-
-			//ViewBag.Citas = paciente.CitasDePaciente;
-			//ViewBag.Informes = paciente.InformesDePaciente;
-			//ViewBag.PacienteDTO = pacienteDTO;
-			//ViewBag.Paciente = paciente;
-
-			return View("~/Views/Home/homePaciente.cshtml");
+			return View("~/Views/Home/homePaciente.cshtml", u);
 		}
 
 
@@ -153,7 +151,7 @@ namespace AppCitasSAS.Controllers
         [Authorize]
         [HttpPost]
         [Route("/privada/procesar-editar")]
-        public IActionResult ProcesarFormularioEdicion(long id, string nombre, string apellidos, string telefono, string direccion, string rol, IFormFile foto)
+        public IActionResult ProcesarFormularioEdicion(long id, string nombre, string dni, string telefono, string direccion, string rol, IFormFile foto)
         {
             try
             {
@@ -162,6 +160,7 @@ namespace AppCitasSAS.Controllers
                 PacienteDTO pacienteDTO = _pacienteServicio.buscarPorId(id);
                 pacienteDTO.NombreCompletoPaciente = nombre;
                 pacienteDTO.TlfPaciente = telefono;
+                pacienteDTO.DniPaciente = dni;
                 pacienteDTO.DireccionPaciente = direccion;
 
                 if (rol.Equals("Administrador"))
