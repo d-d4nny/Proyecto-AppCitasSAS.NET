@@ -1,7 +1,10 @@
 ﻿using AppCitasSAS.DTO;
 using AppCitasSAS.Servicios.Interfaces;
 using AppCitasSAS.Utils;
+using DAL.Entidades;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Principal;
 
 namespace AppCitasSAS.Controllers
 {
@@ -23,19 +26,27 @@ namespace AppCitasSAS.Controllers
             _citaToDto = citaToDto;
         }
 
+        [Authorize]
+        [HttpGet]
+        [Route("/privada/crear-cita")]
         public IActionResult MostrarFormNuevaCita()
         {
             try
             {
                 EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método MostrarFormNuevaCita() de la clase CitasController");
 
-                string emailDelPaciente = User.Identity.Name;
-                PacienteDTO pacienteSesionActual = _pacienteServicio.buscarPorEmail(emailDelPaciente);
+                List<DoctoresDTO> doctores = _doctorServicio.buscarTodos();
+
+                PacienteDTO paciente = _pacienteServicio.buscarPorEmail(User.Identity.Name);
+
+
                 CitasDTO nuevaCita = new CitasDTO();
-                nuevaCita.IdPacienteDTO = pacienteSesionActual.IdPaciente;
+
+                ViewBag.Doctores = doctores;
+                ViewBag.Pacientes = paciente;
 
                 EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método MostrarFormNuevaCita() de la clase CitasController");
-                return View("~/Views/Home/crarCita.cshtml", nuevaCita);
+                return View("~/Views/Home/crearCita.cshtml", nuevaCita);
             }
             catch (Exception e)
             {
@@ -44,5 +55,32 @@ namespace AppCitasSAS.Controllers
                 return View("~/Views/Home/homePaciente.cshtml");
             }
         }
+
+        [Authorize]
+        [HttpPost]
+        [Route("/privada/crear-cita")]
+        public IActionResult RegistrarCitaPost(CitasDTO citaDTO)
+        {
+            try
+            {
+
+                EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método RegistrarCitaPost() de la clase CitasController");
+
+                PacienteDTO u = _pacienteServicio.buscarPorEmail(User.Identity.Name);
+
+                citaDTO.IdPacienteDTO = u.IdPaciente;
+
+                _citaServicio.registrar(citaDTO);           
+
+                return View("~/Views/Home/homePaciente.cshtml");
+            }
+            catch (Exception e)
+            {
+                ViewData["error"] = "Error al procesar la solicitud";
+                EscribirLog.escribirEnFicheroLog("[ERROR] Se lanzó una excepción en el método RegistrarCitaPost() de la clase CitasController: " + e.Message + e.StackTrace);
+                return View("~/Views/Home/homePaciente.cshtml");
+            }
+        }
+
     }
 }

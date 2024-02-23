@@ -8,7 +8,7 @@ namespace AppCitasSAS.Servicios.Interfaces
     {
         public CitasDTO registrar(CitasDTO citasDTO);
 
-		public List<Cita> ObtenerCitasDePaciente(long IdPaciente);
+		public List<CitasDTO> ObtenerCitasDePaciente(long IdPaciente);
 
 		public CitasDTO buscarPorId(long id);
 

@@ -47,7 +47,9 @@
 		<div class="card bg-light">
 			<div class="card-header"><h3>Proximas Citas</h3></div>
 			<div class="card-body" style="max-width: 700px;max-height: 700px;overflow: auto;">
-						
+				<a asp-controller="Citas" asp-action="MostrarFormNuevaCita" role="button" class="btn buttonPrincipal p-2 mb-3">
+					<i class="bi bi-circle p-2 fs-5"> Nueva Cita</i>
+				</a>
 				<table class="table table-striped table-bordered">
 					<thead class="thead-inverse">
 						<tr>
@@ -76,10 +78,6 @@
 						}
 					</tbody>
 				</table>
-
-				<form id="crearCitaForm" method="post" action="/auth/crear-cita" class="center-form">
-					<button type="submit">Crear Cita</button>
-				</form>
 			</div>
 		</div>
 	</div>

@@ -25,15 +25,19 @@ namespace AppCitasSAS.Servicios.Implementaciones
             {
                 EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método registrar() de la clase ImplCitasServicio");
 
-                var citaExiste = _contexto.Citas.FirstOrDefault(u => u.IdCita == citaDTO.IdCita);
 
-                if (citaExiste != null)
-                {
-                    EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método registrar() de la clase ImplCitasServicio");
-                    return citaDTO;
-                }
+                var doctor = _contexto.Doctores.FirstOrDefault(u => u.IdDoctor == citaDTO.IdDoctoresDTO);
+                var paciente = _contexto.Pacientes.FirstOrDefault(u => u.IdPaciente == citaDTO.IdPacienteDTO);
 
-                Cita citaDao = _toDao.citasToDao(citaDTO);
+                Cita citaDao = new Cita();
+
+
+                citaDao.IdDoctorNavigation = doctor;
+                citaDao.MotivoCita = "Pendiente";
+                citaDao.FechaCita = citaDTO.FechaCita;
+                citaDao.HoraCita = citaDTO.HoraCita;
+                citaDao.IdDoctorNavigation = doctor;
+
                 _contexto.Citas.Add(citaDao);
                 _contexto.SaveChanges();
 
@@ -55,32 +59,24 @@ namespace AppCitasSAS.Servicios.Implementaciones
         }
 
 
-		public List<Cita> ObtenerCitasDePaciente(long IdPaciente)
+		public List<CitasDTO> ObtenerCitasDePaciente(long IdPaciente)
 		{
 			try
 			{
 				// Se escribe un mensaje de registro al entrar al método.
 				EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método ObtenerCitasDePaciente() de la clase ImplCitasServicio");
 
-				// Se obtienen las transacciones donde el usuario es el destinatario o el remitente.
-				var citas = _contexto.Citas
-					.Where(t => t.IdPaciente == IdPaciente)
-					.ToList();
-
-				// Se escribe un mensaje de registro al salir del método.
-				EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método ObtenerCitasDePaciente() de la clase ImplCitasServicio");
-
-				return citas;
+                List<Cita> listaCitas = _contexto.Citas.Where(m => m.IdPaciente == IdPaciente).ToList();
+                return _toDto.listCitasToDto(listaCitas);
 			}
 			catch (Exception e)
 			{
-				// Se atrapa cualquier excepción que pueda ocurrir.
-				// Se escribe un mensaje de registro indicando el error.
-				EscribirLog.escribirEnFicheroLog("[Error ImplCitasServicio - ObtenerCitasDePaciente()] Error al obtener citas del paciente: " + e.Message);
+                // Se atrapa cualquier excepción que pueda ocurrir.
+                // Se escribe un mensaje de registro indicando el error.
+                EscribirLog.escribirEnFicheroLog($"[ERROR ImplCitasServicio - ObtenerCitasDePaciente()] - Argumento id es NULL al obtener las citas de un paciente: {e}");
 
-				// Se retorna una lista vacía debido a que ocurrió un error.
-				return new List<Cita>();
-			}
+                return null;
+            }
 		}
 
 

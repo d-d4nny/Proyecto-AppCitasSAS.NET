@@ -17,67 +17,67 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AppCitasSAS
 build_property.RootNamespace = AppCitasSAS
-build_property.ProjectDir = C:\Users\Puesto15\Desktop\CLASES\DIW\AppCitasSASv2\AppCitasSAS\AppCitasSAS\
+build_property.ProjectDir = C:\Users\DaniT\Desktop\AppCitasSAS.net\Proyecto-AppCitasSAS.NET\AppCitasSAS\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Puesto15\Desktop\CLASES\DIW\AppCitasSASv2\AppCitasSAS\AppCitasSAS
+build_property.MSBuildProjectDirectory = C:\Users\DaniT\Desktop\AppCitasSAS.net\Proyecto-AppCitasSAS.NET\AppCitasSAS
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Puesto15/Desktop/CLASES/DIW/AppCitasSASv2/AppCitasSAS/AppCitasSAS/Views/Home/crearCita.cshtml]
+[C:/Users/DaniT/Desktop/AppCitasSAS.net/Proyecto-AppCitasSAS.NET/AppCitasSAS/Views/Home/crearCita.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxjcmVhckNpdGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Puesto15/Desktop/CLASES/DIW/AppCitasSASv2/AppCitasSAS/AppCitasSAS/Views/Home/editarPaciente.cshtml]
+[C:/Users/DaniT/Desktop/AppCitasSAS.net/Proyecto-AppCitasSAS.NET/AppCitasSAS/Views/Home/editarPaciente.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxlZGl0YXJQYWNpZW50ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Puesto15/Desktop/CLASES/DIW/AppCitasSASv2/AppCitasSAS/AppCitasSAS/Views/Home/homeEmpleado.cshtml]
+[C:/Users/DaniT/Desktop/AppCitasSAS.net/Proyecto-AppCitasSAS.NET/AppCitasSAS/Views/Home/homeEmpleado.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxob21lRW1wbGVhZG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Puesto15/Desktop/CLASES/DIW/AppCitasSASv2/AppCitasSAS/AppCitasSAS/Views/Home/homePaciente.cshtml]
+[C:/Users/DaniT/Desktop/AppCitasSAS.net/Proyecto-AppCitasSAS.NET/AppCitasSAS/Views/Home/homePaciente.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxob21lUGFjaWVudGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Puesto15/Desktop/CLASES/DIW/AppCitasSASv2/AppCitasSAS/AppCitasSAS/Views/Home/Index.cshtml]
+[C:/Users/DaniT/Desktop/AppCitasSAS.net/Proyecto-AppCitasSAS.NET/AppCitasSAS/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Puesto15/Desktop/CLASES/DIW/AppCitasSASv2/AppCitasSAS/AppCitasSAS/Views/Home/login.cshtml]
+[C:/Users/DaniT/Desktop/AppCitasSAS.net/Proyecto-AppCitasSAS.NET/AppCitasSAS/Views/Home/login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxsb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Puesto15/Desktop/CLASES/DIW/AppCitasSASv2/AppCitasSAS/AppCitasSAS/Views/Home/recuperar.cshtml]
+[C:/Users/DaniT/Desktop/AppCitasSAS.net/Proyecto-AppCitasSAS.NET/AppCitasSAS/Views/Home/recuperar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxyZWN1cGVyYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Puesto15/Desktop/CLASES/DIW/AppCitasSASv2/AppCitasSAS/AppCitasSAS/Views/Home/registro.cshtml]
+[C:/Users/DaniT/Desktop/AppCitasSAS.net/Proyecto-AppCitasSAS.NET/AppCitasSAS/Views/Home/registro.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxyZWdpc3Ryby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Puesto15/Desktop/CLASES/DIW/AppCitasSASv2/AppCitasSAS/AppCitasSAS/Views/Home/solicitarRecuperacion.cshtml]
+[C:/Users/DaniT/Desktop/AppCitasSAS.net/Proyecto-AppCitasSAS.NET/AppCitasSAS/Views/Home/solicitarRecuperacion.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxzb2xpY2l0YXJSZWN1cGVyYWNpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Puesto15/Desktop/CLASES/DIW/AppCitasSASv2/AppCitasSAS/AppCitasSAS/Views/Shared/Error.cshtml]
+[C:/Users/DaniT/Desktop/AppCitasSAS.net/Proyecto-AppCitasSAS.NET/AppCitasSAS/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Puesto15/Desktop/CLASES/DIW/AppCitasSASv2/AppCitasSAS/AppCitasSAS/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/DaniT/Desktop/AppCitasSAS.net/Proyecto-AppCitasSAS.NET/AppCitasSAS/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Puesto15/Desktop/CLASES/DIW/AppCitasSASv2/AppCitasSAS/AppCitasSAS/Views/_ViewImports.cshtml]
+[C:/Users/DaniT/Desktop/AppCitasSAS.net/Proyecto-AppCitasSAS.NET/AppCitasSAS/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Puesto15/Desktop/CLASES/DIW/AppCitasSASv2/AppCitasSAS/AppCitasSAS/Views/_ViewStart.cshtml]
+[C:/Users/DaniT/Desktop/AppCitasSAS.net/Proyecto-AppCitasSAS.NET/AppCitasSAS/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Puesto15/Desktop/CLASES/DIW/AppCitasSASv2/AppCitasSAS/AppCitasSAS/Views/Shared/_Layout.cshtml]
+[C:/Users/DaniT/Desktop/AppCitasSAS.net/Proyecto-AppCitasSAS.NET/AppCitasSAS/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-xrcmvybqse

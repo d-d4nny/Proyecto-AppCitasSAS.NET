@@ -94,7 +94,8 @@ namespace AppCitasSAS.Controllers
 			EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método HomeUser() de la clase PacienteController");
 
 			PacienteDTO u = _pacienteServicio.buscarPorEmail(User.Identity.Name);
-            List<CitasDTO> citas = _citaToDto.listCitasToDto(_citaServicio.ObtenerCitasDePaciente(u.IdPaciente));
+
+            List<CitasDTO> citas = _citaServicio.ObtenerCitasDePaciente(u.IdPaciente);
 
             ViewBag.Cita = citas;
 			ViewBag.PacienteDTO = u;

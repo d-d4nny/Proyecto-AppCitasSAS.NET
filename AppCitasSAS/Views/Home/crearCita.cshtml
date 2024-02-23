@@ -1,5 +1,44 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model AppCitasSAS.DTO.CitasDTO
+@using AppCitasSAS.DTO
+
 @{
+    ViewData["Title"] = "registroCita";
+
+    List<DoctoresDTO> doctores = ViewBag.Doctores;
 }
+
+<div class="container py-4">
+    <div class="registro cardPrincipal">
+        <form class="custom-form" asp-controller="Citas" asp-action="RegistrarCitaPost" method="post" asp-for="CitasDTO">
+            <h2 class="text-center mb-5">
+                <i class="bi bi-bicycle" style="color: #1f3c85;"> Registro nueva moto</i>
+            </h2>
+            <input type="hidden" asp-for="IdPacienteDTO" />
+            <div class="mb-3">
+                <label for="fechaCita" class="form-label textoPrincipal">Fecha</label>
+                <input asp-for="FechaCita" type="date" id="fechaCita" name="fechaCita" class="form-control" placeholder="Introduzca la fecha" required />
+            </div>
+            <div class="mb-3">
+                <label for="horaCita" class="form-label textoPrincipal">Hora</label>
+                <input asp-for="HoraCita" type="time" id="horaCita" name="horaCita" class="form-control" placeholder="Introduzca la hora" required />
+            </div>
+            <div class="mb-3">
+                <label for="motivoCita" class="form-label textoPrincipal">Motivo</label>
+                <input asp-for="MotivoCita" type="text" id="motivoCita" name="motivoCita" class="form-control" placeholder="Introduzca el motivo" required />
+            </div>
+
+            <div class="mb-3">
+                <label for="IdDoctoresDTO">Selecciona una cuenta Remitente:</label>
+                <select id="IdDoctores" name="IdDoctores">
+                    @foreach (var doctor in doctores)
+                    {
+                        <option value="@doctor.IdDoctor">@doctor.NombreCompletoDoctor</option>
+                    }
+                </select>
+            </div>
+            <button type="submit" id="btnRegistro" class="btn btn-primary mt-5">
+                <i class="bi bi-plus-square fs-5"> Guardar Cita</i>
+            </button>
+        </form>
+    </div>
+</div>
