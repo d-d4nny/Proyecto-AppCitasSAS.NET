@@ -26,17 +26,14 @@ namespace AppCitasSAS.Servicios.Implementaciones
                 EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método registrar() de la clase ImplCitasServicio");
 
 
-                var doctor = _contexto.Doctores.FirstOrDefault(u => u.IdDoctor == citaDTO.IdDoctoresDTO);
-                var paciente = _contexto.Pacientes.FirstOrDefault(u => u.IdPaciente == citaDTO.IdPacienteDTO);
-
                 Cita citaDao = new Cita();
 
-
-                citaDao.IdDoctorNavigation = doctor;
-                citaDao.MotivoCita = "Pendiente";
+                citaDao.EstadoCita = "Pendiente";
+                citaDao.MotivoCita = citaDTO.MotivoCita;
                 citaDao.FechaCita = citaDTO.FechaCita;
                 citaDao.HoraCita = citaDTO.HoraCita;
-                citaDao.IdDoctorNavigation = doctor;
+                citaDao.IdDoctor = citaDTO.IdDoctoresDTO;
+                citaDao.IdPaciente = citaDTO.IdPacienteDTO;
 
                 _contexto.Citas.Add(citaDao);
                 _contexto.SaveChanges();

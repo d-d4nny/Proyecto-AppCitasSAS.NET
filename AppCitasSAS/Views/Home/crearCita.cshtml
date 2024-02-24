@@ -28,8 +28,8 @@
             </div>
 
             <div class="mb-3">
-                <label for="IdDoctoresDTO">Selecciona una cuenta Remitente:</label>
-                <select id="IdDoctores" name="IdDoctores">
+                <label for="IdDoctoresDTO">Selecciona un Doctor:</label>
+                <select asp-for="IdDoctoresDTO" id="IdDoctoresDTO" name="IdDoctoresDTO">
                     @foreach (var doctor in doctores)
                     {
                         <option value="@doctor.IdDoctor">@doctor.NombreCompletoDoctor</option>

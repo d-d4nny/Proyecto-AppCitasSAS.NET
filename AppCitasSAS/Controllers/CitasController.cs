@@ -70,9 +70,9 @@ namespace AppCitasSAS.Controllers
 
                 citaDTO.IdPacienteDTO = u.IdPaciente;
 
-                _citaServicio.registrar(citaDTO);           
+                _citaServicio.registrar(citaDTO);
 
-                return View("~/Views/Home/homePaciente.cshtml");
+                return RedirectToAction("HomeUser", "Paciente");
             }
             catch (Exception e)
             {
@@ -82,5 +82,29 @@ namespace AppCitasSAS.Controllers
             }
         }
 
-    }
+		[Authorize]
+		[HttpGet]
+		[Route("/privada/eliminar-cita/{id}")]
+		public IActionResult eliminarCita(long idCita)
+        {
+
+            CitasDTO cita = _citaServicio.buscarPorId(idCita);
+
+
+            if (cita != null)
+            {
+                _citaServicio.eliminar(idCita);
+                List<CitasDTO> misCitas = _citaServicio.ObtenerCitasDePaciente(cita.IdPacienteDTO);
+                if (misCitas != null && misCitas.Count > 0)
+                {
+                    ViewBag.MisCitas = misCitas;
+                }
+                ViewData["eliminacionCorrecta"] = "La cita se ha eliminado correctamente";
+            }
+            EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método EliminarMoto() de la clase MisMotosController. " + ViewData["eliminacionCorrecta"]);
+            return RedirectToAction("HomeUser", "Paciente");
+        }
+
+
+	}
 }

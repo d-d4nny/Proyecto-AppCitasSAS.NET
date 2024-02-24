@@ -69,9 +69,9 @@
 								<td>@cita.MotivoCita</td>
 								<td>@cita.EstadoCita</td>
 								<td style="text-align: center;">
-		    						<button class="btn btn-danger">
+									<a class="btn btn-danger" data-id="@cita.IdCita" onclick="eliminarCita(event)">
 										<i class="bi bi-x-square"></i>
-									</button>
+									</a>
 								</td>
 		
 							</tr>
@@ -130,5 +130,12 @@
 			</div>
 		</div>
 	</div>
+
+	<script>
+		function eliminarCita(event) {
+			const idCita = event.currentTarget.getAttribute("data-id");
+			window.location.href = 'http://localhost:5187/privada/eliminar-cita/' + idCita;
+		}
+	</script>
 </div>
 
