@@ -14,16 +14,17 @@ namespace AppCitasSAS.Controllers
 
         private readonly IntfPacienteServicio _pacienteServicio;
         private readonly IntfCitasServicio _citaServicio;
-        private readonly IntfCitasToDao _citaToDao;
-        private readonly IntfCitasToDto _citaToDto;
+        private readonly IntfDoctorServicio _doctorServicio;
+        private readonly IntfConsultaTurnoServicio _turnoServicio;
 
-        public PacienteController(IntfPacienteServicio pacienteServicio, IntfCitasServicio citaServicio, IntfCitasToDao citaToDao, IntfCitasToDto citasToDto)
+        public PacienteController(IntfPacienteServicio pacienteServicio, IntfCitasServicio citaServicio, IntfDoctorServicio doctorServicio, IntfConsultaTurnoServicio turnoServicio)
         {
             _pacienteServicio = pacienteServicio;
             _citaServicio = citaServicio;
-            _citaToDao = citaToDao;
-            _citaToDto = citasToDto;
-        }
+            _doctorServicio = doctorServicio;
+            _turnoServicio = turnoServicio;
+
+		}
 
         [HttpGet]
         [Route("/auth/registrar")]
@@ -108,15 +109,15 @@ namespace AppCitasSAS.Controllers
         [HttpGet("/privada/Administracion")]
         public IActionResult HomeEmpleado()
         {
-            //var citas = _citasServicio.BuscarTodos();
-            //var doctores = _doctoresServicio.BuscarTodos();
-            var pacientes = _pacienteServicio.buscarTodos();
-            //var consultaTurnos = _consultaTurnoServicio.BuscarTodos();
+			List<CitasDTO> citas = _citaServicio.buscarTodos();
+            List<DoctoresDTO> doctores = _doctorServicio.buscarTodos();
+            List<ConsultaTurnoDTO> turnos = _turnoServicio.buscarTodos();
+            List<PacienteDTO> pacientes = _pacienteServicio.buscarTodos();
 
-            //ViewBag.Citas = citas;
-            //ViewBag.Doctores = doctores;
+            ViewBag.Citas = citas;
+            ViewBag.Doctores = doctores;
             ViewBag.Pacientes = pacientes;
-            //ViewBag.ConsultaTurnos = consultaTurnos;
+            ViewBag.Turnos = turnos;
 
             return View("~/Views/Home/homeEmpleado.cshtml");
         }

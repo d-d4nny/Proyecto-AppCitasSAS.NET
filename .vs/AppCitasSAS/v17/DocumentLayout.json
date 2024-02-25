@@ -3,56 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\DaniT\\Desktop\\AppCitasSAS.net\\Proyecto-AppCitasSAS.NET\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{12BFB9F8-137F-45EA-A1BC-1F587D1EE1F5}|AppCitasSAS\\AppCitasSAS.csproj|c:\\users\\danit\\desktop\\appcitassas.net\\proyecto-appcitassas.net\\appcitassas\\controllers\\citascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12BFB9F8-137F-45EA-A1BC-1F587D1EE1F5}|AppCitasSAS\\AppCitasSAS.csproj|solutionrelative:appcitassas\\controllers\\citascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12BFB9F8-137F-45EA-A1BC-1F587D1EE1F5}|AppCitasSAS\\AppCitasSAS.csproj|c:\\users\\danit\\desktop\\appcitassas.net\\proyecto-appcitassas.net\\appcitassas\\views\\home\\homepaciente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{12BFB9F8-137F-45EA-A1BC-1F587D1EE1F5}|AppCitasSAS\\AppCitasSAS.csproj|solutionrelative:appcitassas\\views\\home\\homepaciente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12BFB9F8-137F-45EA-A1BC-1F587D1EE1F5}|AppCitasSAS\\AppCitasSAS.csproj|c:\\users\\danit\\desktop\\appcitassas.net\\proyecto-appcitassas.net\\appcitassas\\servicios\\implementaciones\\implcitasservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12BFB9F8-137F-45EA-A1BC-1F587D1EE1F5}|AppCitasSAS\\AppCitasSAS.csproj|solutionrelative:appcitassas\\servicios\\implementaciones\\implcitasservicio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12BFB9F8-137F-45EA-A1BC-1F587D1EE1F5}|AppCitasSAS\\AppCitasSAS.csproj|c:\\users\\danit\\desktop\\appcitassas.net\\proyecto-appcitassas.net\\appcitassas\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{12BFB9F8-137F-45EA-A1BC-1F587D1EE1F5}|AppCitasSAS\\AppCitasSAS.csproj|solutionrelative:appcitassas\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12BFB9F8-137F-45EA-A1BC-1F587D1EE1F5}|AppCitasSAS\\AppCitasSAS.csproj|c:\\users\\danit\\desktop\\appcitassas.net\\proyecto-appcitassas.net\\appcitassas\\views\\home\\crearcita.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{12BFB9F8-137F-45EA-A1BC-1F587D1EE1F5}|AppCitasSAS\\AppCitasSAS.csproj|solutionrelative:appcitassas\\views\\home\\crearcita.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12BFB9F8-137F-45EA-A1BC-1F587D1EE1F5}|AppCitasSAS\\AppCitasSAS.csproj|c:\\users\\danit\\desktop\\appcitassas.net\\proyecto-appcitassas.net\\appcitassas\\wwwroot\\js\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{12BFB9F8-137F-45EA-A1BC-1F587D1EE1F5}|AppCitasSAS\\AppCitasSAS.csproj|solutionrelative:appcitassas\\wwwroot\\js\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12BFB9F8-137F-45EA-A1BC-1F587D1EE1F5}|AppCitasSAS\\AppCitasSAS.csproj|c:\\users\\danit\\desktop\\appcitassas.net\\proyecto-appcitassas.net\\appcitassas\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{12BFB9F8-137F-45EA-A1BC-1F587D1EE1F5}|AppCitasSAS\\AppCitasSAS.csproj|solutionrelative:appcitassas\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12BFB9F8-137F-45EA-A1BC-1F587D1EE1F5}|AppCitasSAS\\AppCitasSAS.csproj|c:\\users\\danit\\desktop\\appcitassas.net\\proyecto-appcitassas.net\\appcitassas\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{12BFB9F8-137F-45EA-A1BC-1F587D1EE1F5}|AppCitasSAS\\AppCitasSAS.csproj|solutionrelative:appcitassas\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12BFB9F8-137F-45EA-A1BC-1F587D1EE1F5}|AppCitasSAS\\AppCitasSAS.csproj|c:\\users\\danit\\desktop\\appcitassas.net\\proyecto-appcitassas.net\\appcitassas\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{12BFB9F8-137F-45EA-A1BC-1F587D1EE1F5}|AppCitasSAS\\AppCitasSAS.csproj|solutionrelative:appcitassas\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{12BFB9F8-137F-45EA-A1BC-1F587D1EE1F5}|AppCitasSAS\\AppCitasSAS.csproj|c:\\users\\danit\\desktop\\appcitassas.net\\proyecto-appcitassas.net\\appcitassas\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{12BFB9F8-137F-45EA-A1BC-1F587D1EE1F5}|AppCitasSAS\\AppCitasSAS.csproj|solutionrelative:appcitassas\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{12BFB9F8-137F-45EA-A1BC-1F587D1EE1F5}|AppCitasSAS\\AppCitasSAS.csproj|c:\\users\\danit\\desktop\\appcitassas.net\\proyecto-appcitassas.net\\appcitassas\\views\\home\\homeempleado.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{12BFB9F8-137F-45EA-A1BC-1F587D1EE1F5}|AppCitasSAS\\AppCitasSAS.csproj|solutionrelative:appcitassas\\views\\home\\homeempleado.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12BFB9F8-137F-45EA-A1BC-1F587D1EE1F5}|AppCitasSAS\\AppCitasSAS.csproj|c:\\users\\danit\\desktop\\appcitassas.net\\proyecto-appcitassas.net\\appcitassas\\dto\\citasdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12BFB9F8-137F-45EA-A1BC-1F587D1EE1F5}|AppCitasSAS\\AppCitasSAS.csproj|solutionrelative:appcitassas\\dto\\citasdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{12BFB9F8-137F-45EA-A1BC-1F587D1EE1F5}|AppCitasSAS\\AppCitasSAS.csproj|c:\\users\\danit\\desktop\\appcitassas.net\\proyecto-appcitassas.net\\appcitassas\\dto\\pacientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12BFB9F8-137F-45EA-A1BC-1F587D1EE1F5}|AppCitasSAS\\AppCitasSAS.csproj|solutionrelative:appcitassas\\dto\\pacientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F17FE2F0-8012-44B3-826D-5EC850CF1E60}|DAL\\DAL.csproj|c:\\users\\danit\\desktop\\appcitassas.net\\proyecto-appcitassas.net\\dal\\entidades\\cita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F17FE2F0-8012-44B3-826D-5EC850CF1E60}|DAL\\DAL.csproj|solutionrelative:dal\\entidades\\cita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{12BFB9F8-137F-45EA-A1BC-1F587D1EE1F5}|AppCitasSAS\\AppCitasSAS.csproj|c:\\users\\danit\\desktop\\appcitassas.net\\proyecto-appcitassas.net\\appcitassas\\controllers\\pacientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12BFB9F8-137F-45EA-A1BC-1F587D1EE1F5}|AppCitasSAS\\AppCitasSAS.csproj|solutionrelative:appcitassas\\controllers\\pacientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{12BFB9F8-137F-45EA-A1BC-1F587D1EE1F5}|AppCitasSAS\\AppCitasSAS.csproj|c:\\users\\danit\\desktop\\appcitassas.net\\proyecto-appcitassas.net\\appcitassas\\dto\\doctoresdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{12BFB9F8-137F-45EA-A1BC-1F587D1EE1F5}|AppCitasSAS\\AppCitasSAS.csproj|solutionrelative:appcitassas\\dto\\doctoresdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -70,171 +34,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "site.js",
-              "DocumentMoniker": "C:\\Users\\DaniT\\Desktop\\AppCitasSAS.net\\Proyecto-AppCitasSAS.NET\\AppCitasSAS\\wwwroot\\js\\site.js",
-              "RelativeDocumentMoniker": "AppCitasSAS\\wwwroot\\js\\site.js",
-              "ToolTip": "C:\\Users\\DaniT\\Desktop\\AppCitasSAS.net\\Proyecto-AppCitasSAS.NET\\AppCitasSAS\\wwwroot\\js\\site.js",
-              "RelativeToolTip": "AppCitasSAS\\wwwroot\\js\\site.js",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-02-24T11:16:21.651Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "script.js",
-              "DocumentMoniker": "C:\\Users\\DaniT\\Desktop\\AppCitasSAS.net\\Proyecto-AppCitasSAS.NET\\AppCitasSAS\\wwwroot\\js\\script.js",
-              "RelativeDocumentMoniker": "AppCitasSAS\\wwwroot\\js\\script.js",
-              "ToolTip": "C:\\Users\\DaniT\\Desktop\\AppCitasSAS.net\\Proyecto-AppCitasSAS.NET\\AppCitasSAS\\wwwroot\\js\\script.js",
-              "RelativeToolTip": "AppCitasSAS\\wwwroot\\js\\script.js",
-              "ViewState": "AQIAAEQAAAAAAAAAAAAgwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-02-24T11:15:06.066Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "_ValidationScriptsPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\DaniT\\Desktop\\AppCitasSAS.net\\Proyecto-AppCitasSAS.NET\\AppCitasSAS\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeDocumentMoniker": "AppCitasSAS\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ToolTip": "C:\\Users\\DaniT\\Desktop\\AppCitasSAS.net\\Proyecto-AppCitasSAS.NET\\AppCitasSAS\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeToolTip": "AppCitasSAS\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-24T11:14:40.472Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "_Layout.cshtml.css",
-              "DocumentMoniker": "C:\\Users\\DaniT\\Desktop\\AppCitasSAS.net\\Proyecto-AppCitasSAS.NET\\AppCitasSAS\\Views\\Shared\\_Layout.cshtml.css",
-              "RelativeDocumentMoniker": "AppCitasSAS\\Views\\Shared\\_Layout.cshtml.css",
-              "ToolTip": "C:\\Users\\DaniT\\Desktop\\AppCitasSAS.net\\Proyecto-AppCitasSAS.NET\\AppCitasSAS\\Views\\Shared\\_Layout.cshtml.css",
-              "RelativeToolTip": "AppCitasSAS\\Views\\Shared\\_Layout.cshtml.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-02-24T11:14:40.315Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\DaniT\\Desktop\\AppCitasSAS.net\\Proyecto-AppCitasSAS.NET\\AppCitasSAS\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "AppCitasSAS\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\DaniT\\Desktop\\AppCitasSAS.net\\Proyecto-AppCitasSAS.NET\\AppCitasSAS\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "AppCitasSAS\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-24T11:14:40.23Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Error.cshtml",
-              "DocumentMoniker": "C:\\Users\\DaniT\\Desktop\\AppCitasSAS.net\\Proyecto-AppCitasSAS.NET\\AppCitasSAS\\Views\\Shared\\Error.cshtml",
-              "RelativeDocumentMoniker": "AppCitasSAS\\Views\\Shared\\Error.cshtml",
-              "ToolTip": "C:\\Users\\DaniT\\Desktop\\AppCitasSAS.net\\Proyecto-AppCitasSAS.NET\\AppCitasSAS\\Views\\Shared\\Error.cshtml",
-              "RelativeToolTip": "AppCitasSAS\\Views\\Shared\\Error.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-24T11:14:40.134Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 0,
               "Title": "homeEmpleado.cshtml",
               "DocumentMoniker": "C:\\Users\\DaniT\\Desktop\\AppCitasSAS.net\\Proyecto-AppCitasSAS.NET\\AppCitasSAS\\Views\\Home\\homeEmpleado.cshtml",
               "RelativeDocumentMoniker": "AppCitasSAS\\Views\\Home\\homeEmpleado.cshtml",
               "ToolTip": "C:\\Users\\DaniT\\Desktop\\AppCitasSAS.net\\Proyecto-AppCitasSAS.NET\\AppCitasSAS\\Views\\Home\\homeEmpleado.cshtml",
               "RelativeToolTip": "AppCitasSAS\\Views\\Home\\homeEmpleado.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAALYAAAAAAAAAAAAIwNEAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-24T11:11:26.763Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ImplCitasServicio.cs",
-              "DocumentMoniker": "C:\\Users\\DaniT\\Desktop\\AppCitasSAS.net\\Proyecto-AppCitasSAS.NET\\AppCitasSAS\\Servicios\\Implementaciones\\ImplCitasServicio.cs",
-              "RelativeDocumentMoniker": "AppCitasSAS\\Servicios\\Implementaciones\\ImplCitasServicio.cs",
-              "ToolTip": "C:\\Users\\DaniT\\Desktop\\AppCitasSAS.net\\Proyecto-AppCitasSAS.NET\\AppCitasSAS\\Servicios\\Implementaciones\\ImplCitasServicio.cs",
-              "RelativeToolTip": "AppCitasSAS\\Servicios\\Implementaciones\\ImplCitasServicio.cs",
-              "ViewState": "AQIAAGwAAAAAAAAAAAAQwH8AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-24T10:54:25.475Z",
+              "WhenOpened": "2024-02-25T11:17:43.46Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "homePaciente.cshtml",
-              "DocumentMoniker": "C:\\Users\\DaniT\\Desktop\\AppCitasSAS.net\\Proyecto-AppCitasSAS.NET\\AppCitasSAS\\Views\\Home\\homePaciente.cshtml",
-              "RelativeDocumentMoniker": "AppCitasSAS\\Views\\Home\\homePaciente.cshtml",
-              "ToolTip": "C:\\Users\\DaniT\\Desktop\\AppCitasSAS.net\\Proyecto-AppCitasSAS.NET\\AppCitasSAS\\Views\\Home\\homePaciente.cshtml",
-              "RelativeToolTip": "AppCitasSAS\\Views\\Home\\homePaciente.cshtml",
-              "ViewState": "AQIAADYAAAAAAAAAAAAjwD8AAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-23T15:48:38.693Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "crearCita.cshtml",
-              "DocumentMoniker": "C:\\Users\\DaniT\\Desktop\\AppCitasSAS.net\\Proyecto-AppCitasSAS.NET\\AppCitasSAS\\Views\\Home\\crearCita.cshtml",
-              "RelativeDocumentMoniker": "AppCitasSAS\\Views\\Home\\crearCita.cshtml",
-              "ToolTip": "C:\\Users\\DaniT\\Desktop\\AppCitasSAS.net\\Proyecto-AppCitasSAS.NET\\AppCitasSAS\\Views\\Home\\crearCita.cshtml",
-              "RelativeToolTip": "AppCitasSAS\\Views\\Home\\crearCita.cshtml",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAUwBkAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-02-23T16:00:49.295Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CitasController.cs",
-              "DocumentMoniker": "C:\\Users\\DaniT\\Desktop\\AppCitasSAS.net\\Proyecto-AppCitasSAS.NET\\AppCitasSAS\\Controllers\\CitasController.cs",
-              "RelativeDocumentMoniker": "AppCitasSAS\\Controllers\\CitasController.cs",
-              "ToolTip": "C:\\Users\\DaniT\\Desktop\\AppCitasSAS.net\\Proyecto-AppCitasSAS.NET\\AppCitasSAS\\Controllers\\CitasController.cs",
-              "RelativeToolTip": "AppCitasSAS\\Controllers\\CitasController.cs",
-              "ViewState": "AQIAAFcAAAAAAAAAAAAxwFgAAAAJAAAA",
+              "Title": "PacienteDTO.cs",
+              "DocumentMoniker": "C:\\Users\\DaniT\\Desktop\\AppCitasSAS.net\\Proyecto-AppCitasSAS.NET\\AppCitasSAS\\DTO\\PacienteDTO.cs",
+              "RelativeDocumentMoniker": "AppCitasSAS\\DTO\\PacienteDTO.cs",
+              "ToolTip": "C:\\Users\\DaniT\\Desktop\\AppCitasSAS.net\\Proyecto-AppCitasSAS.NET\\AppCitasSAS\\DTO\\PacienteDTO.cs",
+              "RelativeToolTip": "AppCitasSAS\\DTO\\PacienteDTO.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-23T15:47:43.745Z",
+              "WhenOpened": "2024-02-25T11:24:26.826Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "CitasDTO.cs",
-              "DocumentMoniker": "C:\\Users\\DaniT\\Desktop\\AppCitasSAS.net\\Proyecto-AppCitasSAS.NET\\AppCitasSAS\\DTO\\CitasDTO.cs",
-              "RelativeDocumentMoniker": "AppCitasSAS\\DTO\\CitasDTO.cs",
-              "ToolTip": "C:\\Users\\DaniT\\Desktop\\AppCitasSAS.net\\Proyecto-AppCitasSAS.NET\\AppCitasSAS\\DTO\\CitasDTO.cs",
-              "RelativeToolTip": "AppCitasSAS\\DTO\\CitasDTO.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAxwA4AAAAhAAAA",
+              "DocumentIndex": 2,
+              "Title": "PacienteController.cs",
+              "DocumentMoniker": "C:\\Users\\DaniT\\Desktop\\AppCitasSAS.net\\Proyecto-AppCitasSAS.NET\\AppCitasSAS\\Controllers\\PacienteController.cs",
+              "RelativeDocumentMoniker": "AppCitasSAS\\Controllers\\PacienteController.cs",
+              "ToolTip": "C:\\Users\\DaniT\\Desktop\\AppCitasSAS.net\\Proyecto-AppCitasSAS.NET\\AppCitasSAS\\Controllers\\PacienteController.cs",
+              "RelativeToolTip": "AppCitasSAS\\Controllers\\PacienteController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-24T10:09:58.319Z",
+              "WhenOpened": "2024-02-25T11:17:32.261Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Cita.cs",
-              "DocumentMoniker": "C:\\Users\\DaniT\\Desktop\\AppCitasSAS.net\\Proyecto-AppCitasSAS.NET\\DAL\\Entidades\\Cita.cs",
-              "RelativeDocumentMoniker": "DAL\\Entidades\\Cita.cs",
-              "ToolTip": "C:\\Users\\DaniT\\Desktop\\AppCitasSAS.net\\Proyecto-AppCitasSAS.NET\\DAL\\Entidades\\Cita.cs",
-              "RelativeToolTip": "DAL\\Entidades\\Cita.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAA9wAAAAAAAAAAA",
+              "DocumentIndex": 3,
+              "Title": "DoctoresDTO.cs",
+              "DocumentMoniker": "C:\\Users\\DaniT\\Desktop\\AppCitasSAS.net\\Proyecto-AppCitasSAS.NET\\AppCitasSAS\\DTO\\DoctoresDTO.cs",
+              "RelativeDocumentMoniker": "AppCitasSAS\\DTO\\DoctoresDTO.cs",
+              "ToolTip": "C:\\Users\\DaniT\\Desktop\\AppCitasSAS.net\\Proyecto-AppCitasSAS.NET\\AppCitasSAS\\DTO\\DoctoresDTO.cs",
+              "RelativeToolTip": "AppCitasSAS\\DTO\\DoctoresDTO.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAoAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-23T18:41:39.264Z"
+              "WhenOpened": "2024-02-25T11:17:31.226Z",
+              "EditorCaption": ""
             }
           ]
         }

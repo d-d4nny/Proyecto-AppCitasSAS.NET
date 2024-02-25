@@ -1,5 +1,211 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    ViewData["Title"] = "Home empleados";
 }
+
+<style>
+
+	.parent {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(4, 1fr);
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+	}
+
+	.div1 {
+		grid-area: 1 / 1 / 3 / 3;
+		max-width: 620px;
+		min-width: 620px;
+		min-height: 300px;
+		max-height: 300px;
+		margin-bottom: 35px;
+		margin-left: 15px;
+	}
+
+	.div2 {
+		grid-area: 1 / 3 / 3 / 5;
+		max-width: 620px;
+		min-width: 620px;
+		min-height: 300px;
+		max-height: 300px;
+		margin-bottom: 35px;
+	}
+
+	.div3 {
+		grid-area: 3 / 1 / 5 / 3;
+		max-width: 620px;
+		min-width: 620px;
+		min-height: 300px;
+		max-height: 300px;
+		margin-top: 30px;
+		margin-left: 15px;
+	}
+
+	.div4 {
+		grid-area: 3 / 3 / 5 / 5;
+		max-width: 620px;
+		min-width: 620px;
+		min-height: 300px;
+		max-height: 300px;
+		margin-top: 30px;
+	}
+
+	.bi {
+		font-size: 12.5px;
+	}
+</style>
+
+
+<div class="parent">
+	<div class="div1">
+		<div class="card bg-light">
+			<div class="card-header"><h3>Administracion Citas</h3></div>
+			<div class="card-body" style="max-width: 625px;max-height: 275px;overflow-x: auto;">
+				<table class="table table-striped table-bordered">
+					<thead class="thead-inverse">
+						<tr>
+							<th class="table-dark" style="width: 20%;">Id</th>
+							<th class="table-dark" style="width: 20%;">Fecha</th>
+							<th class="table-dark" style="width: 20%;">Hora</th>
+							<th class="table-dark" style="width: 25%;">Motivo</th>
+							<th class="table-dark" style="width: 15%;">Estado</th>
+						</tr>
+					</thead>
+					<tbody>
+						@foreach (var cita in ViewBag.Citas)
+						{
+							<tr>
+								<td>@cita.IdCita</td>
+								<td>@cita.FechaCita</td>
+								<td>@cita.HoraCita</td>
+								<td>@cita.MotivoCita</td>
+								<td>@cita.EstadoCita</td>
+							</tr>
+						}
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="div2">
+		<div class="card bg-light">
+			<div class="card-header d-flex justify-content-between align-items-center">
+				<h3>Administracion Horarios</h3>
+				<a asp-controller="Turnos" asp-action="MostrarFormNuevoTurno" role="button" class="btn buttonPrincipal p-2 mb-3">
+					<i class="bi bi-plus-square"></i>
+				</a>
+			</div>
+			<div class="card-body" style="max-width: 625px;max-height: 275px;overflow: auto;">
+				<table class="table table-striped table-bordered">
+					<thead class="thead-inverse">
+						<tr>
+							<th class="table-dark" style="width: 20%;">Id</th>
+							<th class="table-dark" style="width: 20%;">Consulta</th>
+							<th class="table-dark" style="width: 25%;">Hora Turno Inicio</th>
+							<th class="table-dark" style="width: 25%;">Hora Turno Fin</th>
+							<th class="table-dark" style="width: 15%;"></th>
+						</tr>
+					</thead>
+					<tbody>
+						@foreach (var turno in ViewBag.Turnos)
+						{
+							<tr>
+								<td>@turno.IdConsultaTurno</td>
+								<td>@turno.NumConsulta</td>
+								<td>@turno.TramoHoraTurnoInicio</td>
+								<td>@turno.TramoHoraTurnoFin</td>
+							</tr>
+						}
+					</tbody>
+				</table>
+			</div>
+		</div>
+    </div>
+    <div class="div3"> 
+		<div class="card bg-light">
+			<div class="card-header d-flex justify-content-between align-items-center">
+				<h3>Administracion Pacientes</h3>
+				<a asp-controller="Pacientes" asp-action="MostrarFormNuevoPaciente" role="button" class="btn buttonPrincipal p-2 mb-3">
+					<i class="bi bi-plus-square"></i>
+				</a>
+			</div>
+			<div class="card-body" style="max-width: 625px;max-height: 275px;overflow: auto;">
+				<table class="table table-striped table-bordered">
+					<thead class="thead-inverse">
+						<tr>
+							<th class="table-dark">Id</th>
+							<th class="table-dark">Nombre</th>
+							<th class="table-dark">Dni</th>
+							<th class="table-dark">Email</th>
+							<th class="table-dark">Telefono</th>
+							<th class="table-dark">Direccion</th>
+							<th class="table-dark">Cuenta activa</th>
+							<th class="table-dark">Rol</th>
+
+							<th class="table-dark" asp:authorize="User.IsInRole('ROLE_ADMIN')"></th>
+						</tr>
+					</thead>
+					<tbody>
+						@foreach (var paciente in ViewBag.Pacientes)
+						{
+							<tr>
+								<td>@paciente.IdPaciente</td>
+								<td>@paciente.NombreCompletoPaciente</td>
+								<td>@paciente.DniPaciente</td>
+								<td>@paciente.EmailPaciente</td>
+								<td>@paciente.TlfPaciente</td>
+								<td>@paciente.DireccionPaciente</td>
+								<td>@(paciente.CuentaConfirmada ? "Sí" : "No")</td>
+								<td>@(paciente.RolPaciente == "ROLE_USER" ? "USER" : "ADMIN")</td>
+								<td asp:authorize="User.IsInRole('ROLE_ADMIN')">
+									<a class="btn btn-danger" data-id="@paciente.IdPaciente" onclick="confirmarEliminar(event)">
+										<i class="bi bi-trash3-fill"></i>
+									</a>
+
+									<a class="btn btn-danger" data-id="@paciente.IdPaciente" onclick="confirmarEditar(event)">
+										<i class="bi bi-pencil-square"></i>
+									</a>
+								</td>
+							</tr>
+						}
+					</tbody>
+				</table>
+			</div>
+		</div>
+    </div>
+	<div class="div4">
+		<div class="card bg-light">
+			<div class="card-header d-flex justify-content-between align-items-center">
+				<h3>Administracion Doctores</h3>
+				<a asp-controller="Doctores" asp-action="MostrarFormNuevoDoctor" role="button" class="btn buttonPrincipal p-2 mb-3">
+					<i class="bi bi-plus-square"></i>
+				</a>
+			</div>
+			<div class="card-body" style="max-width: 625px;max-height: 275px;overflow: auto;">
+
+				<table class="table table-striped table-bordered">
+					<thead class="thead-inverse">
+						<tr>
+							<th class="table-dark" style="width: 20%;">Id</th>
+							<th class="table-dark" style="width: 20%;">Nombre</th>
+							<th class="table-dark" style="width: 25%;">Especialidad</th>
+							<th class="table-dark" style="width: 15%;">Turno</th>
+						</tr>
+					</thead>
+					<tbody>
+						@foreach (var doctor in ViewBag.Doctores)
+						{
+							<tr>
+								<td>@doctor.IdDoctor</td>
+								<td>@doctor.NombreCompletoDoctor</td>
+								<td>@doctor.EspecialidadDoctor</td>
+								<td>@doctor.IdConsultaTurno</td>
+							</tr>
+						}
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<br/><br/>
+</div>

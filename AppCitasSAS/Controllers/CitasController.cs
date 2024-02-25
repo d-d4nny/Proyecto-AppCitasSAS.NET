@@ -4,6 +4,7 @@ using AppCitasSAS.Utils;
 using DAL.Entidades;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Build.Framework;
 using System.Security.Principal;
 
 namespace AppCitasSAS.Controllers
@@ -94,11 +95,11 @@ namespace AppCitasSAS.Controllers
             if (cita != null)
             {
                 _citaServicio.eliminar(idCita);
-                List<CitasDTO> misCitas = _citaServicio.ObtenerCitasDePaciente(cita.IdPacienteDTO);
-                if (misCitas != null && misCitas.Count > 0)
+                List<CitasDTO> citas = _citaServicio.ObtenerCitasDePaciente(cita.IdPacienteDTO);
+                if (citas != null && citas.Count > 0)
                 {
-                    ViewBag.MisCitas = misCitas;
-                }
+					ViewBag.Cita = citas;
+				}
                 ViewData["eliminacionCorrecta"] = "La cita se ha eliminado correctamente";
             }
             EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método EliminarMoto() de la clase MisMotosController. " + ViewData["eliminacionCorrecta"]);
