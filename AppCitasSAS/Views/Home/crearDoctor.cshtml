@@ -1,0 +1,40 @@
+﻿@model AppCitasSAS.DTO.DoctoresDTO
+﻿@using AppCitasSAS.DTO
+
+@{
+    ViewData["Title"] = "Registrar doctor";
+
+    List<ConsultaTurnoDTO> turnos = ViewBag.Turnos;
+}
+
+<div class="container py-4">
+    <div class="registro cardPrincipal">
+        <form class="custom-form" asp-controller="Doctores" asp-action="RegistrarDoctorPost" method="post" asp-for="DoctoresDTO">
+            <h2 class="text-center mb-5">
+                <i class="bi bi-bicycle" style="color: #1f3c85;"> Registro nueva Cita</i>
+            </h2>
+            <input type="hidden" asp-for="IdDoctor" />
+            <div class="mb-3">
+                <label for="NombreCompletoDoctor" class="form-label textoPrincipal">Nombre</label>
+                <input type="text" id="NombreCompletoDoctor" name="NombreCompletoDoctor" class="form-control" placeholder="Introduzca el nombre" required />
+            </div>
+            <div class="mb-3">
+                <label for="EspecialidadDoctor" class="form-label textoPrincipal">Especialidad Doctor</label>
+                <input type="text" id="EspecialidadDoctor" name="EspecialidadDoctor" class="form-control" placeholder="Introduzca la especialidad" required />
+            </div>
+
+            <div class="mb-3">
+                <label for="IdConsultaTurno" class="form-label textoPrincipal">Turno</label>
+                <select asp-for="IdConsultaTurno" id ="IdConsultaTurno" name="IdConsultaTurno">
+                    @foreach (var turno in turnos)
+                    {
+                        <option value="@turno.IdConsultaTurno">@turno.TramoHoraTurnoInicio - @turno.TramoHoraTurnoFin</option>
+                    }
+                </select>
+            </div>
+            <button type="submit" id="btnRegistro" class="btn btn-primary mt-5">
+                <i class="bi bi-plus-square fs-5"> Guardar Doctor</i>
+            </button>
+        </form>
+    </div>
+</div>

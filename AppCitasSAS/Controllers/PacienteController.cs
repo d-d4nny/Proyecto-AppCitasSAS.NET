@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
+using DAL.Entidades;
 
 namespace AppCitasSAS.Controllers
 {
@@ -157,7 +158,9 @@ namespace AppCitasSAS.Controllers
         {
             try
             {
-                EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método ProcesarFormularioEdicion() de la clase PacienteController");
+                PacienteDTO p = _pacienteServicio.buscarPorEmail(User.Identity.Name);
+
+				EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método ProcesarFormularioEdicion() de la clase PacienteController");
 
                 PacienteDTO pacienteDTO = _pacienteServicio.buscarPorId(id);
                 pacienteDTO.NombreCompletoPaciente = nombre;
@@ -198,7 +201,7 @@ namespace AppCitasSAS.Controllers
 
                 EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método ProcesarFormularioEdicion() de la clase PacienteController. " + ViewData["EdicionCorrecta"]);
 
-                if (pacienteDTO.RolPaciente.Contains("ROLE_ADMIN"))
+                if (p.RolPaciente.Contains("ROLE_ADMIN"))
                 {
                     return RedirectToAction("HomeEmpleado", "Paciente");
                 }
@@ -224,15 +227,38 @@ namespace AppCitasSAS.Controllers
             PacienteDTO paciente = _pacienteServicio.buscarPorId(id);
             List<PacienteDTO> pacientes = _pacienteServicio.buscarTodos();
 
-            if (User.IsInRole("ROLE_ADMIN") && paciente.RolPaciente.Equals("ROLE_ADMIN"))
-            {
-                TempData["noSePuedeEliminar"] = "No se puede eliminar a un admin";
-                TempData["usuarios"] = pacientes;
-                return RedirectToAction("Administracion");
-            }
+			string emailUsuarioActual = User.Identity.Name;
 
-            _pacienteServicio.eliminar(id);
-            return RedirectToAction("Administracion");
+
+			if (emailUsuarioActual == paciente.EmailPaciente)
+			{
+				ViewData["noTePuedesEliminar"] = "Un administrador no puede eliminarse a sí mismo";
+				EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método EliminarUsuario() de la clase AdministracionUsuariosController. " + ViewData["noTePuedesEliminar"]);
+				return RedirectToAction("HomeEmpleado");
+			}
+			else if (User.IsInRole("ROLE_ADMIN") && paciente.RolPaciente == "ROLE_ADMIN")
+			{
+				ViewData["noSePuedeEliminar"] = "No se puede eliminar al último administrador del sistema";
+				EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método EliminarUsuario() de la clase AdministracionUsuariosController. " + ViewData["noSePuedeEliminar"]);
+				return RedirectToAction("HomeEmpleado");
+			}
+
+			List<CitasDTO> citas = _citaServicio.ObtenerCitasDePaciente(id);
+			foreach (CitasDTO cita in citas)
+			{
+				_citaServicio.eliminar(cita.IdCita); // Adjust this line based on your actual method to delete a cita
+			}
+
+			_pacienteServicio.eliminar(id);
+            return RedirectToAction("HomeEmpleado");
+        }
+
+        [HttpPost]
+        public IActionResult CerrarSesion()
+        {
+            EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método CerrarSesion() de la clase PacienteController");
+            HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            return RedirectToAction("Index", "Home");
         }
     }
 }

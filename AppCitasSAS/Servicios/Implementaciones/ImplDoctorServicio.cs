@@ -3,6 +3,7 @@ using AppCitasSAS.Servicios.Interfaces;
 using AppCitasSAS.Utils;
 using DAL.Entidades;
 using Microsoft.EntityFrameworkCore;
+using NuGet.Protocol.Core.Types;
 
 namespace AppCitasSAS.Servicios.Implementaciones
 {
@@ -62,8 +63,41 @@ namespace AppCitasSAS.Servicios.Implementaciones
             }
         }
 
+		
+		public void actualizarDoctor(DoctoresDTO doctorModificado)
+		{
+			try
+			{
+				EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método actualizarDoctor() de la clase ImplDoctorServicio");
 
-        public DoctoresDTO buscarPorId(long id)
+				Doctore? doctorActual = _contexto.Doctores.Find(doctorModificado.IdDoctor);
+
+				if (doctorActual != null)
+				{
+					doctorActual.NombreCompletoDoctor = doctorModificado.NombreCompletoDoctor;
+					doctorActual.EspecialidadDoctor = doctorModificado.EspecialidadDoctor;
+					doctorActual.IdConsultaTurno = doctorModificado.IdConsultaTurno;
+
+					_contexto.Doctores.Update(doctorActual);
+					_contexto.SaveChanges();
+					EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método actualizarDoctor() de la clase ImplDoctorServicio. Doctor actualizado OK");
+				}
+				else
+				{
+					EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método actualizarDoctor() de la clase ImplDoctorServicio. Doctor no encontrado");
+				}
+			}
+			catch (DbUpdateException dbe)
+			{
+				EscribirLog.escribirEnFicheroLog("[Error ImplDoctorServicio - actualizarDoctor()] Error de persistencia al modificar el doctor " + dbe.Message);
+			}
+		}
+
+
+
+
+
+		public DoctoresDTO buscarPorId(long id)
         {
             try
             {

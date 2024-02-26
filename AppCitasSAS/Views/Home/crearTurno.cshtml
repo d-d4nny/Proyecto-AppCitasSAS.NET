@@ -1,0 +1,31 @@
+﻿@model AppCitasSAS.DTO.ConsultaTurnoDTO
+
+@{
+    ViewData["Title"] = "Registrar Turno";
+}
+
+<div class="container py-4">
+    <div class="registro cardPrincipal">
+        <form class="custom-form" asp-controller="Turnos" asp-action="RegistrarTurnoPost" method="post" asp-for="ConsultaTurnoDTO">
+            <h2 class="text-center mb-5">
+                <i class="bi bi-bicycle" style="color: #1f3c85;"> Registro nuevo Turno</i>
+            </h2>
+            <input type="hidden" asp-for="IdConsultaTurno" />
+            <div class="mb-3">
+                <label for="NumConsulta" class="form-label textoPrincipal">Numero Consulta</label>
+                <input type="number" id="NumConsulta" name="NumConsulta" class="form-control" placeholder="Introduzca la consulta" required />
+            </div>
+            <div class="mb-3">
+                <label for="TramoHoraTurnoInicio" class="form-label textoPrincipal">Hora Inicio</label>
+                <input type="time" id="TramoHoraTurnoInicio" name="TramoHoraTurnoInicio" class="form-control" placeholder="Introduzca la hora de inicio" required />
+            </div>   
+            <div class="mb-3">
+                <label for="TramoHoraTurnoFin" class="form-label textoPrincipal">Especialidad Doctor</label>
+                <input type="time" id="TramoHoraTurnoFin" name="TramoHoraTurnoFin" class="form-control" placeholder="Introduzca la hora de fin" required />
+            </div>
+            <button type="submit" id="btnRegistro" class="btn btn-primary mt-5">
+                <i class="bi bi-plus-square fs-5"> Guardar Doctor</i>
+            </button>
+        </form>
+    </div>
+</div>

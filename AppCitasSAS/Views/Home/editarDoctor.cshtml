@@ -1,0 +1,37 @@
+﻿@model AppCitasSAS.DTO.DoctoresDTO
+﻿@using AppCitasSAS.DTO
+
+@{
+    ViewData["Title"] = "Editar doctor";
+
+    List<ConsultaTurnoDTO> turnos = ViewBag.Turnos;
+}
+
+<div class="container py-4">
+    <form class="custom-form cardPrincipal" asp-action="ProcesarFormularioEdicionDoctor" asp-controller="Doctores" enctype="multipart/form-data" method="post" asp-route-id="@Model.IdDoctor">
+        <h2 class="text-center mb-5">
+            <i class="bi bi-person-fill-gear" style="color: #1f3c85">Editar doctor</i>
+        </h2>
+        <input type="hidden" name="id" value="@Model.IdDoctor" />
+        <div class="mb-3">
+            <label for="nombreCompleto" class="form-label textoPrincipal">Nombre Doctor</label>
+            <input type="text" id="nombreCompleto" name="nombreCompleto" class="form-control" value="@Model.NombreCompletoDoctor" required />
+        </div>
+        <div class="mb-3">
+            <label for="especialidad" class="form-label textoPrincipal">Especialidad</label>
+            <input type="text" id="especialidad" name="especialidad" class="form-control" value="@Model.EspecialidadDoctor" required />
+        </div>
+        <div class="mb-3">
+            <label for="IdConsultaTurno">Selecciona un turno:</label>
+            <select id="IdConsultaTurno" name="IdConsultaTurno">
+                @foreach (var turno in turnos)
+                {
+                    <option value="@turno.IdConsultaTurno">@turno.TramoHoraTurnoInicio - @turno.TramoHoraTurnoFin</option>
+                }
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary mt-5">
+            <i class="bi bi-person-fill-gear fs-5"> Guardar cambios</i>
+        </button>
+    </form>
+</div>

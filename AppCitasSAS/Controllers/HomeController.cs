@@ -23,13 +23,13 @@ namespace AppCitasSAS.Controllers
                 EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método  Index() de la clase HomeController");
 
                 HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-                return View();
+                return View("~/Views/Home/login.cshtml");
             }
             catch (Exception e)
             {
                 ViewData["error"] = "Ocurrió un error al mostrar la vista de Home";
                 EscribirLog.escribirEnFicheroLog("[ERROR] Se lanzó una excepción en el método Index() de la clase HomeController: " + e.Message + e.StackTrace);
-                return View();
+                return View("~/Views/Home/login.cshtml");
             }
         }
 

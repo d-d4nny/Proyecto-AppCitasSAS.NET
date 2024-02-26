@@ -1,5 +1,22 @@
-﻿@{
+﻿﻿@using AppCitasSAS.DTO
+
+@{
     ViewData["Title"] = "Home empleados";
+
+	List<ConsultaTurnoDTO> turnos = ViewBag.Turnos;
+	
+
+	var noAdmin = ViewData["noAdmin"] as string;
+
+	var noSePuedeEliminar = ViewData["noSePuedeEliminar"] as string;
+	var elUsuarioTieneQuedadas = ViewData["elUsuarioTieneQuedadas"] as string;
+	var eliminacionCorrecta = ViewData["eliminacionCorrecta"] as string;
+	var EdicionCorrecta = ViewData["EdicionCorrecta"] as string;
+	var mensajeRegistroExitoso = ViewData["MensajeRegistroExitoso"] as string;
+	var cuentaNoVerificada = ViewData["EmailNoConfirmado"] as string;
+	var noTePuedesEliminar = ViewData["noTePuedesEliminar"] as string;
+	var usuarioNoEncontrado = ViewData["usuarioNoEncontrado"] as string;
+	var error = ViewData["error"] as string;
 }
 
 <style>
@@ -69,6 +86,7 @@
 							<th class="table-dark" style="width: 20%;">Hora</th>
 							<th class="table-dark" style="width: 25%;">Motivo</th>
 							<th class="table-dark" style="width: 15%;">Estado</th>
+							<th class="table-dark" style="width: 15%;"></th>
 						</tr>
 					</thead>
 					<tbody>
@@ -80,6 +98,15 @@
 								<td>@cita.HoraCita</td>
 								<td>@cita.MotivoCita</td>
 								<td>@cita.EstadoCita</td>
+								<td>
+									<a class="btn btn-danger" data-id="@cita.IdCita" onclick="confirmarCancelarCita(event)">
+										<i class="bi bi-x-square"></i>
+									</a>
+
+									<a class="btn btn-danger" data-id="@cita.IdCita" onclick="confirmarCompletarCita(event)">
+										<i class="bi bi-check-square"></i>
+									</a>
+								</td>
 							</tr>
 						}
 					</tbody>
@@ -113,7 +140,16 @@
 								<td>@turno.IdConsultaTurno</td>
 								<td>@turno.NumConsulta</td>
 								<td>@turno.TramoHoraTurnoInicio</td>
-								<td>@turno.TramoHoraTurnoFin</td>
+								<td>@turno.TramoHoraTurnoFin</td>								
+								<td>
+									<a class="btn btn-danger" data-id="@turno.IdConsultaTurno" onclick="confirmarEliminarTurno(event)">
+										<i class="bi bi-trash3-fill"></i>
+									</a>
+
+									<a class="btn btn-danger" data-id="@turno.IdConsultaTurno" onclick="confirmarEditarTurno(event)">
+										<i class="bi bi-pencil-square"></i>
+									</a>
+								</td>
 							</tr>
 						}
 					</tbody>
@@ -125,7 +161,7 @@
 		<div class="card bg-light">
 			<div class="card-header d-flex justify-content-between align-items-center">
 				<h3>Administracion Pacientes</h3>
-				<a asp-controller="Pacientes" asp-action="MostrarFormNuevoPaciente" role="button" class="btn buttonPrincipal p-2 mb-3">
+				<a asp-controller="Paciente" asp-action="RegistrarGet" role="button" class="btn buttonPrincipal p-2 mb-3">
 					<i class="bi bi-plus-square"></i>
 				</a>
 			</div>
@@ -158,11 +194,11 @@
 								<td>@(paciente.CuentaConfirmada ? "Sí" : "No")</td>
 								<td>@(paciente.RolPaciente == "ROLE_USER" ? "USER" : "ADMIN")</td>
 								<td asp:authorize="User.IsInRole('ROLE_ADMIN')">
-									<a class="btn btn-danger" data-id="@paciente.IdPaciente" onclick="confirmarEliminar(event)">
+									<a class="btn btn-danger" data-id="@paciente.IdPaciente" onclick="confirmarEliminarPaciente(event)">
 										<i class="bi bi-trash3-fill"></i>
 									</a>
 
-									<a class="btn btn-danger" data-id="@paciente.IdPaciente" onclick="confirmarEditar(event)">
+									<a class="btn btn-danger" data-id="@paciente.IdPaciente" onclick="confirmarEditarPaciente(event)">
 										<i class="bi bi-pencil-square"></i>
 									</a>
 								</td>
@@ -190,6 +226,7 @@
 							<th class="table-dark" style="width: 20%;">Nombre</th>
 							<th class="table-dark" style="width: 25%;">Especialidad</th>
 							<th class="table-dark" style="width: 15%;">Turno</th>
+							<th class="table-dark" style="width: 15%;"></th>
 						</tr>
 					</thead>
 					<tbody>
@@ -199,7 +236,22 @@
 								<td>@doctor.IdDoctor</td>
 								<td>@doctor.NombreCompletoDoctor</td>
 								<td>@doctor.EspecialidadDoctor</td>
-								<td>@doctor.IdConsultaTurno</td>
+								<td>
+									@if (doctor.IdConsultaTurno != null)
+									{
+										var selectedTurno = turnos.FirstOrDefault(t => t.IdConsultaTurno == doctor.IdConsultaTurno);
+										<span>@selectedTurno.TramoHoraTurnoInicio - @selectedTurno.TramoHoraTurnoFin</span>
+									}
+								</td>
+								<td>
+									<a class="btn btn-danger" data-id="@doctor.IdDoctor" onclick="confirmarEliminarDoctor(event)">
+										<i class="bi bi-trash3-fill"></i>
+									</a>
+
+									<a class="btn btn-danger" data-id="@doctor.IdDoctor" onclick="confirmarEditarDoctor(event)">
+										<i class="bi bi-pencil-square"></i>
+									</a>
+								</td>
 							</tr>
 						}
 					</tbody>
@@ -208,4 +260,106 @@
 		</div>
 	</div>
 	<br/><br/>
+	
+	@if (!string.IsNullOrEmpty(noAdmin))
+	{
+		<script>
+			mostrarNotificacion("¡Recurso prohibido!", "No tiene los permisos suficientes para acceder a este recurso", 'error');
+		</script>
+	}
+	@if (!string.IsNullOrEmpty(usuarioNoEncontrado))
+	{
+		<script>
+			mostrarNotificacion("¡No se encontraron usuarios!", "No hay ninguna coincidencia en ningún email con la busqueda introducida", 'info');
+		</script>
+	}
+	@if (!string.IsNullOrEmpty(mensajeRegistroExitoso))
+	{
+		<script>
+			mostrarNotificacion("¡El usuario fue registrado!", "Para usar la cuenta tiene que confirmar su cuenta de correo electrónico.", 'info');
+		</script>
+	}
+	@if (!string.IsNullOrEmpty(noSePuedeEliminar))
+	{
+		<script>
+			mostrarNotificacion("¡Error!", "No se puede eliminar al ultimo usuario con permisos de administrador", 'error');
+		</script>
+	}
+	@if (!string.IsNullOrEmpty(elUsuarioTieneQuedadas))
+	{
+		<script>
+			mostrarNotificacion("¡No se puede eliminar!", "El usuario tiene quedadas pendientes en las que participa y para poder eliminarlo antes debe salir de todas ellas", 'info');
+		</script>
+	}
+	@if (!string.IsNullOrEmpty(eliminacionCorrecta))
+	{
+		<script>
+			mostrarNotificacion("¡Usuario eliminado!", "El usuario ha sido eliminado correctamente", 'success');
+		</script>
+	}
+	@if (!string.IsNullOrEmpty(cuentaNoVerificada))
+	{
+		<script>
+			mostrarNotificacion("¡Email registrado pero sin verificar!", "Para que pueda usar la cuenta, antes debe confirmar su cuenta de correo electrónico", 'error');
+		</script>
+	}
+	@if (!string.IsNullOrEmpty(EdicionCorrecta))
+	{
+		<script>
+			mostrarNotificacion("¡Cambios guardados!", "El usuario ha sido modificado", 'info');
+		</script>
+	}
+	@if (!string.IsNullOrEmpty(noTePuedesEliminar))
+	{
+		<script>
+			mostrarNotificacion("¡No puede eliminarse a sí mismo!", "Debe ser otro administrador quien realice esta acción", 'info');
+		</script>
+	}
+	@if (!string.IsNullOrEmpty(error))
+	{
+		<script>
+			mostrarNotificacion("¡Error!", "Ocurrio un error no esperado, intentelo de nuevo", 'error');
+		</script>
+	}
+
+	<script>
+		function confirmarEliminarPaciente(event) {
+			const idPaciente = event.currentTarget.getAttribute("data-id");
+			window.location.href = 'http://localhost:5187/privada/eliminar/' + idPaciente;
+		}
+		function confirmarEditarPaciente(event) {
+			const idPaciente = event.currentTarget.getAttribute("data-id");
+			window.location.href = 'http://localhost:5187/privada/editar-usuario/' + idPaciente;
+		}
+
+		function confirmarCancelarCita(event) {
+			const idCita = event.currentTarget.getAttribute("data-id");
+			window.location.href = 'http://localhost:5187/privada/cancelar-cita/' + idCita;
+		}
+
+		function confirmarCompletarCita(event) {
+			const idCita = event.currentTarget.getAttribute("data-id");
+			window.location.href = 'http://localhost:5187/privada/completar-cita/' + idCita;
+		}
+
+		function confirmarEditarDoctor(event) {
+			const idDoctor = event.currentTarget.getAttribute("data-id");
+			window.location.href = 'http://localhost:5187/privada/editar-doctor/' + idDoctor;
+		}
+
+		function confirmarEliminarDoctor(event) {
+			const idDoctor = event.currentTarget.getAttribute("data-id");
+			window.location.href = 'http://localhost:5187/privada/eliminar-doctor/' + idDoctor;
+		}
+
+		function confirmarEditarTurno(event) {
+			const idTurno = event.currentTarget.getAttribute("data-id");
+			window.location.href = 'http://localhost:5187/privada/editar-turno/' + idTurno;
+		}
+
+		function confirmarEliminarTurno(event) {
+			const idTurno = event.currentTarget.getAttribute("data-id");
+			window.location.href = 'http://localhost:5187/privada/eliminar-turno/' + idTurno;
+		}
+	</script>
 </div>

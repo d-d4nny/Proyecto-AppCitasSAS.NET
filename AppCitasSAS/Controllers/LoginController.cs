@@ -125,14 +125,5 @@ namespace AppCitasSAS.Controllers
                 return View("~/Views/Home/login.cshtml");
             }
         }
-
-
-        [HttpPost]
-        public IActionResult CerrarSesion()
-        {
-            EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método CerrarSesion() de la clase LoginController");
-            HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
-            return RedirectToAction("Index", "Home");
-        }
     }
 }

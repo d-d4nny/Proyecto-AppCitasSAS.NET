@@ -55,6 +55,36 @@ namespace AppCitasSAS.Servicios.Implementaciones
         }
 
 
+        public void actualizarTurno(ConsultaTurnoDTO turnoModificado)
+        {
+            try
+            {
+                EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método actualizarTurno() de la clase ImplConsultaTurnoServicio");
+
+                ConsultasTurno? turnoActual = _contexto.ConsultasTurnos.Find(turnoModificado.IdConsultaTurno);
+
+                if (turnoActual != null)
+                {
+                    turnoActual.NumConsulta = turnoModificado.NumConsulta;
+                    turnoActual.TramoHoraTurnoInicio = turnoModificado.TramoHoraTurnoInicio;
+                    turnoActual.TramoHoraTurnoFin = turnoModificado.TramoHoraTurnoFin;
+
+                    _contexto.ConsultasTurnos.Update(turnoActual);
+                    _contexto.SaveChanges();
+                    EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método actualizarTurno() de la clase ImplConsultaTurnoServicio. Turno actualizado OK");
+                }
+                else
+                {
+                    EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método actualizarTurno() de la clase ImplConsultaTurnoServicio. Turno no encontrado");
+                }
+            }
+            catch (DbUpdateException dbe)
+            {
+                EscribirLog.escribirEnFicheroLog("[Error ImplDoctorServicio - actualizarDoctor()] Error de persistencia al modificar el turno " + dbe.Message);
+            }
+        }
+
+
         public ConsultaTurnoDTO buscarPorId(long id)
         {
             try

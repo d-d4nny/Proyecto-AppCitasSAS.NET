@@ -73,28 +73,3 @@ function confirmar(mensaje) {
         return result.isConfirmed;
     });
 }
-
-function confirmarEliminarMoto(event) {
-    const idMoto = event.currentTarget.getAttribute("data-id");
-    confirmar("eliminar la moto").then(function (confirmado) {
-        if (confirmado) {
-            window.location.href = 'https://localhost:7142/privada/eliminar-moto/' + idMoto;
-        }
-    });
-}
-function confirmarCancelarQuedada(event) {
-    const idQuedada = event.currentTarget.getAttribute("data-id");
-    confirmar("cancelar la quedada").then(function (confirmado) {
-        if (confirmado) {
-            window.location.href = 'https://localhost:7142/privada/quedadas/detalle-quedada/cancelar-quedada/' + idQuedada;
-        }
-    });
-}
-function confirmarEliminar(event) {
-    const idUsuario = event.currentTarget.getAttribute("data-id");
-    confirmar("eliminar el usuario").then(function (confirmado) {
-        if (confirmado) {
-            window.location.href = 'https://localhost:7142/privada/eliminar-usuario/' + idUsuario;
-        }
-    });
-}

@@ -7,8 +7,9 @@ namespace AppCitasSAS.Servicios.Interfaces
     {
         public DoctoresDTO registrar(DoctoresDTO doctoresDTO);
 
+		public void actualizarDoctor(DoctoresDTO doctorModificado);
 
-        public DoctoresDTO buscarPorId(long id);
+		public DoctoresDTO buscarPorId(long id);
 
 
         public List<DoctoresDTO> buscarTodos();

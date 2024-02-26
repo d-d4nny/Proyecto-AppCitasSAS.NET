@@ -7,6 +7,7 @@ namespace AppCitasSAS.Servicios.Interfaces
     {
         public ConsultaTurnoDTO registrar(ConsultaTurnoDTO consultaTurnoDTO);
 
+        public void actualizarTurno(ConsultaTurnoDTO turnoModificado);
 
         public ConsultaTurnoDTO buscarPorId(long id);
 

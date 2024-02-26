@@ -30,8 +30,24 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxjcmVhckNpdGEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/DaniT/Desktop/AppCitasSAS.net/Proyecto-AppCitasSAS.NET/AppCitasSAS/Views/Home/crearDoctor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxjcmVhckRvY3Rvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DaniT/Desktop/AppCitasSAS.net/Proyecto-AppCitasSAS.NET/AppCitasSAS/Views/Home/crearTurno.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxjcmVhclR1cm5vLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DaniT/Desktop/AppCitasSAS.net/Proyecto-AppCitasSAS.NET/AppCitasSAS/Views/Home/editarDoctor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxlZGl0YXJEb2N0b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/DaniT/Desktop/AppCitasSAS.net/Proyecto-AppCitasSAS.NET/AppCitasSAS/Views/Home/editarPaciente.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxlZGl0YXJQYWNpZW50ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DaniT/Desktop/AppCitasSAS.net/Proyecto-AppCitasSAS.NET/AppCitasSAS/Views/Home/editarTurno.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxlZGl0YXJUdXJuby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/DaniT/Desktop/AppCitasSAS.net/Proyecto-AppCitasSAS.NET/AppCitasSAS/Views/Home/homeEmpleado.cshtml]
@@ -40,10 +56,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/DaniT/Desktop/AppCitasSAS.net/Proyecto-AppCitasSAS.NET/AppCitasSAS/Views/Home/homePaciente.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxob21lUGFjaWVudGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/DaniT/Desktop/AppCitasSAS.net/Proyecto-AppCitasSAS.NET/AppCitasSAS/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/DaniT/Desktop/AppCitasSAS.net/Proyecto-AppCitasSAS.NET/AppCitasSAS/Views/Home/login.cshtml]

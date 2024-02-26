@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/style.css" asp-append-version="true"/>
     <link rel="stylesheet" href="~/css/menu.css" asp-append-version="true" />
+    <script src="~/js/script.js" asp - append - version="true" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
 </head>
 <body>
     <header>
@@ -30,11 +33,43 @@
                     <ul class="navbar-nav flex-grow-1">
                         @if (currentController == "Home" && currentAction == "Index")
                         {
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <li class="nav-item me-3">
+                                <a class="nav-link fw-bold" href="/auth/login">
+                                    <i class="bi bi-box-arrow-in-right fs-5"> Iniciar sesión</i>
+                                </a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <li class="nav-item me-3">
+                                <a class="nav-link fw-bold" href="/auth/registrar">
+                                    <i class="bi bi-person-add fs-5"> Crear cuenta</i>
+                                </a>
+                            </li>
+                        }
+                        @if (currentController == "Login" && currentAction == "InicioSesion")
+                        {
+                            <li class="nav-item me-3">
+                                <a class="nav-link fw-bold" href="/auth/registrar">
+                                    <i class="bi bi-person-add fs-5"> Crear cuenta</i>
+                                </a>
+                            </li>                           
+                        }
+                        @if ((currentController == "Paciente" && currentAction == "RegistrarGet")
+                        ||
+                        (currentController == "RecuperarPasswordController" && currentAction == "MostrarVistaIniciarRecuperacion"))
+                        {
+                            <li class="nav-item me-3">
+                                <a class="nav-link fw-bold" href="/auth/login">
+                                    <i class="bi bi-box-arrow-in-right fs-5">Iniciar sesión</i>
+                                </a>
+                            </li>
+                        }
+                        @if ((currentController == "Turnos" && currentAction == "MostrarFormNuevoTurno" || currentAction == "MostrarFormularioEdicionTurno")                    
+                        ||
+                        (currentController == "Doctores" && currentAction == "MostrarFormNuevoDoctor" || currentAction == "MostrarFormularioEdicionDoctor"))
+                        {
+                            <li class="nav-item me-3">
+                                <a class="nav-link fw-bold" href="/privada/Administracion">
+                                    <i class="bi bi-house fs-5">Volver</i>
+                                </a>
                             </li>
                         }
                     </ul>
@@ -47,16 +82,14 @@
             @RenderBody()
         </main>
     </div>
-
+    <br /><br />
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2024 - AppCitasSAS - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2024 - AppCitasSAS
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    <script src="~/js/script.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

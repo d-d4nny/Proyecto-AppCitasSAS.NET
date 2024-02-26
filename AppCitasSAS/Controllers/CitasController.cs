@@ -86,15 +86,15 @@ namespace AppCitasSAS.Controllers
 		[Authorize]
 		[HttpGet]
 		[Route("/privada/eliminar-cita/{id}")]
-		public IActionResult eliminarCita(long idCita)
+		public IActionResult eliminarCita(long id)
         {
 
-            CitasDTO cita = _citaServicio.buscarPorId(idCita);
+            CitasDTO cita = _citaServicio.buscarPorId(id);
 
 
             if (cita != null)
             {
-                _citaServicio.eliminar(idCita);
+                _citaServicio.eliminar(id);
                 List<CitasDTO> citas = _citaServicio.ObtenerCitasDePaciente(cita.IdPacienteDTO);
                 if (citas != null && citas.Count > 0)
                 {
@@ -102,10 +102,51 @@ namespace AppCitasSAS.Controllers
 				}
                 ViewData["eliminacionCorrecta"] = "La cita se ha eliminado correctamente";
             }
-            EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método EliminarMoto() de la clase MisMotosController. " + ViewData["eliminacionCorrecta"]);
+            EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método eliminarCita() de la clase CitasController. " + ViewData["eliminacionCorrecta"]);
             return RedirectToAction("HomeUser", "Paciente");
         }
 
+		[Authorize]
+		[HttpGet]
+		[Route("/privada/cancelar-cita/{id}")]
+		public IActionResult cancelarCita(long id)
+		{
 
+			CitasDTO cita = _citaServicio.buscarPorId(id);
+
+
+			if (cita != null)
+			{
+				_citaServicio.cancelarCita(id);
+
+				ViewBag.Citas = _citaServicio.buscarTodos();
+
+				ViewData["eliminacionCorrecta"] = "La cita se ha cancelado correctamente";
+			}
+
+			EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método cancelarCita() de la clase CitasController. " + ViewData["eliminacionCorrecta"]);
+			return RedirectToAction("HomeEmpleado", "Paciente");
+		}
+
+		[Authorize]
+		[HttpGet]
+		[Route("/privada/completar-cita/{id}")]
+		public IActionResult completarCita(long id)
+		{
+
+			CitasDTO cita = _citaServicio.buscarPorId(id);
+
+
+			if (cita != null)
+			{
+				_citaServicio.completarCita(id);
+				
+				ViewBag.Cita = _citaServicio.buscarTodos();
+
+				ViewData["eliminacionCorrecta"] = "La cita se ha completado correctamente";
+			}
+			EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método completarCita() de la clase CitasController. " + ViewData["completar Correcta"]);
+			return RedirectToAction("HomeEmpleado", "Paciente");
+		}
 	}
 }

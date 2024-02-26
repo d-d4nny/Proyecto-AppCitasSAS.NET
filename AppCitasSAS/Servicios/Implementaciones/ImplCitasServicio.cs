@@ -120,12 +120,12 @@ namespace AppCitasSAS.Servicios.Implementaciones
                     _contexto.SaveChanges();
                     EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método eliminar() de la clase ImplCitasServicio. cita eliminada correctamente.");
                 }
-            }
+                  }
             catch (DbUpdateException dbe)
             {
                 EscribirLog.escribirEnFicheroLog($"[Error ImplCitasServicio - eliminar()] Error de persistencia al eliminar una cita por su id: {dbe.Message}");
             }
-        }
+          }
 
         public void cancelarCita(long idCita)
         {
@@ -133,7 +133,7 @@ namespace AppCitasSAS.Servicios.Implementaciones
             {
                 EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método cancelarCita() de la clase ImplCitasServicio");
 
-                Cita cita = _contexto.Citas.Find(idCita);
+                Cita? cita = _contexto.Citas.Find(idCita);
 
                 if (cita != null)
                 {
