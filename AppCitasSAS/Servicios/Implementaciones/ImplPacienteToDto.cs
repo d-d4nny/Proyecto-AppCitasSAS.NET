@@ -7,6 +7,11 @@ namespace AppCitasSAS.Servicios.Implementaciones
 {
     public class ImplPacienteToDto : IntfPacienteToDto
     {
+        /// <summary>
+        /// Convierte un objeto Paciente a un objeto PacienteDTO.
+        /// </summary>
+        /// <param name="u">Objeto Paciente a convertir.</param>
+        /// <returns>Objeto PacienteDTO convertido.</returns>
         public PacienteDTO pacienteToDto(Paciente u)
         {
             try
@@ -31,8 +36,7 @@ namespace AppCitasSAS.Servicios.Implementaciones
                     dto.ProfilePicture = u.ProfilePicture;
                 }
 
-
-                EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método usuarioToDto() de la clase ConvertirAdtoImpl");
+                EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto");
                 return dto;
             }
             catch (Exception e)
@@ -41,18 +45,23 @@ namespace AppCitasSAS.Servicios.Implementaciones
                 return null;
             }
         }
-           
+
+        /// <summary>
+        /// Convierte una lista de objetos Paciente a una lista de objetos PacienteDTO.
+        /// </summary>
+        /// <param name="listaPaciente">Lista de Paciente a convertir.</param>
+        /// <returns>Lista de PacienteDTO convertida.</returns>
         public List<PacienteDTO> listPacienteToDto(List<Paciente> listaPaciente)
         {
             try
             {
-                EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método listaPacienteToDto() de la clase ImplPacienteToDto");
+                EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método listPacienteToDto() de la clase ImplPacienteToDto");
                 List<PacienteDTO> listaDto = new List<PacienteDTO>();
                 foreach (Paciente u in listaPaciente)
                 {
                     listaDto.Add(pacienteToDto(u));
                 }
-                EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método listaPacienteToDto() de la clase ImplPacienteToDto");
+                EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método listPacienteToDto() de la clase ImplPacienteToDto");
                 return listaDto;
             }
             catch (Exception e)

@@ -2,12 +2,17 @@
 using AppCitasSAS.Servicios.Interfaces;
 using AppCitasSAS.Utils;
 using DAL.Entidades;
+using System;
+using System.Collections.Generic;
 
 namespace AppCitasSAS.Servicios.Implementaciones
 {
     public class ImplCitasToDao : IntfCitasToDao
     {
-        public Cita citasToDao (CitasDTO citaDTO)
+        // Método para convertir un objeto CitasDTO a un objeto Cita (DAO)
+        /// <param name="citaDTO">DTO de la cita a convertir</param>
+        /// <returns>Objeto Cita (DAO) resultante de la conversión</returns>
+        public Cita citasToDao(CitasDTO citaDTO)
         {
             try
             {
@@ -15,8 +20,9 @@ namespace AppCitasSAS.Servicios.Implementaciones
 
                 Cita cita = new Cita();
 
+                // Configuración de la entidad Cita a partir del DTO
                 cita.IdCita = citaDTO.IdCita;
-                cita.FechaCita = citaDTO.FechaCita; 
+                cita.FechaCita = citaDTO.FechaCita;
                 cita.HoraCita = citaDTO.HoraCita;
                 cita.MotivoCita = citaDTO.MotivoCita;
                 cita.EstadoCita = citaDTO.EstadoCita;
@@ -34,7 +40,10 @@ namespace AppCitasSAS.Servicios.Implementaciones
             return null;
         }
 
-        public List<Cita> listCitasToDao(List<CitasDTO> listaCitasDTO) 
+        // Método para convertir una lista de objetos CitasDTO a una lista de objetos Cita (DAO)
+        /// <param name="listaCitasDTO">Lista de DTOs de citas a convertir</param>
+        /// <returns>Lista de objetos Cita (DAO) resultante de la conversión</returns>
+        public List<Cita> listCitasToDao(List<CitasDTO> listaCitasDTO)
         {
             try
             {

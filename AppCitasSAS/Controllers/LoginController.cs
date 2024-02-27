@@ -9,50 +9,69 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace AppCitasSAS.Controllers
 {
+    /// <summary>
+    /// Controlador para la gestión de las acciones relacionadas con el inicio de sesión y confirmación de cuentas.
+    /// </summary>
     public class LoginController : Controller
     {
         private readonly IntfPacienteServicio _pacienteServicio;
 
+        /// <summary>
+        /// Constructor que inicializa el controlador con el servicio de pacientes.
+        /// </summary>
+        /// <param name="pacienteServicio">Servicio de pacientes.</param>
         public LoginController(IntfPacienteServicio pacienteServicio)
         {
             _pacienteServicio = pacienteServicio;
         }
 
+        /// <summary>
+        /// Muestra la vista de inicio de sesión.
+        /// </summary>
+        /// <returns>Vista de inicio de sesión.</returns>
         [HttpGet]
         [Route("/auth/login")]
         public IActionResult InicioSesion()
         {
-            EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método Login() de la clase LoginController");
             try
             {
-                PacienteDTO pacienteDTO = new PacienteDTO();
-                return View("~/Views/Home/login.cshtml", pacienteDTO);
+                EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método InicioSesion() de la clase LoginController");
 
+                // Crear un nuevo objeto PacienteDTO.
+                PacienteDTO pacienteDTO = new PacienteDTO();
+
+                EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método InicioSesion() de la clase LoginController");
+
+                return View("~/Views/Home/login.cshtml", pacienteDTO);
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
+                // Manejar excepciones y registrar en el log.
+                EscribirLog.escribirEnFicheroLog("[ERROR] Se lanzó una excepción en el método InicioSesion() de la clase LoginController: " + ex.Message + ex.StackTrace);
                 ViewData["error"] = "Error al procesar la solicitud. Por favor, inténtelo de nuevo.";
-                EscribirLog.escribirEnFicheroLog("[ERROR] Se lanzó una excepción en el método Login() de la clase LoginController: " + e.Message + e.StackTrace);
                 return View("~/Views/Home/login.cshtml");
             }
         }
 
-
+        /// <summary>
+        /// Procesa el inicio de sesión del paciente.
+        /// </summary>
+        /// <param name="pacienteDTO">Datos del paciente para iniciar sesión.</param>
+        /// <returns>Redirección a la página principal del paciente.</returns>
         [HttpPost]
         [Route("/auth/iniciar-sesion")]
         public IActionResult ProcesarInicioSesion(PacienteDTO pacienteDTO)
         {
             try
             {
+                EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método ProcesarInicioSesion() de la clase LoginController");
+
                 bool credencialesValidas = _pacienteServicio.verificarCredenciales(pacienteDTO.EmailPaciente, pacienteDTO.ContrasenaPaciente);
 
                 if (credencialesValidas)
                 {
                     PacienteDTO u = _pacienteServicio.buscarPorEmail(pacienteDTO.EmailPaciente);
 
-                    // Al hacer login correctamente se crea una identidad de reclamaciones (claims identity) con información del usuario 
-                    // y su rol, de esta manera se controla que solo los admin puedan acceder a la administracion de usuarios
-                    // y se mantiene esa info del usuario autenticado durante toda la sesión en una cookie.
                     var claims = new List<Claim>
                     {
                         new Claim(ClaimTypes.Name, pacienteDTO.EmailPaciente),
@@ -61,9 +80,7 @@ namespace AppCitasSAS.Controllers
                     {
                         claims.Add(new Claim(ClaimTypes.Role, u.RolPaciente));
                     }
-
                     var identidadDeReclamaciones = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-
 
                     EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController");
 
@@ -85,15 +102,19 @@ namespace AppCitasSAS.Controllers
                     return View("~/Views/Home/login.cshtml");
                 }
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
+                EscribirLog.escribirEnFicheroLog("[ERROR] Se lanzó una excepción en el método ProcesarInicioSesion() de la clase LoginController: " + ex.Message + ex.StackTrace);
                 ViewData["error"] = "Error al procesar la solicitud. Por favor, inténtelo de nuevo.";
-                EscribirLog.escribirEnFicheroLog("[ERROR] Se lanzó una excepción en el método ProcesarInicioSesion() de la clase LoginController: " + e.Message + e.StackTrace);
                 return View("~/Views/Home/login.cshtml");
             }
         }
 
-
+        /// <summary>
+        /// Confirma la cuenta del paciente mediante un token.
+        /// </summary>
+        /// <param name="token">Token de confirmación de la cuenta.</param>
+        /// <returns>Vista con el resultado de la confirmación.</returns>
         [HttpGet]
         [Route("/auth/confirmar-cuenta")]
         public IActionResult ConfirmarCuenta([FromQuery] string token)
@@ -116,12 +137,13 @@ namespace AppCitasSAS.Controllers
                 EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método ConfirmarCuenta() de la clase LoginController" +
                     (ViewData["CuentaVerificada"] != null ? ". " + ViewData["CuentaVerificada"] :
                     (ViewData["yaEstabaVerificada"] != null ? ". " + ViewData["yaEstabaVerificada"] : "")));
+
                 return View("~/Views/Home/login.cshtml");
             }
-            catch (Exception e)
+            catch (Exception ex)
             {
+                EscribirLog.escribirEnFicheroLog("[ERROR] Se lanzó una excepción en el método ConfirmarCuenta() de la clase LoginController: " + ex.Message + ex.StackTrace);
                 ViewData["error"] = "Error al procesar la solicitud. Por favor, inténtelo de nuevo.";
-                EscribirLog.escribirEnFicheroLog("[ERROR] Se lanzó una excepción en el método ConfirmarCuenta() de la clase LoginController: " + e.Message + e.StackTrace);
                 return View("~/Views/Home/login.cshtml");
             }
         }

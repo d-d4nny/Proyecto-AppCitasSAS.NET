@@ -3,6 +3,8 @@ using AppCitasSAS.Servicios.Interfaces;
 using AppCitasSAS.Utils;
 using DAL.Entidades;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
 
 namespace AppCitasSAS.Servicios.Implementaciones
 {
@@ -19,12 +21,16 @@ namespace AppCitasSAS.Servicios.Implementaciones
             _toDto = toDto;
         }
 
+        // Método para registrar una nueva consulta de turno
+        /// <param name="consultaTurnoDTO">DTO de la consulta de turno a registrar</param>
+        /// <returns>DTO de la consulta de turno registrada</returns>
         public ConsultaTurnoDTO registrar(ConsultaTurnoDTO consultaTurnoDTO)
         {
             try
             {
                 EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método registrar() de la clase ImplConsultaTurnoServicio");
 
+                // Verificar si la consulta de turno ya existe
                 var turnoExiste = _contexto.ConsultasTurnos.FirstOrDefault(u => u.IdConsultaTurno == consultaTurnoDTO.IdConsultaTurno);
 
                 if (turnoExiste != null)
@@ -33,6 +39,7 @@ namespace AppCitasSAS.Servicios.Implementaciones
                     return consultaTurnoDTO;
                 }
 
+                // Crear la entidad ConsultasTurno a partir del DTO
                 ConsultasTurno turnoDao = _toDao.consultaTurnoToDao(consultaTurnoDTO);
                 _contexto.ConsultasTurnos.Add(turnoDao);
                 _contexto.SaveChanges();
@@ -40,7 +47,6 @@ namespace AppCitasSAS.Servicios.Implementaciones
                 EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método registrar() de la clase ImplConsultaTurnoServicio");
 
                 return consultaTurnoDTO;
-
             }
             catch (DbUpdateException dbe)
             {
@@ -54,17 +60,20 @@ namespace AppCitasSAS.Servicios.Implementaciones
             }
         }
 
-
+        // Método para actualizar una consulta de turno existente
+        /// <param name="turnoModificado">DTO del turno modificado</param>
         public void actualizarTurno(ConsultaTurnoDTO turnoModificado)
         {
             try
             {
                 EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método actualizarTurno() de la clase ImplConsultaTurnoServicio");
 
+                // Obtener la consulta de turno actual
                 ConsultasTurno? turnoActual = _contexto.ConsultasTurnos.Find(turnoModificado.IdConsultaTurno);
 
                 if (turnoActual != null)
                 {
+                    // Actualizar los campos de la consulta de turno
                     turnoActual.NumConsulta = turnoModificado.NumConsulta;
                     turnoActual.TramoHoraTurnoInicio = turnoModificado.TramoHoraTurnoInicio;
                     turnoActual.TramoHoraTurnoFin = turnoModificado.TramoHoraTurnoFin;
@@ -84,13 +93,16 @@ namespace AppCitasSAS.Servicios.Implementaciones
             }
         }
 
-
+        // Método para buscar una consulta de turno por su ID
+        /// <param name="id">ID de la consulta de turno a buscar</param>
+        /// <returns>DTO de la consulta de turno encontrada</returns>
         public ConsultaTurnoDTO buscarPorId(long id)
         {
             try
             {
                 EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método buscarPorId() de la clase ImplConsultaTurnoServicio");
 
+                // Buscar la consulta de turno por su ID
                 ConsultasTurno? turno = _contexto.ConsultasTurnos.Find(id);
                 if (turno != null)
                 {
@@ -103,10 +115,10 @@ namespace AppCitasSAS.Servicios.Implementaciones
                 EscribirLog.escribirEnFicheroLog($"[ERROR ImplConsultaTurnoServicio - buscarPorId()] - Al buscar un turno por su id: {e}");
             }
             return null;
-
         }
 
-
+        // Método para obtener todas las consultas de turno
+        /// <returns>Lista de DTOs de todas las consultas de turno</returns>
         public List<ConsultaTurnoDTO> buscarTodos()
         {
             EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método obtenerTodos() de la clase ImplConsultaTurnoServicio");
@@ -114,13 +126,15 @@ namespace AppCitasSAS.Servicios.Implementaciones
             return _toDto.listConsultaTurnoToDto(_contexto.ConsultasTurnos.ToList());
         }
 
-
+        // Método para eliminar una consulta de turno por su ID
+        /// <param name="id">ID de la consulta de turno a eliminar</param>
         public void eliminar(long id)
         {
             try
             {
                 EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método eliminar() de la clase ImplConsultaTurnoServicio");
 
+                // Buscar la consulta de turno por su ID y eliminarla
                 ConsultasTurno? turno = _contexto.ConsultasTurnos.Find(id);
                 if (turno != null)
                 {

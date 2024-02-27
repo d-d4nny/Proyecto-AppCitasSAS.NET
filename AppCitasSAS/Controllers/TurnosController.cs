@@ -3,22 +3,36 @@ using AppCitasSAS.Servicios.Interfaces;
 using AppCitasSAS.Utils;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace AppCitasSAS.Controllers
 {
+    /// <summary>
+    /// Controlador para gestionar los turnos de consulta.
+    /// </summary>
     public class TurnosController : Controller
     {
         private readonly IntfConsultaTurnoServicio _turnoServicio;
         private readonly IntfConsultaTurnoToDao _turnoToDao;
         private readonly IntfConsultaTurnoToDto _turnoToDto;
 
-        public TurnosController (IntfConsultaTurnoServicio turnoServicio, IntfConsultaTurnoToDao turnoToDao, IntfConsultaTurnoToDto turnoToDto)
+        /// <summary>
+        /// Constructor del controlador TurnosController.
+        /// </summary>
+        /// <param name="turnoServicio">Servicio para la gestión de turnos de consulta.</param>
+        /// <param name="turnoToDao">Transformador de DTO a DAO para turnos de consulta.</param>
+        /// <param name="turnoToDto">Transformador de DAO a DTO para turnos de consulta.</param>
+        public TurnosController(IntfConsultaTurnoServicio turnoServicio, IntfConsultaTurnoToDao turnoToDao, IntfConsultaTurnoToDto turnoToDto)
         {
             _turnoServicio = turnoServicio;
             _turnoToDao = turnoToDao;
             _turnoToDto = turnoToDto;
         }
 
+        /// <summary>
+        /// Muestra el formulario para crear un nuevo turno de consulta.
+        /// </summary>
+        /// <returns>Vista del formulario de creación de turno.</returns>
         [Authorize]
         [HttpGet]
         [Route("/privada/crear-turno")]
@@ -41,6 +55,11 @@ namespace AppCitasSAS.Controllers
             }
         }
 
+        /// <summary>
+        /// Procesa el formulario para registrar un nuevo turno de consulta.
+        /// </summary>
+        /// <param name="consultaTurnoDTO">Datos del turno de consulta a registrar.</param>
+        /// <returns>Redirecciona a la página principal del empleado después de registrar el turno.</returns>
         [Authorize]
         [HttpPost]
         [Route("/privada/crear-turno")]
@@ -48,7 +67,6 @@ namespace AppCitasSAS.Controllers
         {
             try
             {
-
                 EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método RegistrarTurnoPost() de la clase TurnosController");
 
                 _turnoServicio.registrar(consultaTurnoDTO);
@@ -63,7 +81,11 @@ namespace AppCitasSAS.Controllers
             }
         }
 
-
+        /// <summary>
+        /// Muestra el formulario para editar un turno de consulta.
+        /// </summary>
+        /// <param name="id">Identificador único del turno de consulta a editar.</param>
+        /// <returns>Vista del formulario de edición de turno.</returns>
         [Authorize]
         [HttpGet]
         [Route("/privada/editar-turno/{id}")]
@@ -91,6 +113,14 @@ namespace AppCitasSAS.Controllers
             }
         }
 
+        /// <summary>
+        /// Procesa el formulario para editar un turno de consulta.
+        /// </summary>
+        /// <param name="id">Identificador único del turno de consulta a editar.</param>
+        /// <param name="numConsulta">Número de la consulta asociada al turno.</param>
+        /// <param name="tramoInicio">Hora de inicio del tramo del turno.</param>
+        /// <param name="tramoFin">Hora de fin del tramo del turno.</param>
+        /// <returns>Redirecciona a la página principal del empleado después de editar el turno.</returns>
         [Authorize]
         [HttpPost]
         [Route("/privada/procesar-editarTurno")]
@@ -104,7 +134,6 @@ namespace AppCitasSAS.Controllers
                 turno.NumConsulta = numConsulta;
                 turno.TramoHoraTurnoInicio = tramoInicio;
                 turno.TramoHoraTurnoFin = tramoFin;
-
 
                 _turnoServicio.actualizarTurno(turno);
 
@@ -122,26 +151,38 @@ namespace AppCitasSAS.Controllers
             }
         }
 
-
-
+        /// <summary>
+        /// Elimina un turno de consulta.
+        /// </summary>
+        /// <param name="id">Identificador único del turno de consulta a eliminar.</param>
+        /// <returns>Redirecciona a la página principal del empleado después de eliminar el turno.</returns>
         [Authorize]
         [HttpGet]
         [Route("/privada/eliminar-turno/{id}")]
-        public IActionResult eliminarTurno(long id)
+        public IActionResult EliminarTurno(long id)
         {
-
-            ConsultaTurnoDTO turno = _turnoServicio.buscarPorId(id);
-
-
-            if (turno != null)
+            try
             {
-                _turnoServicio.eliminar(id);
-                ViewBag.Turnos = turno;
+                EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método EliminarTurno() de la clase TurnosController");
 
-                ViewData["eliminacionCorrecta"] = "El turno se ha eliminado correctamente";
+                ConsultaTurnoDTO turno = _turnoServicio.buscarPorId(id);
+
+                if (turno != null)
+                {
+                    _turnoServicio.eliminar(id);
+                    ViewBag.Turnos = turno;
+
+                    ViewData["eliminacionCorrecta"] = "El turno se ha eliminado correctamente";
+                }
+                EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método EliminarTurno() de la clase DoctoresController. " + ViewData["eliminacionCorrecta"]);
+                return RedirectToAction("HomeEmpleado", "Paciente");
             }
-            EscribirLog.escribirEnFicheroLog("[INFO] Saliendo del método eliminarTurno() de la clase DoctoresController. " + ViewData["eliminacionCorrecta"]);
-            return RedirectToAction("HomeEmpleado", "Paciente");
+            catch (Exception e)
+            {
+                ViewData["Error"] = "Ocurrió un error al eliminar el turno";
+                EscribirLog.escribirEnFicheroLog("[ERROR] Se lanzó una excepción en el método EliminarTurno() de la clase TurnosController: " + e.Message + e.StackTrace);
+                return View("~/Views/Home/homeEmpleado.cshtml");
+            }
         }
     }
 }

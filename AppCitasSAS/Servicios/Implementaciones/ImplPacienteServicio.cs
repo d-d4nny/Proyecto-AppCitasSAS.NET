@@ -4,6 +4,8 @@ using AppCitasSAS.Utils;
 using DAL.Entidades;
 using Microsoft.EntityFrameworkCore;
 using NuGet.Protocol.Core.Types;
+using System;
+using System.Collections.Generic;
 using System.Security.Cryptography;
 
 namespace AppCitasSAS.Servicios.Implementaciones
@@ -25,12 +27,18 @@ namespace AppCitasSAS.Servicios.Implementaciones
             _servicioEmail = servicioEmail;
         }
 
+        /// <summary>
+        /// Registra un nuevo paciente en el sistema.
+        /// </summary>
+        /// <param name="pacienteDTO">Datos del paciente a registrar.</param>
+        /// <returns>Objeto PacienteDTO que representa al paciente registrado.</returns>
         public PacienteDTO registrar(PacienteDTO pacienteDTO)
         {
             try
             {
                 EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método registrarPaciente() de la clase PacienteServicioImpl");
 
+                // Verifica si hay un paciente existente con el mismo email sin confirmar
                 var pacienteExistente = _contexto.Pacientes.FirstOrDefault(u => u.EmailPaciente == pacienteDTO.EmailPaciente && !u.CuentaConfirmada);
 
                 if (pacienteExistente != null)
@@ -40,6 +48,7 @@ namespace AppCitasSAS.Servicios.Implementaciones
                     return pacienteDTO;
                 }
 
+                // Verifica si hay un paciente existente con el mismo email confirmado
                 var emailExistente = _contexto.Pacientes.FirstOrDefault(u => u.EmailPaciente == pacienteDTO.EmailPaciente && u.CuentaConfirmada);
 
                 if (emailExistente != null)
@@ -49,15 +58,17 @@ namespace AppCitasSAS.Servicios.Implementaciones
                     return pacienteDTO;
                 }
 
+                // Encripta la contraseña y crea el objeto paciente para persistir en la base de datos
                 pacienteDTO.ContrasenaPaciente = _servicioEncriptar.Encriptar(pacienteDTO.ContrasenaPaciente);
                 Paciente pacienteDao = _convertirAdao.pacienteToDao(pacienteDTO);
-                pacienteDao.RolPaciente = "ROLE_USER";
                 string token = generarToken();
                 pacienteDao.TokenRecuperacion = token;
 
+                // Persiste el paciente en la base de datos
                 _contexto.Pacientes.Add(pacienteDao);
                 _contexto.SaveChanges();
 
+                // Envia el correo de confirmación
                 string nombreUsuario = pacienteDao.NombreCompletoPaciente;
                 _servicioEmail.enviarEmailConfirmacion(pacienteDTO.EmailPaciente, nombreUsuario, token);
 
@@ -67,18 +78,24 @@ namespace AppCitasSAS.Servicios.Implementaciones
             }
             catch (DbUpdateException dbe)
             {
+                // Manejo de excepciones específicas de la base de datos
                 EscribirLog.escribirEnFicheroLog("[Error PacienteServicioImpl - registrarPaciente()] Error de persistencia al actualizar la bbdd: " + dbe.Message);
                 return null;
             }
             catch (Exception e)
             {
+                // Manejo de excepciones generales
                 EscribirLog.escribirEnFicheroLog("[Error PacienteServicioImpl - registrarPaciente()] Error al registrar un usuario: " + e.Message);
                 return null;
             }
-
-
         }
 
+        // Métodos privados
+
+        /// <summary>
+        /// Genera un token aleatorio.
+        /// </summary>
+        /// <returns>Token generado.</returns>
         private string generarToken()
         {
             try
@@ -97,13 +114,19 @@ namespace AppCitasSAS.Servicios.Implementaciones
             }
             catch (ArgumentException ae)
             {
+                // Manejo de excepciones específicas del método generarToken
                 EscribirLog.escribirEnFicheroLog("[Error PacienteServicioImpl -  generarToken()] Error al generar un token de usuario " + ae.Message);
                 return null;
             }
-
         }
 
 
+
+        /// <summary>
+        /// Confirma la cuenta de un usuario utilizando el token proporcionado.
+        /// </summary>
+        /// <param name="token">Token de confirmación.</param>
+        /// <returns>True si la cuenta se confirmó correctamente, False en caso contrario.</returns>
         public bool confirmarCuenta(string token)
         {
             try
@@ -131,17 +154,23 @@ namespace AppCitasSAS.Servicios.Implementaciones
             }
             catch (ArgumentException ae)
             {
+                // Manejo de excepciones específicas de confirmarCuenta
                 EscribirLog.escribirEnFicheroLog("[Error PacienteServicioImpl - confirmarCuenta()] Error al confirmar la cuenta " + ae.Message);
                 return false;
             }
             catch (Exception e)
             {
+                // Manejo de excepciones generales
                 EscribirLog.escribirEnFicheroLog("[Error PacienteServicioImpl - confirmarCuenta()] Error al confirmar la cuenta " + e.Message);
                 return false;
             }
         }
 
-
+        /// <summary>
+        /// Inicia el proceso de recuperación de contraseña para un usuario.
+        /// </summary>
+        /// <param name="emailUsuario">Email del usuario.</param>
+        /// <returns>True si el proceso se inició correctamente, False en caso contrario.</returns>
         public bool iniciarProcesoRecuperacion(string emailUsuario)
         {
             try
@@ -180,16 +209,23 @@ namespace AppCitasSAS.Servicios.Implementaciones
             }
             catch (DbUpdateException dbe)
             {
+                // Manejo de excepciones específicas de la base de datos
                 Console.WriteLine("[Error PacienteServicioImpl - iniciarProcesoRecuperacion()] Error de persistencia al actualizar la bbdd: " + dbe.Message);
                 return false;
             }
             catch (Exception ex)
             {
+                // Manejo de excepciones generales
                 Console.WriteLine("[Error PacienteServicioImpl - iniciarProcesoRecuperacion()] Error al iniciar el proceso de recuperación: " + ex.Message);
                 return false;
             }
         }
 
+        /// <summary>
+        /// Obtiene un paciente por su token de recuperación.
+        /// </summary>
+        /// <param name="token">Token de recuperación del paciente.</param>
+        /// <returns>Objeto PacienteDTO que representa al paciente encontrado, o null si no se encuentra.</returns>
         public PacienteDTO obtenerPacientePorToken(string token)
         {
             try
@@ -212,11 +248,17 @@ namespace AppCitasSAS.Servicios.Implementaciones
             }
             catch (ArgumentNullException e)
             {
+                // Manejo de excepciones específicas del método obtenerPacientePorToken
                 EscribirLog.escribirEnFicheroLog("[Error PacienteServicioImpl - obtenerPacientePorToken()] Error al obtener usuario por token " + e.Message);
                 return null;
             }
         }
 
+        /// <summary>
+        /// Modifica la contraseña de un paciente utilizando el token de recuperación.
+        /// </summary>
+        /// <param name="paciente">Datos del paciente con nueva contraseña y token.</param>
+        /// <returns>True si la modificación fue exitosa, False en caso contrario.</returns>
         public bool modificarContraseñaConToken(PacienteDTO paciente)
         {
             try
@@ -239,16 +281,24 @@ namespace AppCitasSAS.Servicios.Implementaciones
             }
             catch (DbUpdateException dbe)
             {
+                // Manejo de excepciones específicas de la base de datos
                 EscribirLog.escribirEnFicheroLog("[Error PacienteServicioImpl - modificarContraseñaConToken()] Error de persistencia al actualizar la bbdd: " + dbe.Message);
             }
             catch (ArgumentNullException e)
             {
+                // Manejo de excepciones generales
                 EscribirLog.escribirEnFicheroLog("[Error PacienteServicioImpl - verificarCredenciales()] Error al modificar contraseña del usuario: " + e.Message);
                 return false;
             }
             return false;
         }
 
+        /// <summary>
+        /// Verifica las credenciales de un paciente.
+        /// </summary>
+        /// <param name="emailUsuario">Email del paciente.</param>
+        /// <param name="claveUsuario">Contraseña del paciente.</param>
+        /// <returns>True si las credenciales son válidas, False en caso contrario.</returns>
         public bool verificarCredenciales(string emailUsuario, string claveUsuario)
         {
             try
@@ -274,12 +324,18 @@ namespace AppCitasSAS.Servicios.Implementaciones
             }
             catch (ArgumentNullException e)
             {
+                // Manejo de excepciones específicas del método verificarCredenciales
                 EscribirLog.escribirEnFicheroLog("[Error PacienteServicioImpl - verificarCredenciales()] Error al comprobar las credenciales del usuario: " + e.Message);
                 return false;
             }
 
         }
 
+        /// <summary>
+        /// Obtiene un paciente por su dirección de correo electrónico.
+        /// </summary>
+        /// <param name="email">Dirección de correo electrónico del paciente.</param>
+        /// <returns>Objeto PacienteDTO que representa al paciente encontrado, o null si no se encuentra.</returns>
         public PacienteDTO obtenerUsuarioPorEmail(string email)
         {
             try
@@ -305,6 +361,10 @@ namespace AppCitasSAS.Servicios.Implementaciones
             }
         }
 
+        /// <summary>
+        /// Busca y devuelve todos los pacientes en formato de lista de DTO.
+        /// </summary>
+        /// <returns>Lista de objetos PacienteDTO que representan a los pacientes encontrados.</returns>
         public List<PacienteDTO> buscarTodos()
         {
             EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método obtenerTodosLosUsuarios() de la clase PacienteServicioImpl");
@@ -312,6 +372,11 @@ namespace AppCitasSAS.Servicios.Implementaciones
             return _convertirAdto.listPacienteToDto(_contexto.Pacientes.ToList());
         }
 
+        /// <summary>
+        /// Busca un paciente por su ID.
+        /// </summary>
+        /// <param name="id">ID del paciente a buscar.</param>
+        /// <returns>Objeto PacienteDTO que representa al paciente encontrado, o null si no se encuentra.</returns>
         public PacienteDTO buscarPorId(long id)
         {
             try
@@ -328,11 +393,16 @@ namespace AppCitasSAS.Servicios.Implementaciones
             }
             catch (ArgumentException iae)
             {
+                // Manejo de excepciones específicas del método buscarPorId
                 EscribirLog.escribirEnFicheroLog("[Error PacienteServicioImpl - buscarPorId()] Al buscar el usuario por su id " + iae.Message);
             }
             return null;
         }
 
+        /// <summary>
+        /// Elimina un paciente por su ID.
+        /// </summary>
+        /// <param name="id">ID del paciente a eliminar.</param>
         public void eliminar(long id)
         {
             try
@@ -349,10 +419,15 @@ namespace AppCitasSAS.Servicios.Implementaciones
             }
             catch (DbUpdateException dbe)
             {
+                // Manejo de excepciones específicas de la base de datos
                 EscribirLog.escribirEnFicheroLog("[Error PacienteServicioImpl - eliminar()] Error de persistencia al eliminar el usuario por su id " + dbe.Message);
             }
         }
 
+        /// <summary>
+        /// Actualiza la información de un paciente.
+        /// </summary>
+        /// <param name="pacienteModificado">Datos actualizados del paciente.</param>
         public void actualizarPaciente(PacienteDTO pacienteModificado)
         {
             try
@@ -381,14 +456,18 @@ namespace AppCitasSAS.Servicios.Implementaciones
             }
             catch (DbUpdateException dbe)
             {
+                // Manejo de excepciones específicas de la base de datos
                 EscribirLog.escribirEnFicheroLog("[Error UsuarioServicioImpl - actualizarUsuario()] Error de persistencia al modificar el usuario " + dbe.Message);
             }
         }
 
-
+        /// <summary>
+        /// Verifica si la cuenta del paciente asociada al correo electrónico proporcionado está confirmada.
+        /// </summary>
+        /// <param name="emailPaciente">Correo electrónico del paciente.</param>
+        /// <returns>True si la cuenta está confirmada, False de lo contrario.</returns>
         public bool estaLaCuentaConfirmada(string emailPaciente)
         {
-
             EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método estaLaCuentaConfirmada() de la clase PacienteServicioImpl");
 
             try
@@ -408,7 +487,11 @@ namespace AppCitasSAS.Servicios.Implementaciones
             return false;
         }
 
-
+        /// <summary>
+        /// Busca y devuelve un paciente por su dirección de correo electrónico.
+        /// </summary>
+        /// <param name="emailPaciente">Dirección de correo electrónico del paciente.</param>
+        /// <returns>Objeto PacienteDTO que representa al paciente encontrado, o null si no se encuentra.</returns>
         public PacienteDTO buscarPorEmail(string emailPaciente)
         {
             EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método buscarPorEmail() de la clase PacienteServicioImpl");
@@ -418,7 +501,11 @@ namespace AppCitasSAS.Servicios.Implementaciones
             return listaPacientes.FirstOrDefault(p => p.EmailPaciente == emailPaciente);
         }
 
-
+        /// <summary>
+        /// Verifica si existe un paciente con el DNI proporcionado.
+        /// </summary>
+        /// <param name="dniPaciente">Número de DNI del paciente.</param>
+        /// <returns>True si existe un paciente con el DNI, False de lo contrario.</returns>
         public bool buscarPorDni(string dniPaciente)
         {
             EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método buscarPorDni() de la clase PacienteServicioImpl");

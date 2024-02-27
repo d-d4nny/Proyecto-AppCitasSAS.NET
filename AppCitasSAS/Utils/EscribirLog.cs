@@ -9,14 +9,14 @@ namespace AppCitasSAS.Utils
     public static class EscribirLog
     {
         /// <summary>
-        /// Metodo que escribe en el archivo de log
+        /// Método que escribe en el archivo de log.
         /// </summary>
-        /// <param name="mensajeLog">El mensaje a escribir en el fichero</param>
+        /// <param name="mensajeLog">El mensaje a escribir en el fichero.</param>
         public static void escribirEnFicheroLog(string mensajeLog)
         {
             try
             {
-                // En el scope de Using los recursos utilizados se cerran automaticamente
+                // En el scope de Using los recursos utilizados se cierran automáticamente
                 // Abrir el archivo de registro en modo de escritura, creándolo si no existe. 
                 using (FileStream fs = new FileStream(@AppDomain.CurrentDomain.BaseDirectory + "appCitasSas.log", FileMode.OpenOrCreate, FileAccess.Write))
                 {
@@ -40,6 +40,7 @@ namespace AppCitasSAS.Utils
             }
             catch (Exception e)
             {
+                // Manejo de errores: se imprime un mensaje en la consola en caso de error al escribir en el archivo de log
                 Console.WriteLine("[Error EscribirLog - escribirEnFicheroLog()] Error al escribir en el fichero log:" + e.Message);
             }
         }

@@ -2,11 +2,16 @@
 using AppCitasSAS.Servicios.Interfaces;
 using AppCitasSAS.Utils;
 using DAL.Entidades;
+using System;
+using System.Collections.Generic;
 
 namespace AppCitasSAS.Servicios.Implementaciones
 {
     public class ImplConsultaTurnoToDto : IntfConsultaTurnoToDto
     {
+        // Método para convertir una entidad ConsultasTurno a un DTO ConsultaTurno
+        /// <param name="u">Entidad ConsultasTurno a convertir</param>
+        /// <returns>DTO ConsultaTurno convertido desde la entidad</returns>
         public ConsultaTurnoDTO consultaTurnoToDto(ConsultasTurno u)
         {
             try
@@ -15,6 +20,7 @@ namespace AppCitasSAS.Servicios.Implementaciones
 
                 ConsultaTurnoDTO dto = new ConsultaTurnoDTO();
 
+                // Asignar valores desde la entidad a DTO
                 dto.IdConsultaTurno = u.IdConsultaTurno;
                 dto.NumConsulta = u.NumConsulta;
                 dto.TramoHoraTurnoInicio = (TimeOnly)u.TramoHoraTurnoInicio;
@@ -30,6 +36,9 @@ namespace AppCitasSAS.Servicios.Implementaciones
             }
         }
 
+        // Método para convertir una lista de entidades ConsultasTurno a una lista de DTOs ConsultaTurno
+        /// <param name="listaConsultaTurno">Lista de entidades ConsultasTurno a convertir</param>
+        /// <returns>Lista de DTOs ConsultaTurno convertidos desde las entidades</returns>
         public List<ConsultaTurnoDTO> listConsultaTurnoToDto(List<ConsultasTurno> listaConsultaTurno)
         {
             try
@@ -38,6 +47,7 @@ namespace AppCitasSAS.Servicios.Implementaciones
 
                 EscribirLog.escribirEnFicheroLog("[INFO] Entrando en el método listConsultaTurnoToDto() de la clase ImplConsultaTurnoToDto");
 
+                // Convertir cada entidad a DTO y agregar a la lista
                 foreach (ConsultasTurno turno in listaConsultaTurno)
                 {
                     listaDto.Add(consultaTurnoToDto(turno));
