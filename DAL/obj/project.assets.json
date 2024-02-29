@@ -2296,19 +2296,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DaniT\\.nuget\\packages\\": {}
+    "C:\\Users\\Puesto15\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DaniT\\Desktop\\AppCitasSAS.net\\Proyecto-AppCitasSAS.NET\\DAL\\DAL.csproj",
+      "projectUniqueName": "C:\\Users\\Puesto15\\Desktop\\CLASES\\DIW\\AppCitasSASv2\\AppCitasSAS\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "C:\\Users\\DaniT\\Desktop\\AppCitasSAS.net\\Proyecto-AppCitasSAS.NET\\DAL\\DAL.csproj",
-      "packagesPath": "C:\\Users\\DaniT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DaniT\\Desktop\\AppCitasSAS.net\\Proyecto-AppCitasSAS.NET\\DAL\\obj\\",
+      "projectPath": "C:\\Users\\Puesto15\\Desktop\\CLASES\\DIW\\AppCitasSASv2\\AppCitasSAS\\DAL\\DAL.csproj",
+      "packagesPath": "C:\\Users\\Puesto15\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Puesto15\\Desktop\\CLASES\\DIW\\AppCitasSASv2\\AppCitasSAS\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\DaniT\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Puesto15\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2328,11 +2328,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -2376,7 +2371,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

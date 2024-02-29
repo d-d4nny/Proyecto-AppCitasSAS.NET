@@ -15016,3 +15016,546 @@
 27/02/2024 01:06:00 [INFO] Saliendo del método listCitasToDto() de la clase ImplCitasToDto
 27/02/2024 01:06:01 [INFO] Entrando en el método Index() de la clase HomeController
 27/02/2024 01:06:01 [INFO] Saliendo del método Index() de la clase HomeController
+29/02/2024 12:01:10 [INFO] Entrando en el método Index() de la clase HomeController
+29/02/2024 12:01:10 [INFO] Saliendo del método Index() de la clase HomeController
+29/02/2024 12:01:30 [INFO] Entrando en el método RegistrarGet() de la clase PacienteController
+29/02/2024 12:02:15 [INFO] Entrando en el método RegistrarPost() de la clase PacienteController
+29/02/2024 12:02:15 [INFO] Entrando en el método registrarPaciente() de la clase PacienteServicioImpl
+29/02/2024 12:02:16 [INFO] Saliendo del método registrarPaciente() de la clase PacienteServicioImpl
+29/02/2024 12:02:16 [INFO] Saliendo del método RegistrarPost() de la clase PacienteController. Ya existe un usuario con ese email registrado en el sistema
+29/02/2024 12:03:27 [INFO] Entrando en el método Index() de la clase HomeController
+29/02/2024 12:03:27 [INFO] Saliendo del método Index() de la clase HomeController
+29/02/2024 12:03:33 [INFO] Entrando en el método RegistrarGet() de la clase PacienteController
+29/02/2024 12:03:56 [INFO] Entrando en el método RegistrarPost() de la clase PacienteController
+29/02/2024 12:03:57 [INFO] Entrando en el método registrarPaciente() de la clase PacienteServicioImpl
+29/02/2024 12:03:58 [INFO] Saliendo del método registrarPaciente() de la clase PacienteServicioImpl
+29/02/2024 12:03:58 [INFO] Saliendo del método RegistrarPost() de la clase PacienteController. Ya existe un usuario con ese email registrado en el sistema
+29/02/2024 12:06:22 [INFO] Entrando en el método Index() de la clase HomeController
+29/02/2024 12:06:22 [INFO] Saliendo del método Index() de la clase HomeController
+29/02/2024 12:06:44 [INFO] Entrando en el método ProcesarInicioSesion() de la clase LoginController
+29/02/2024 12:06:44 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+29/02/2024 12:06:44 [INFO] Entrando en el método Encriptar() de la clase ImplEncriptar
+29/02/2024 12:06:44 [INFO] Saliendo del método Encriptar() de la clase ImplEncriptar
+29/02/2024 12:06:45 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl. Username no encontrado
+29/02/2024 12:06:45 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController. Credenciales inválidas o cuenta no confirmada. Inténtelo de nuevo.
+29/02/2024 12:06:49 [INFO] Entrando en el método ProcesarInicioSesion() de la clase LoginController
+29/02/2024 12:06:49 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+29/02/2024 12:06:49 [INFO] Entrando en el método Encriptar() de la clase ImplEncriptar
+29/02/2024 12:06:49 [INFO] Saliendo del método Encriptar() de la clase ImplEncriptar
+29/02/2024 12:06:49 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl. Username no encontrado
+29/02/2024 12:06:49 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController. Credenciales inválidas o cuenta no confirmada. Inténtelo de nuevo.
+29/02/2024 12:06:53 [INFO] Entrando en el método ProcesarInicioSesion() de la clase LoginController
+29/02/2024 12:06:53 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+29/02/2024 12:06:53 [INFO] Entrando en el método Encriptar() de la clase ImplEncriptar
+29/02/2024 12:06:53 [INFO] Saliendo del método Encriptar() de la clase ImplEncriptar
+29/02/2024 12:06:54 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl. Username no encontrado
+29/02/2024 12:06:54 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController. Credenciales inválidas o cuenta no confirmada. Inténtelo de nuevo.
+29/02/2024 12:07:09 [INFO] Entrando en el método ProcesarInicioSesion() de la clase LoginController
+29/02/2024 12:07:09 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+29/02/2024 12:07:09 [INFO] Entrando en el método Encriptar() de la clase ImplEncriptar
+29/02/2024 12:07:09 [INFO] Saliendo del método Encriptar() de la clase ImplEncriptar
+29/02/2024 12:07:10 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl
+29/02/2024 12:07:10 [INFO] Entrando en el método buscarPorEmail() de la clase PacienteServicioImpl
+29/02/2024 12:07:10 [INFO] Entrando en el método obtenerTodosLosUsuarios() de la clase PacienteServicioImpl
+29/02/2024 12:07:10 [INFO] Entrando en el método listPacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:10 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:10 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:10 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:10 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:10 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:10 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:10 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:10 [INFO] Saliendo del método listPacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:10 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController
+29/02/2024 12:07:10 [INFO] Entrando en el método HomeUser() de la clase PacienteController
+29/02/2024 12:07:10 [INFO] Entrando en el método buscarPorEmail() de la clase PacienteServicioImpl
+29/02/2024 12:07:10 [INFO] Entrando en el método obtenerTodosLosUsuarios() de la clase PacienteServicioImpl
+29/02/2024 12:07:10 [INFO] Entrando en el método listPacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:10 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:10 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:10 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:10 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:10 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:10 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:10 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:10 [INFO] Saliendo del método listPacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:10 [INFO] Entrando en el método ObtenerCitasDePaciente() de la clase ImplCitasServicio
+29/02/2024 12:07:10 [INFO] Entrando en el método listCitasToDto() de la clase ImplCitasToDto
+29/02/2024 12:07:10 [INFO] Saliendo del método listCitasToDto() de la clase ImplCitasToDto
+29/02/2024 12:07:28 [INFO] Entrando en el método MostrarFormularioEdicion() de la clase PacienteController
+29/02/2024 12:07:28 [INFO] Entrando en el método buscarPorId() de la clase PacienteServicioImpl
+29/02/2024 12:07:28 [INFO] Saliendo del método buscarPorId() de la clase PacienteServicioImpl
+29/02/2024 12:07:28 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:28 [INFO] Saliendo del método MostrarFormularioEdicion() de la clase PacienteController.
+29/02/2024 12:07:45 [INFO] Entrando en el método HomeUser() de la clase PacienteController
+29/02/2024 12:07:45 [INFO] Entrando en el método buscarPorEmail() de la clase PacienteServicioImpl
+29/02/2024 12:07:45 [INFO] Entrando en el método obtenerTodosLosUsuarios() de la clase PacienteServicioImpl
+29/02/2024 12:07:45 [INFO] Entrando en el método listPacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:45 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:45 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:45 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:45 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:45 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:45 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:45 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:45 [INFO] Saliendo del método listPacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:45 [INFO] Entrando en el método ObtenerCitasDePaciente() de la clase ImplCitasServicio
+29/02/2024 12:07:45 [INFO] Entrando en el método listCitasToDto() de la clase ImplCitasToDto
+29/02/2024 12:07:45 [INFO] Saliendo del método listCitasToDto() de la clase ImplCitasToDto
+29/02/2024 12:07:47 [INFO] Entrando en el método Index() de la clase HomeController
+29/02/2024 12:07:47 [INFO] Saliendo del método Index() de la clase HomeController
+29/02/2024 12:07:56 [INFO] Entrando en el método ProcesarInicioSesion() de la clase LoginController
+29/02/2024 12:07:56 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+29/02/2024 12:07:56 [INFO] Entrando en el método Encriptar() de la clase ImplEncriptar
+29/02/2024 12:07:56 [INFO] Saliendo del método Encriptar() de la clase ImplEncriptar
+29/02/2024 12:07:56 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl
+29/02/2024 12:07:56 [INFO] Entrando en el método buscarPorEmail() de la clase PacienteServicioImpl
+29/02/2024 12:07:56 [INFO] Entrando en el método obtenerTodosLosUsuarios() de la clase PacienteServicioImpl
+29/02/2024 12:07:56 [INFO] Entrando en el método listPacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:56 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:56 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:56 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:56 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:56 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:56 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:56 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:56 [INFO] Saliendo del método listPacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:56 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController
+29/02/2024 12:07:56 [INFO] Entrando en el método obtenerTodos() de la clase ImplCitasServicio
+29/02/2024 12:07:56 [INFO] Entrando en el método listCitasToDto() de la clase ImplCitasToDto
+29/02/2024 12:07:56 [INFO] Entrando en el método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:07:56 [INFO] Saliendo del método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:07:56 [INFO] Entrando en el método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:07:56 [INFO] Saliendo del método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:07:56 [INFO] Entrando en el método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:07:56 [INFO] Saliendo del método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:07:56 [INFO] Entrando en el método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:07:56 [INFO] Saliendo del método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:07:56 [INFO] Saliendo del método listCitasToDto() de la clase ImplCitasToDto
+29/02/2024 12:07:56 [INFO] Entrando en el método obtenerTodos() de la clase ImplDoctorServicio
+29/02/2024 12:07:56 [INFO] Entrando en el método listDoctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:07:56 [INFO] Entrando en el método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:07:56 [INFO] Saliendo del método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:07:56 [INFO] Entrando en el método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:07:56 [INFO] Saliendo del método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:07:56 [INFO] Entrando en el método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:07:56 [INFO] Saliendo del método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:07:56 [INFO] Entrando en el método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:07:56 [INFO] Saliendo del método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:07:56 [INFO] Saliendo del método listDoctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:07:56 [INFO] Entrando en el método obtenerTodos() de la clase ImplConsultaTurnoServicio
+29/02/2024 12:07:56 [INFO] Entrando en el método listConsultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:07:56 [INFO] Entrando en el método consultaTurnoToDTO() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:07:56 [INFO] Saliendo del método consultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:07:56 [INFO] Entrando en el método consultaTurnoToDTO() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:07:56 [INFO] Saliendo del método consultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:07:56 [INFO] Entrando en el método consultaTurnoToDTO() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:07:56 [INFO] Saliendo del método consultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:07:56 [INFO] Saliendo del método listConsultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:07:56 [INFO] Entrando en el método obtenerTodosLosUsuarios() de la clase PacienteServicioImpl
+29/02/2024 12:07:56 [INFO] Entrando en el método listPacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:56 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:56 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:56 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:56 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:56 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:56 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:56 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:07:56 [INFO] Saliendo del método listPacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:08:01 [INFO] Entrando en el método RegistrarGet() de la clase PacienteController
+29/02/2024 12:08:42 [INFO] Entrando en el método RegistrarPost() de la clase PacienteController
+29/02/2024 12:08:42 [INFO] Entrando en el método registrarPaciente() de la clase PacienteServicioImpl
+29/02/2024 12:08:42 [INFO] Saliendo del método registrarPaciente() de la clase PacienteServicioImpl
+29/02/2024 12:08:42 [INFO] Saliendo del método RegistrarPost() de la clase PacienteController. Ya existe un usuario con ese email registrado en el sistema
+29/02/2024 12:10:20 [INFO] Entrando en el método Index() de la clase HomeController
+29/02/2024 12:10:20 [INFO] Saliendo del método Index() de la clase HomeController
+29/02/2024 12:10:36 [INFO] Entrando en el método ProcesarInicioSesion() de la clase LoginController
+29/02/2024 12:10:36 [INFO] Entrando en el método verificarCredenciales() de la clase PacienteServicioImpl
+29/02/2024 12:10:36 [INFO] Entrando en el método Encriptar() de la clase ImplEncriptar
+29/02/2024 12:10:36 [INFO] Saliendo del método Encriptar() de la clase ImplEncriptar
+29/02/2024 12:10:37 [INFO] Saliendo del método verificarCredenciales() de la clase PacienteServicioImpl
+29/02/2024 12:10:37 [INFO] Entrando en el método buscarPorEmail() de la clase PacienteServicioImpl
+29/02/2024 12:10:37 [INFO] Entrando en el método obtenerTodosLosUsuarios() de la clase PacienteServicioImpl
+29/02/2024 12:10:37 [INFO] Entrando en el método listPacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:10:37 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:10:37 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:10:37 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:10:37 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:10:37 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:10:37 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:10:37 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:10:37 [INFO] Saliendo del método listPacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:10:37 [INFO] Saliendo del método ProcesarInicioSesion() de la clase LoginController
+29/02/2024 12:10:37 [INFO] Entrando en el método obtenerTodos() de la clase ImplCitasServicio
+29/02/2024 12:10:37 [INFO] Entrando en el método listCitasToDto() de la clase ImplCitasToDto
+29/02/2024 12:10:37 [INFO] Entrando en el método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:10:37 [INFO] Saliendo del método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:10:37 [INFO] Entrando en el método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:10:37 [INFO] Saliendo del método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:10:37 [INFO] Entrando en el método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:10:37 [INFO] Saliendo del método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:10:37 [INFO] Entrando en el método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:10:37 [INFO] Saliendo del método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:10:37 [INFO] Saliendo del método listCitasToDto() de la clase ImplCitasToDto
+29/02/2024 12:10:37 [INFO] Entrando en el método obtenerTodos() de la clase ImplDoctorServicio
+29/02/2024 12:10:38 [INFO] Entrando en el método listDoctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:10:38 [INFO] Entrando en el método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:10:38 [INFO] Saliendo del método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:10:38 [INFO] Entrando en el método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:10:38 [INFO] Saliendo del método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:10:38 [INFO] Entrando en el método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:10:38 [INFO] Saliendo del método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:10:38 [INFO] Entrando en el método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:10:38 [INFO] Saliendo del método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:10:38 [INFO] Saliendo del método listDoctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:10:38 [INFO] Entrando en el método obtenerTodos() de la clase ImplConsultaTurnoServicio
+29/02/2024 12:10:38 [INFO] Entrando en el método listConsultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:10:38 [INFO] Entrando en el método consultaTurnoToDTO() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:10:38 [INFO] Saliendo del método consultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:10:38 [INFO] Entrando en el método consultaTurnoToDTO() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:10:38 [INFO] Saliendo del método consultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:10:38 [INFO] Entrando en el método consultaTurnoToDTO() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:10:38 [INFO] Saliendo del método consultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:10:38 [INFO] Saliendo del método listConsultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:10:38 [INFO] Entrando en el método obtenerTodosLosUsuarios() de la clase PacienteServicioImpl
+29/02/2024 12:10:38 [INFO] Entrando en el método listPacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:10:38 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:10:38 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:10:38 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:10:38 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:10:38 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:10:38 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:10:38 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:10:38 [INFO] Saliendo del método listPacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:11:01 [INFO] Entrando en el método InicioSesion() de la clase LoginController
+29/02/2024 12:11:01 [INFO] Saliendo del método InicioSesion() de la clase LoginController
+29/02/2024 12:11:09 [INFO] Entrando en el método Index() de la clase HomeController
+29/02/2024 12:11:09 [INFO] Saliendo del método Index() de la clase HomeController
+29/02/2024 12:11:43 [INFO] Entrando en el método buscarPorId() de la clase ImplCitasServicio
+29/02/2024 12:11:43 [INFO] Saliendo del método buscarPorId() de la clase ImplCitasServicio
+29/02/2024 12:11:43 [INFO] Entrando en el método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:43 [INFO] Saliendo del método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:43 [INFO] Entrando en el método completarCita() de la clase ImplCitasServicio
+29/02/2024 12:11:43 [INFO] Saliendo del método completarCita() de la clase ImplCitasServicio. Estado de la cita cambiado a 'Completada'.
+29/02/2024 12:11:43 [INFO] Entrando en el método obtenerTodos() de la clase ImplCitasServicio
+29/02/2024 12:11:43 [INFO] Entrando en el método listCitasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:43 [INFO] Entrando en el método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:43 [INFO] Saliendo del método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:43 [INFO] Entrando en el método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:43 [INFO] Saliendo del método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:43 [INFO] Entrando en el método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:43 [INFO] Saliendo del método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:43 [INFO] Entrando en el método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:43 [INFO] Saliendo del método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:43 [INFO] Saliendo del método listCitasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:43 [INFO] Saliendo del método completarCita() de la clase CitasController. 
+29/02/2024 12:11:43 [INFO] Entrando en el método obtenerTodos() de la clase ImplCitasServicio
+29/02/2024 12:11:43 [INFO] Entrando en el método listCitasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:43 [INFO] Entrando en el método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:43 [INFO] Saliendo del método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:43 [INFO] Entrando en el método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:43 [INFO] Saliendo del método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:43 [INFO] Entrando en el método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:43 [INFO] Saliendo del método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:43 [INFO] Entrando en el método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:43 [INFO] Saliendo del método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:43 [INFO] Saliendo del método listCitasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:43 [INFO] Entrando en el método obtenerTodos() de la clase ImplDoctorServicio
+29/02/2024 12:11:43 [INFO] Entrando en el método listDoctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:11:43 [INFO] Entrando en el método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:11:43 [INFO] Saliendo del método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:11:43 [INFO] Entrando en el método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:11:43 [INFO] Saliendo del método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:11:43 [INFO] Entrando en el método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:11:43 [INFO] Saliendo del método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:11:43 [INFO] Entrando en el método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:11:43 [INFO] Saliendo del método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:11:43 [INFO] Saliendo del método listDoctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:11:43 [INFO] Entrando en el método obtenerTodos() de la clase ImplConsultaTurnoServicio
+29/02/2024 12:11:43 [INFO] Entrando en el método listConsultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:11:43 [INFO] Entrando en el método consultaTurnoToDTO() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:11:43 [INFO] Saliendo del método consultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:11:43 [INFO] Entrando en el método consultaTurnoToDTO() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:11:43 [INFO] Saliendo del método consultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:11:43 [INFO] Entrando en el método consultaTurnoToDTO() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:11:43 [INFO] Saliendo del método consultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:11:43 [INFO] Saliendo del método listConsultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:11:43 [INFO] Entrando en el método obtenerTodosLosUsuarios() de la clase PacienteServicioImpl
+29/02/2024 12:11:43 [INFO] Entrando en el método listPacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:11:43 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:11:43 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:11:43 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:11:43 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:11:43 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:11:43 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:11:43 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:11:43 [INFO] Saliendo del método listPacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:11:47 [INFO] Entrando en el método buscarPorId() de la clase ImplCitasServicio
+29/02/2024 12:11:47 [INFO] Saliendo del método buscarPorId() de la clase ImplCitasServicio
+29/02/2024 12:11:47 [INFO] Entrando en el método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:47 [INFO] Saliendo del método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:47 [INFO] Entrando en el método cancelarCita() de la clase ImplCitasServicio
+29/02/2024 12:11:47 [INFO] Saliendo del método cancelarCita() de la clase ImplCitasServicio. Estado de la cita cambiado a 'Cancelada'.
+29/02/2024 12:11:47 [INFO] Entrando en el método obtenerTodos() de la clase ImplCitasServicio
+29/02/2024 12:11:47 [INFO] Entrando en el método listCitasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:47 [INFO] Entrando en el método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:47 [INFO] Saliendo del método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:47 [INFO] Entrando en el método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:47 [INFO] Saliendo del método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:47 [INFO] Entrando en el método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:47 [INFO] Saliendo del método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:47 [INFO] Entrando en el método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:47 [INFO] Saliendo del método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:47 [INFO] Saliendo del método listCitasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:47 [INFO] Saliendo del método cancelarCita() de la clase CitasController. La cita se ha cancelado correctamente
+29/02/2024 12:11:47 [INFO] Entrando en el método obtenerTodos() de la clase ImplCitasServicio
+29/02/2024 12:11:47 [INFO] Entrando en el método listCitasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:47 [INFO] Entrando en el método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:47 [INFO] Saliendo del método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:47 [INFO] Entrando en el método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:47 [INFO] Saliendo del método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:47 [INFO] Entrando en el método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:47 [INFO] Saliendo del método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:47 [INFO] Entrando en el método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:47 [INFO] Saliendo del método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:47 [INFO] Saliendo del método listCitasToDto() de la clase ImplCitasToDto
+29/02/2024 12:11:47 [INFO] Entrando en el método obtenerTodos() de la clase ImplDoctorServicio
+29/02/2024 12:11:47 [INFO] Entrando en el método listDoctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:11:47 [INFO] Entrando en el método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:11:47 [INFO] Saliendo del método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:11:47 [INFO] Entrando en el método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:11:47 [INFO] Saliendo del método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:11:47 [INFO] Entrando en el método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:11:47 [INFO] Saliendo del método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:11:47 [INFO] Entrando en el método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:11:47 [INFO] Saliendo del método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:11:47 [INFO] Saliendo del método listDoctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:11:47 [INFO] Entrando en el método obtenerTodos() de la clase ImplConsultaTurnoServicio
+29/02/2024 12:11:47 [INFO] Entrando en el método listConsultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:11:47 [INFO] Entrando en el método consultaTurnoToDTO() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:11:47 [INFO] Saliendo del método consultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:11:47 [INFO] Entrando en el método consultaTurnoToDTO() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:11:47 [INFO] Saliendo del método consultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:11:47 [INFO] Entrando en el método consultaTurnoToDTO() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:11:47 [INFO] Saliendo del método consultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:11:47 [INFO] Saliendo del método listConsultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:11:47 [INFO] Entrando en el método obtenerTodosLosUsuarios() de la clase PacienteServicioImpl
+29/02/2024 12:11:47 [INFO] Entrando en el método listPacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:11:47 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:11:47 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:11:47 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:11:47 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:11:47 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:11:47 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:11:47 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:11:47 [INFO] Saliendo del método listPacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:12:12 [INFO] Entrando en el método MostrarFormNuevaDoctor() de la clase DoctoresController
+29/02/2024 12:12:12 [INFO] Entrando en el método obtenerTodos() de la clase ImplConsultaTurnoServicio
+29/02/2024 12:12:12 [INFO] Entrando en el método listConsultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:12:12 [INFO] Entrando en el método consultaTurnoToDTO() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:12:12 [INFO] Saliendo del método consultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:12:12 [INFO] Entrando en el método consultaTurnoToDTO() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:12:12 [INFO] Saliendo del método consultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:12:12 [INFO] Entrando en el método consultaTurnoToDTO() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:12:12 [INFO] Saliendo del método consultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:12:12 [INFO] Saliendo del método listConsultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:12:12 [INFO] Saliendo del método MostrarFormNuevaDoctor() de la clase DoctoresController
+29/02/2024 12:12:36 [INFO] Entrando en el método RegistrarDoctorPost() de la clase DoctoresController
+29/02/2024 12:12:36 [INFO] Entrando en el método registrar() de la clase ImplDoctorServicio
+29/02/2024 12:12:36 [INFO] Entrando en el método doctoresToDao() de la clase ImplDoctorToDao
+29/02/2024 12:12:36 [INFO] Saliendo del método doctoresToDao() de la clase ImplDoctorToDao
+29/02/2024 12:12:36 [INFO] Saliendo del método registrar() de la clase ImplDoctorServicio
+29/02/2024 12:12:36 [INFO] Entrando en el método obtenerTodos() de la clase ImplCitasServicio
+29/02/2024 12:12:36 [INFO] Entrando en el método listCitasToDto() de la clase ImplCitasToDto
+29/02/2024 12:12:36 [INFO] Entrando en el método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:12:36 [INFO] Saliendo del método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:12:36 [INFO] Entrando en el método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:12:36 [INFO] Saliendo del método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:12:36 [INFO] Entrando en el método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:12:36 [INFO] Saliendo del método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:12:36 [INFO] Entrando en el método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:12:36 [INFO] Saliendo del método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:12:36 [INFO] Saliendo del método listCitasToDto() de la clase ImplCitasToDto
+29/02/2024 12:12:36 [INFO] Entrando en el método obtenerTodos() de la clase ImplDoctorServicio
+29/02/2024 12:12:36 [INFO] Entrando en el método listDoctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:12:36 [INFO] Entrando en el método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:12:36 [INFO] Saliendo del método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:12:36 [INFO] Entrando en el método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:12:36 [INFO] Saliendo del método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:12:36 [INFO] Entrando en el método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:12:36 [INFO] Saliendo del método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:12:36 [INFO] Entrando en el método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:12:36 [INFO] Saliendo del método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:12:36 [INFO] Entrando en el método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:12:36 [INFO] Saliendo del método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:12:36 [INFO] Saliendo del método listDoctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:12:36 [INFO] Entrando en el método obtenerTodos() de la clase ImplConsultaTurnoServicio
+29/02/2024 12:12:36 [INFO] Entrando en el método listConsultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:12:36 [INFO] Entrando en el método consultaTurnoToDTO() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:12:36 [INFO] Saliendo del método consultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:12:36 [INFO] Entrando en el método consultaTurnoToDTO() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:12:36 [INFO] Saliendo del método consultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:12:36 [INFO] Entrando en el método consultaTurnoToDTO() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:12:36 [INFO] Saliendo del método consultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:12:36 [INFO] Saliendo del método listConsultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:12:36 [INFO] Entrando en el método obtenerTodosLosUsuarios() de la clase PacienteServicioImpl
+29/02/2024 12:12:36 [INFO] Entrando en el método listPacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:12:36 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:12:36 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:12:36 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:12:36 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:12:36 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:12:36 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:12:36 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:12:36 [INFO] Saliendo del método listPacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:12:40 [INFO] Entrando en el método buscarPorId() de la clase ImplDoctorServicio
+29/02/2024 12:12:40 [INFO] Saliendo del método buscarPorId() de la clase ImplDoctorServicio
+29/02/2024 12:12:40 [INFO] Entrando en el método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:12:40 [INFO] Saliendo del método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:12:40 [INFO] Entrando en el método eliminar() de la clase ImplDoctorServicio
+29/02/2024 12:12:40 [INFO] Saliendo del método eliminar() de la clase ImplDoctorServicio. Doctor eliminado correctamente.
+29/02/2024 12:12:40 [INFO] Saliendo del método eliminarDoctor() de la clase DoctoresController. El doctor se ha eliminado correctamente
+29/02/2024 12:12:40 [INFO] Entrando en el método obtenerTodos() de la clase ImplCitasServicio
+29/02/2024 12:12:40 [INFO] Entrando en el método listCitasToDto() de la clase ImplCitasToDto
+29/02/2024 12:12:40 [INFO] Entrando en el método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:12:40 [INFO] Saliendo del método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:12:40 [INFO] Entrando en el método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:12:40 [INFO] Saliendo del método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:12:40 [INFO] Entrando en el método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:12:40 [INFO] Saliendo del método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:12:40 [INFO] Entrando en el método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:12:40 [INFO] Saliendo del método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:12:40 [INFO] Saliendo del método listCitasToDto() de la clase ImplCitasToDto
+29/02/2024 12:12:40 [INFO] Entrando en el método obtenerTodos() de la clase ImplDoctorServicio
+29/02/2024 12:12:40 [INFO] Entrando en el método listDoctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:12:40 [INFO] Entrando en el método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:12:40 [INFO] Saliendo del método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:12:40 [INFO] Entrando en el método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:12:40 [INFO] Saliendo del método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:12:40 [INFO] Entrando en el método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:12:40 [INFO] Saliendo del método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:12:40 [INFO] Entrando en el método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:12:40 [INFO] Saliendo del método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:12:40 [INFO] Saliendo del método listDoctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:12:40 [INFO] Entrando en el método obtenerTodos() de la clase ImplConsultaTurnoServicio
+29/02/2024 12:12:40 [INFO] Entrando en el método listConsultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:12:40 [INFO] Entrando en el método consultaTurnoToDTO() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:12:40 [INFO] Saliendo del método consultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:12:40 [INFO] Entrando en el método consultaTurnoToDTO() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:12:40 [INFO] Saliendo del método consultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:12:40 [INFO] Entrando en el método consultaTurnoToDTO() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:12:40 [INFO] Saliendo del método consultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:12:40 [INFO] Saliendo del método listConsultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:12:40 [INFO] Entrando en el método obtenerTodosLosUsuarios() de la clase PacienteServicioImpl
+29/02/2024 12:12:40 [INFO] Entrando en el método listPacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:12:40 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:12:40 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:12:40 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:12:40 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:12:40 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:12:40 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:12:40 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:12:40 [INFO] Saliendo del método listPacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:13:13 [INFO] Entrando en el método buscarPorId() de la clase ImplDoctorServicio
+29/02/2024 12:13:13 [INFO] Saliendo del método buscarPorId() de la clase ImplDoctorServicio
+29/02/2024 12:13:13 [INFO] Entrando en el método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:13:13 [INFO] Saliendo del método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:13:13 [INFO] Entrando en el método eliminar() de la clase ImplDoctorServicio
+29/02/2024 12:13:13 [Error ImplDoctorServicio - eliminar()] Error de persistencia al eliminar un doctor por su id: An error occurred while saving the entity changes. See the inner exception for details.
+29/02/2024 12:13:13 [INFO] Saliendo del método eliminarDoctor() de la clase DoctoresController. El doctor se ha eliminado correctamente
+29/02/2024 12:13:13 [INFO] Entrando en el método obtenerTodos() de la clase ImplCitasServicio
+29/02/2024 12:13:13 [INFO] Entrando en el método listCitasToDto() de la clase ImplCitasToDto
+29/02/2024 12:13:13 [INFO] Entrando en el método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:13:13 [INFO] Saliendo del método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:13:13 [INFO] Entrando en el método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:13:13 [INFO] Saliendo del método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:13:13 [INFO] Entrando en el método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:13:13 [INFO] Saliendo del método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:13:13 [INFO] Entrando en el método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:13:13 [INFO] Saliendo del método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:13:13 [INFO] Saliendo del método listCitasToDto() de la clase ImplCitasToDto
+29/02/2024 12:13:13 [INFO] Entrando en el método obtenerTodos() de la clase ImplDoctorServicio
+29/02/2024 12:13:13 [INFO] Entrando en el método listDoctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:13:13 [INFO] Entrando en el método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:13:13 [INFO] Saliendo del método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:13:13 [INFO] Entrando en el método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:13:13 [INFO] Saliendo del método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:13:13 [INFO] Entrando en el método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:13:13 [INFO] Saliendo del método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:13:13 [INFO] Entrando en el método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:13:13 [INFO] Saliendo del método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:13:13 [INFO] Saliendo del método listDoctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:13:13 [INFO] Entrando en el método obtenerTodos() de la clase ImplConsultaTurnoServicio
+29/02/2024 12:13:13 [INFO] Entrando en el método listConsultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:13:13 [INFO] Entrando en el método consultaTurnoToDTO() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:13:13 [INFO] Saliendo del método consultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:13:13 [INFO] Entrando en el método consultaTurnoToDTO() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:13:13 [INFO] Saliendo del método consultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:13:13 [INFO] Entrando en el método consultaTurnoToDTO() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:13:13 [INFO] Saliendo del método consultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:13:13 [INFO] Saliendo del método listConsultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:13:13 [INFO] Entrando en el método obtenerTodosLosUsuarios() de la clase PacienteServicioImpl
+29/02/2024 12:13:13 [INFO] Entrando en el método listPacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:13:13 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:13:13 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:13:13 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:13:13 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:13:13 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:13:13 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:13:13 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:13:13 [INFO] Saliendo del método listPacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:14:55 [INFO] Entrando en el método MostrarFormularioEdicionTurno() de la clase TurnosController
+29/02/2024 12:14:55 [INFO] Entrando en el método buscarPorId() de la clase ImplConsultaTurnoServicio
+29/02/2024 12:14:55 [INFO] Saliendo del método buscarPorId() de la clase ImplConsultaTurnoServicio
+29/02/2024 12:14:55 [INFO] Entrando en el método consultaTurnoToDTO() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:14:55 [INFO] Saliendo del método consultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:14:55 [INFO] Saliendo del método MostrarFormularioEdicionTurno() de la clase TurnosController.
+29/02/2024 12:15:00 [INFO] Entrando en el método ProcesarFormularioEdicionTurno() de la clase TurnosController
+29/02/2024 12:15:00 [INFO] Entrando en el método buscarPorId() de la clase ImplConsultaTurnoServicio
+29/02/2024 12:15:00 [INFO] Saliendo del método buscarPorId() de la clase ImplConsultaTurnoServicio
+29/02/2024 12:15:00 [INFO] Entrando en el método consultaTurnoToDTO() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:15:00 [INFO] Saliendo del método consultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:15:00 [INFO] Entrando en el método actualizarTurno() de la clase ImplConsultaTurnoServicio
+29/02/2024 12:15:00 [INFO] Saliendo del método actualizarTurno() de la clase ImplConsultaTurnoServicio. Turno actualizado OK
+29/02/2024 12:15:00 [INFO] Saliendo del método ProcesarFormularioEdicionTurno() de la clase TurnosController. El turno se ha editado correctamente
+29/02/2024 12:15:00 [INFO] Entrando en el método obtenerTodos() de la clase ImplCitasServicio
+29/02/2024 12:15:00 [INFO] Entrando en el método listCitasToDto() de la clase ImplCitasToDto
+29/02/2024 12:15:00 [INFO] Entrando en el método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:15:00 [INFO] Saliendo del método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:15:00 [INFO] Entrando en el método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:15:00 [INFO] Saliendo del método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:15:00 [INFO] Entrando en el método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:15:00 [INFO] Saliendo del método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:15:00 [INFO] Entrando en el método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:15:00 [INFO] Saliendo del método citasToDto() de la clase ImplCitasToDto
+29/02/2024 12:15:00 [INFO] Saliendo del método listCitasToDto() de la clase ImplCitasToDto
+29/02/2024 12:15:00 [INFO] Entrando en el método obtenerTodos() de la clase ImplDoctorServicio
+29/02/2024 12:15:00 [INFO] Entrando en el método listDoctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:15:00 [INFO] Entrando en el método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:15:00 [INFO] Saliendo del método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:15:00 [INFO] Entrando en el método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:15:00 [INFO] Saliendo del método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:15:00 [INFO] Entrando en el método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:15:00 [INFO] Saliendo del método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:15:00 [INFO] Entrando en el método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:15:00 [INFO] Saliendo del método doctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:15:00 [INFO] Saliendo del método listDoctoresToDto() de la clase ImplDoctorToDto
+29/02/2024 12:15:00 [INFO] Entrando en el método obtenerTodos() de la clase ImplConsultaTurnoServicio
+29/02/2024 12:15:00 [INFO] Entrando en el método listConsultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:15:00 [INFO] Entrando en el método consultaTurnoToDTO() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:15:00 [INFO] Saliendo del método consultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:15:00 [INFO] Entrando en el método consultaTurnoToDTO() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:15:00 [INFO] Saliendo del método consultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:15:00 [INFO] Entrando en el método consultaTurnoToDTO() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:15:00 [INFO] Saliendo del método consultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:15:00 [INFO] Saliendo del método listConsultaTurnoToDto() de la clase ImplConsultaTurnoToDto
+29/02/2024 12:15:00 [INFO] Entrando en el método obtenerTodosLosUsuarios() de la clase PacienteServicioImpl
+29/02/2024 12:15:00 [INFO] Entrando en el método listPacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:15:00 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:15:00 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:15:00 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:15:00 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:15:00 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:15:00 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:15:00 [INFO] Saliendo del método pacienteToDto() de la clase ImplPacienteToDto
+29/02/2024 12:15:00 [INFO] Saliendo del método listPacienteToDto() de la clase ImplPacienteToDto
